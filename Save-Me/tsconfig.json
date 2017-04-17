@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "systemjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules"
+  ]
+}

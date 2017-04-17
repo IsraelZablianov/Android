@@ -1,0 +1,218 @@
+/* App Colors (instead of using Scss Or Less) */
+
+.colors-not-for-use{
+    color: #fa8b00;  /*      Orange    */
+    color: #FAD40B;  /*   Light Orange */
+    color: #3388cc;  /*      Blue      */
+    color: #0B09CC;  /*    Dark Blue   */
+    color: #FFF;     /*      White     */
+    color: #ED4046;  /*      Red       */
+    color: #9CCC4E;  /*      Green     */
+    color: #E9E9E9;  /*      Gray      */
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    font-weight: bold;
+    src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("opentype");
+}
+
+/* apply for all */
+body.ui-mobile-viewport.ui-overlay-a, body{
+    font-family: PlayfairDisplay;
+    background-color: #3388cc;
+}
+
+body.ui-mobile-viewport.ui-overlay-a, body, input, select, textarea, button, .ui-btn {
+    font-family: PlayfairDisplay;
+}
+
+.ui-page-theme-a .ui-btn.expense-wrapper{
+    background-color: #fff;
+}
+
+ul#expense-list li:nth-child(even) a.ui-btn.expense-wrapper{
+    background-color: #E9E9E9;
+}
+
+ul#expense-list li:nth-child(even) .expense-display .content-section .price-display{
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.ui-loader-background {
+    width:100%;
+    height:100%;
+    top:0;
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display:none;
+    position: fixed;
+    z-index:100;
+}
+
+.ui-loading .ui-loader-background {
+    display:block;
+}
+
+/* expense template */
+
+.expense-display{
+    display: flex;
+}
+
+.expense-display .date-section {
+    font-family: -WEBKIT-BODY;
+    width: 80px;
+}
+
+.expense-display .date-section .date-display{
+    font-size: xx-large;
+}
+
+.expense-display .date-section .day-display{
+    background-color: #3388cc;
+    color: #FFF;
+    font-weight: normal;
+    font-size: small;
+    letter-spacing: 1px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 10%;
+    margin-bottom: 5px;
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    left: -10px;
+}
+
+.expense-display .date-section .month-display, .expense-display .date-section .year-display{
+    font-size: smaller;
+}
+
+.expense-display .content-section .type-display{
+    text-align: center;
+    font-size: larger;
+    width: 140px;
+}
+
+.expense-display .content-section .comments-display{
+    width: 125px;
+    margin-top: 10%;
+    padding-left: 10px;
+    text-align: center;
+    font-size: initial;
+}
+
+.expense-display .content-section .price-display{
+    color: #ED4046;
+    float: right;
+    padding-top: 10px;
+    font-family: -WEBKIT-BODY;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.icon-display{
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 65%;
+    position: absolute;
+    border-radius: 100% !important;
+}
+
+
+/* floating button */
+div.add-btn{
+    position: fixed;
+    background-color: #fa8b00;
+    z-index: 100;
+    top: 400px;
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    color: #FFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    font-size: 43px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+div.add-btn:active {
+    box-shadow: none;
+}
+
+/* expense page and new-expense-page */
+.ui-input-text input.price {
+    text-align: center;
+}
+
+input.date-of-expense{
+    text-align: center;
+}
+
+.expense-page-headers{
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+div#ui-datepicker-div{
+    width: 97%;
+}
+
+.ui-selectmenu-button.ui-button {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center !important;
+}
+
+.expense-page-comments-title{
+    margin-top: 20px;
+}
+
+/* header and footer */
+
+.ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a {
+    background: #3388cc;
+}
+
+.ui-page .ui-header a{
+    background: #fa8b00 !important;
+    text-shadow: 0 1px 0 #f3f3f3;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title, .ui-header .ui-link.ui-btn, .ui-footer .ui-link.ui-btn{
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
+    background-color: #3388cc;
+}
+
+.ui-footer .ui-link.ui-btn:active, .ui-footer .ui-link.ui-btn:focus, .ui-footer .ui-link.ui-btn:hover{
+    background-color: #0B09CC;
+}
+
+
+
+
+
+
+
