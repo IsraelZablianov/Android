@@ -42,6 +42,9 @@ var HtmlService = (function () {
     HtmlService.prototype.activateDragAndDrop = function (elementId) {
         $('#' + elementId).draggable();
     };
+    HtmlService.prototype.getYearAndMonthDisplay = function (date) {
+        return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
+    };
     HtmlService.prototype.getDate = function (date) {
         var day = date.getDate().toString();
         day = day.length > 1 ? day : '0' + day;

@@ -21,31 +21,23 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="376">
+              <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="126" column="35" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/utils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="101" column="15" lean-forward="false" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+            <state relative-caret-position="16">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
@@ -55,12 +47,50 @@
                 <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+                <element signature="e#4431#4861#0" expanded="false" />
+                <element signature="e#4927#5087#0" expanded="false" />
+                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-                <marker date="1492389805146" expanded="true" signature="3296:5982" ph="..." />
+                <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#isTheSameDate#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#54#210#0" expanded="false" />
+                <element signature="e#253#394#0" expanded="false" />
+                <element signature="e#586#741#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#activateDragAndDrop#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+                <marker date="1492448020841" expanded="true" signature="1236:2615" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1301:2597" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1351:2576" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1402:2085" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1457:1565" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1619:1726" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1782:1891" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="1946:2054" ph="..." />
+                <marker date="1492448020841" expanded="true" signature="2139:2549" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,7 +109,7 @@
       <file leaf-file-name="expense-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="510">
               <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
               <folding>
                 <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
@@ -126,6 +156,11 @@
       <find>setDefaultExpenseToNewExpensePage</find>
       <find>add-</find>
       <find>price-dis</find>
+      <find>home</find>
+      <find>data</find>
+      <find>padd</find>
+      <find>date-f</find>
+      <find>this.htmlService.sortUL</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -153,9 +188,10 @@
         <option value="$PROJECT_DIR$/utils/html-service.ts" />
         <option value="$PROJECT_DIR$/utils/expense-service.ts" />
         <option value="$PROJECT_DIR$/main/loader.ts" />
+        <option value="$PROJECT_DIR$/services/html-service.ts" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/main/utils.ts" />
         <option value="$PROJECT_DIR$/assets/styles/main.css" />
+        <option value="$PROJECT_DIR$/main/utils.ts" />
       </list>
     </option>
   </component>
@@ -187,7 +223,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -216,6 +251,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,16 +267,16 @@
     <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/assets/styles/main.css&#10;mainc&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/assets/styles/main.css&#10;mode&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/models/models.ts&#10;main.cs&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/assets/styles/main.css" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\israel\WebstormProjects\Save-Me\bower_components\localforage-getitems\dist" />
-      <recent name="C:\Users\israel\WebstormProjects\Save-Me" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\assets\images" />
       <recent name="C:\Users\israel\WebstormProjects\Save-Me\assets\images" />
       <recent name="C:\Users\israel\WebstormProjects\Save-Me" />
       <recent name="C:\Users\israel\WebstormProjects\Save-Me\main" />
-      <recent name="C:\Users\israel\WebstormProjects\Save-Me\services" />
-      <recent name="C:\Users\israel\WebstormProjects\Save-Me\assets\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\israel\WebstormProjects\Save-Me\bower_components\localforage-getitems\dist" />
+      <recent name="C:\Users\israel\WebstormProjects\Save-Me" />
     </key>
   </component>
   <component name="RunManager">
@@ -321,18 +357,19 @@
       <workItem from="1492266000731" duration="2109000" />
       <workItem from="1492273996528" duration="4552000" />
       <workItem from="1492278713976" duration="55195000" />
+      <workItem from="1492436855949" duration="13608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125865000" />
+    <option name="totallyTimeSpent" value="139473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19765739" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19692533" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -358,7 +395,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -474,7 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,7 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="180" column="263" lean-forward="false" selection-start-line="180" selection-start-column="261" selection-end-line="180" selection-end-column="263" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,71 +539,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="198" column="14" lean-forward="false" selection-start-line="198" selection-start-column="14" selection-end-line="198" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/examples/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/src/System.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/build/system.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system-production.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/examples/test.html" />
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/src/System.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/build/system.min.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system-production.src.js" />
     <entry file="file://$PROJECT_DIR$/typings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,9 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="666" column="0" lean-forward="true" selection-start-line="666" selection-start-column="0" selection-end-line="666" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,34 +567,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typings/globals/require/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="99" lean-forward="false" selection-start-line="0" selection-start-column="99" selection-end-line="0" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/typings/node.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/require/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/typings/node.d.ts" />
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -624,67 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#getAllExpenses#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery-ui-touch-punch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="1090" lean-forward="false" selection-start-line="10" selection-start-column="1090" selection-end-line="10" selection-end-column="1090" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="69" column="23" lean-forward="false" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-          <folding>
-            <element signature="e#54#210#0" expanded="false" />
-            <element signature="e#253#394#0" expanded="false" />
-            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#activateDragAndDrop#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-            <marker date="1492380625005" expanded="true" signature="1236:2615" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1301:2597" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1351:2576" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1402:2085" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1457:1565" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1619:1726" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1782:1891" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="1946:2054" ph="..." />
-            <marker date="1492380625005" expanded="true" signature="2139:2549" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,21 +596,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/money0.gif" />
+    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#210#0" expanded="false" />
+            <element signature="e#253#394#0" expanded="false" />
+            <element signature="e#586#741#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#activateDragAndDrop#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+            <marker date="1492448020841" expanded="true" signature="1236:2615" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1301:2597" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1351:2576" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1402:2085" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1457:1565" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1619:1726" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1782:1891" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="1946:2054" ph="..." />
+            <marker date="1492448020841" expanded="true" signature="2139:2549" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="376">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#addExpenseToDB#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#getAllExpenses#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="101" column="15" lean-forward="false" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+        <state relative-caret-position="16">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
@@ -720,26 +685,20 @@
             <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="e#4431#4861#0" expanded="false" />
+            <element signature="e#4927#5087#0" expanded="false" />
+            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-            <marker date="1492389805146" expanded="true" signature="3296:5982" ph="..." />
+            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#isTheSameDate#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/money0.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="126" column="35" lean-forward="false" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>

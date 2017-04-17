@@ -71,6 +71,10 @@ class HtmlService{
         $('#' + elementId).draggable();
     }
 
+    getYearAndMonthDisplay(date: Date): string{
+        return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
+    }
+
     private getDate(date : Date): string {
         let day = date.getDate().toString();
         day = day.length > 1 ? day : '0' + day;

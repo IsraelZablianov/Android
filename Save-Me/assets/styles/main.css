@@ -25,7 +25,6 @@
 /* apply for all */
 body.ui-mobile-viewport.ui-overlay-a, body{
     font-family: PlayfairDisplay;
-    background-color: #3388cc;
 }
 
 body.ui-mobile-viewport.ui-overlay-a, body, input, select, textarea, button, .ui-btn {
@@ -58,6 +57,25 @@ ul#expense-list li:nth-child(even) .expense-display .content-section .price-disp
 
 .ui-loading .ui-loader-background {
     display:block;
+}
+
+
+/* home page */
+
+.ui-page .ui-header .date-filter{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: PlayfairDisplay;
+    font-weight: 300;
+    font-size: smaller;
+    text-shadow: 1px 1px 1px black;
+}
+
+.ui-page .ui-header .date-filter a{
+    background-color: transparent !important;
+    position: relative;
+    bottom: -2px;
 }
 
 /* expense template */
