@@ -13,30 +13,54 @@
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
     <link rel="stylesheet" href="Material-Design-Style-Ripple-Effect-On-Click-Touch-Ripple-js/Material-Design-Style-Ripple-Effect-On-Click-Touch-Ripple-js/ripple.css">
+    <link rel="stylesheet" href="assets/styles/animate.css">
+    <link rel="stylesheet" href="assets/styles/bounce.css">
+    <link rel="stylesheet" href="assets/styles/flip.css">
+    <link rel="stylesheet" href="assets/styles/slide.css">
+    <link rel="stylesheet" href="assets/styles/swing.css">
 
     <!--Custom styles-->
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
+<script>
 
+</script>
 <!-- home page -->
 <div id="home-page" data-role="page">
 
     <header data-role="header" data-position="fixed">
         <h1>
             <div class="date-filter">
-                <a data-ripple="#fff" id="data-filter-left"><img src="assets/images/arrow-left.png"></a>
+                <a class="round" data-ripple="#fff" id="data-filter-left"><img src="assets/images/arrow-left.png"></a>
                 <span id="date-filter-display"></span>
-                <a id="data-filter-right" data-ripple="#fff"><img src="assets/images/arrow-right.png"></a>
+                <a class="round" id="data-filter-right" data-ripple="#fff"><img src="assets/images/arrow-right.png"></a>
             </div>
         </h1>
         <a href="#" id="refresh-home-page" data-icon="refresh">Refresh</a>
         <a href="#settings-page" data-icon="gear" data-transition="pop">Settings</a>
+        <div data-ripple="#3388cc" class="hover-price-report-container header header--fixed hide-from-print" id="hover-price-report-container" role="banner">
+            <div class="hover-price-report-col">
+                Budget
+                <div class="budget-price-color" id="hover-price-budget-price">
+                </div>
+            </div>
+            <div class="hover-price-report-col">
+                Expenses
+                <div class="expense-price-color" id="hover-price-expenses-price">
+                </div>
+            </div>
+            <div class="hover-price-report-col">
+                Total
+                <div id="hover-price-report-total-price">
+                </div>
+            </div>
+        </div>
     </header>
 
     <ul class="expense-list" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Expenses..." id="expense-list"/>
 
-    <a data-ripple="#fff" href="#new-expense-page"><div id="add-new-expense" class="add-btn"><span>+</span></div></a>
+    <a href="#new-expense-page"><div data-ripple="#fff" id="add-new-expense" class="add-btn"><span>+</span></div></a>
 
     <footer data-role="footer"
             data-position="fixed">

@@ -23,6 +23,10 @@
 }
 
 /* apply for all */
+
+.round .ripple{
+    border-radius: 100%;
+}
 body.ui-mobile-viewport.ui-overlay-a, body{
     font-family: PlayfairDisplay;
 }
@@ -61,6 +65,37 @@ ul#expense-list li:nth-child(even) .expense-display .content-section .price-disp
 
 
 /* home page */
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+
+header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 2px 3px 5px rgba(57, 63, 72, 0.3);
+    justify-content: space-around;
+    transition: top 0.2s ease-in-out;
+}
+
+header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container .hover-price-report-col{
+    padding: 5px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container .expense-price-color {
+    color: #ED4046;
+}
+
+header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container .budget-price-color {
+    color: #3388cc;
+}
 
 .ui-page .ui-header .date-filter{
     text-align: center;
@@ -140,7 +175,7 @@ ul#expense-list li:nth-child(even) .expense-display .content-section .price-disp
     width: 60px;
     height: 60px;
     top: 30px;
-    left: 65%;
+    left: 67%;
     position: absolute;
     border-radius: 100% !important;
 }

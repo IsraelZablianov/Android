@@ -3,6 +3,7 @@ var Utils = (function () {
         this.expenses = [];
         this.dateFilter = new Date();
         this.clickAllExpensesToShow = false;
+        this.budget = 3000;
         this.expenseListId = 'expense-list';
         this.expensePageDatepickerId = 'expense-page-datepicker';
         this.expensePageSaveChangesId = 'expense-page-save-changes';
@@ -16,6 +17,7 @@ var Utils = (function () {
         this.dateFilterId = 'date-filter-display';
         this.dateFilterLeftArrowId = 'data-filter-left';
         this.dateFilterRightArrowId = 'data-filter-right';
+        this.containerPriceId = 'hover-price-report-container';
         this.datepickerService = new DatepickerService();
         this.expenseService = new ExpenseService();
         this.htmlService = new HtmlService();
@@ -164,6 +166,7 @@ var Utils = (function () {
         $('#' + this.newExpensePageSelectId).append(optionHtmlString);
     };
     Utils.prototype.handleArrowDateFilterClicked = function (isLeft) {
+        this.clickAllExpensesToShow = false;
         var newMonth;
         var newYear = this.dateFilter.getFullYear();
         if (!isLeft) {
@@ -189,7 +192,16 @@ var Utils = (function () {
     Utils.prototype.handleExpenseListChange = function (expenses) {
         this.htmlService.sortUL(this.expenseListId, SortType.Date);
         var selector = '#' + this.expenseListId;
+        this.setPriceInformation();
         $(selector).listview("refresh");
+    };
+    Utils.prototype.setPriceInformation = function () {
+        var expensesPrice = 0;
+        var filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
+        filterdExpenses.forEach(function (expense) {
+            expensesPrice += Number(expense.price);
+        });
+        this.htmlService.setPriceHoverReportTemplate(this.budget, expensesPrice);
     };
     Utils.prototype.handleExpenseDateClicked = function () {
         this.clickAllExpensesToShow = !this.clickAllExpensesToShow;

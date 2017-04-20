@@ -5,7 +5,7 @@ class HtmlService{
         "August", "September", "October",
         "November", "December" ];
     private expenseTypeNames: string[] = [
-        "Food & Drinks",
+        "Food",
         "House",
         "Entertainment",
         "Clothes",
@@ -23,6 +23,13 @@ class HtmlService{
         "car.png",
         "bills.png",
         "other.png"];
+
+    private expensesPriceClass: string = 'expense-price-color';
+    private budgetPriceClass: string = 'budget-price-color';
+
+    private hoverPriceExpensePriceId: string = 'hover-price-expenses-price';
+    private hoverPriceBudgetPriceId: string = 'hover-price-budget-price';
+    private hoverPriceReportTotalPriceId: string = 'hover-price-report-total-price';
 
     sortUL(id: string, sortType: SortType){
         let sortFunction;
@@ -73,6 +80,30 @@ class HtmlService{
 
     getYearAndMonthDisplay(date: Date): string{
         return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
+    }
+
+    setPriceHoverReportTemplate(budgetPrice: number, expensesPrice: number): void {
+        $('#' + this.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
+        $('#' + this.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
+        let reportPrice = budgetPrice - expensesPrice;
+        if(reportPrice < 0) {
+            this.manageHoverPriceClasses(this.expensesPriceClass, this.budgetPriceClass);
+        }
+        else {
+            this.manageHoverPriceClasses(this.budgetPriceClass, this.expensesPriceClass);
+        }
+
+        $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
+    }
+
+    private manageHoverPriceClasses(classToAdd: string, classToRemove: string): void {
+        let reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);
+        if(reortTotalPriceElement.hasClass(classToRemove)) {
+            reortTotalPriceElement.removeClass(classToRemove)
+        }
+        if(!reortTotalPriceElement.hasClass(classToAdd)) {
+            reortTotalPriceElement.addClass(classToAdd)
+        }
     }
 
     private getDate(date : Date): string {

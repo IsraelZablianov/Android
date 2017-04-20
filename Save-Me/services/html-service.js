@@ -6,7 +6,7 @@ var HtmlService = (function () {
             "August", "September", "October",
             "November", "December"];
         this.expenseTypeNames = [
-            "Food & Drinks",
+            "Food",
             "House",
             "Entertainment",
             "Clothes",
@@ -24,6 +24,11 @@ var HtmlService = (function () {
             "car.png",
             "bills.png",
             "other.png"];
+        this.expensesPriceClass = 'expense-price-color';
+        this.budgetPriceClass = 'budget-price-color';
+        this.hoverPriceExpensePriceId = 'hover-price-expenses-price';
+        this.hoverPriceBudgetPriceId = 'hover-price-budget-price';
+        this.hoverPriceReportTotalPriceId = 'hover-price-report-total-price';
     }
     HtmlService.prototype.sortUL = function (id, sortType) {
         var sortFunction;
@@ -44,6 +49,27 @@ var HtmlService = (function () {
     };
     HtmlService.prototype.getYearAndMonthDisplay = function (date) {
         return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
+    };
+    HtmlService.prototype.setPriceHoverReportTemplate = function (budgetPrice, expensesPrice) {
+        $('#' + this.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
+        $('#' + this.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
+        var reportPrice = budgetPrice - expensesPrice;
+        if (reportPrice < 0) {
+            this.manageHoverPriceClasses(this.expensesPriceClass, this.budgetPriceClass);
+        }
+        else {
+            this.manageHoverPriceClasses(this.budgetPriceClass, this.expensesPriceClass);
+        }
+        $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
+    };
+    HtmlService.prototype.manageHoverPriceClasses = function (classToAdd, classToRemove) {
+        var reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);
+        if (reortTotalPriceElement.hasClass(classToRemove)) {
+            reortTotalPriceElement.removeClass(classToRemove);
+        }
+        if (!reortTotalPriceElement.hasClass(classToAdd)) {
+            reortTotalPriceElement.addClass(classToAdd);
+        }
     };
     HtmlService.prototype.getDate = function (date) {
         var day = date.getDate().toString();

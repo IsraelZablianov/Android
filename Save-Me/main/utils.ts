@@ -4,6 +4,8 @@ class Utils {
     dateFilter: Date = new Date();
     clickAllExpensesToShow: boolean = false;
 
+    budget: number = 3000;
+
     expenseListId: string = 'expense-list';
     expensePageDatepickerId: string = 'expense-page-datepicker';
     expensePageSaveChangesId: string = 'expense-page-save-changes';
@@ -17,6 +19,7 @@ class Utils {
     dateFilterId: string = 'date-filter-display';
     dateFilterLeftArrowId: string = 'data-filter-left';
     dateFilterRightArrowId: string = 'data-filter-right';
+    private containerPriceId: string = 'hover-price-report-container';
 
     datepickerService: DatepickerService = new DatepickerService();
     expenseService: ExpenseService = new ExpenseService();
@@ -93,8 +96,7 @@ class Utils {
 
     private loadExpensesToView(expenses: Expense[]): void {
         $('#' + this.expenseListId + ' > li').remove();
-
-        $.each(expenses, (index, expense)=>{
+        $.each(expenses, (index, expense)=> {
             this.addExpenseToView(expense);
         });
 
@@ -197,6 +199,7 @@ class Utils {
 
 
     private handleArrowDateFilterClicked(isLeft: boolean): void {
+        this.clickAllExpensesToShow = false;
         let newMonth: number;
         let newYear: number = this.dateFilter.getFullYear();
 
@@ -225,7 +228,17 @@ class Utils {
     private handleExpenseListChange(expenses?: Expense[]): void {
         this.htmlService.sortUL(this.expenseListId, SortType.Date);
         let selector = '#' + this.expenseListId;
+        this.setPriceInformation();
         $(selector).listview("refresh");
+    }
+
+    private setPriceInformation() {
+        let expensesPrice: number = 0;
+        let filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
+        filterdExpenses.forEach((expense) => {
+            expensesPrice += Number(expense.price);
+        });
+        this.htmlService.setPriceHoverReportTemplate(this.budget, expensesPrice);
     }
 
     private handleExpenseDateClicked(): void {
