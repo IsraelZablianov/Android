@@ -44,9 +44,6 @@ var HtmlService = (function () {
     HtmlService.prototype.getOptionTypeExpenseTemplate = function (optionType) {
         return "<option value=\"" + optionType + "\">" + this.expenseTypeNames[optionType] + "</option>";
     };
-    HtmlService.prototype.activateDragAndDrop = function (elementId) {
-        $('#' + elementId).draggable();
-    };
     HtmlService.prototype.getYearAndMonthDisplay = function (date) {
         return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
     };
@@ -61,6 +58,9 @@ var HtmlService = (function () {
             this.manageHoverPriceClasses(this.budgetPriceClass, this.expensesPriceClass);
         }
         $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
+    };
+    HtmlService.prototype.getExpensesTypeNames = function () {
+        return this.expenseTypeNames;
     };
     HtmlService.prototype.manageHoverPriceClasses = function (classToAdd, classToRemove) {
         var reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);

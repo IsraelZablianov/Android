@@ -31,7 +31,7 @@ class HtmlService{
     private hoverPriceBudgetPriceId: string = 'hover-price-budget-price';
     private hoverPriceReportTotalPriceId: string = 'hover-price-report-total-price';
 
-    sortUL(id: string, sortType: SortType){
+    sortUL(id: string, sortType: SortType) {
         let sortFunction;
         sortFunction = sortType === SortType.Date ? this.dateSort : this.priceSort;
         var ul = $('#' + id);
@@ -74,10 +74,6 @@ class HtmlService{
         return `<option value="${optionType}">${this.expenseTypeNames[optionType]}</option>`;
     }
 
-    activateDragAndDrop(elementId: string): void{
-        $('#' + elementId).draggable();
-    }
-
     getYearAndMonthDisplay(date: Date): string{
         return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
     }
@@ -96,6 +92,10 @@ class HtmlService{
         $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     }
 
+    getExpensesTypeNames(): string[] {
+        return this.expenseTypeNames;
+    }
+
     private manageHoverPriceClasses(classToAdd: string, classToRemove: string): void {
         let reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);
         if(reortTotalPriceElement.hasClass(classToRemove)) {
@@ -112,19 +112,19 @@ class HtmlService{
         return day;
     }
 
-    private getMonth(date : Date): string{
+    private getMonth(date : Date): string {
         return this.monthNames[date.getMonth()];
     }
 
-    private getYear(date : Date): string{
+    private getYear(date : Date): string {
         return date.getFullYear().toString();
     }
 
-    private getDay(date : Date): string{
+    private getDay(date : Date): string {
         return this.weekday[date.getDay()];
     }
 
-    private dateSort(a, b): number{
+    private dateSort(a, b): number {
         let aDate = new Date(a.getAttribute('date'));
         let bDate = new Date(b.getAttribute('date'));
 

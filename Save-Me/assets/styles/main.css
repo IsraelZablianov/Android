@@ -24,6 +24,23 @@
 
 /* apply for all */
 
+.loading {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: PlayfairDisplay;
+    font-size: xx-large;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
 .round .ripple{
     border-radius: 100%;
 }
@@ -48,15 +65,15 @@ ul#expense-list li:nth-child(even) .expense-display .content-section .price-disp
 }
 
 .ui-loader-background {
-    width:100%;
-    height:100%;
-    top:0;
+    width: 100%;
+    height: 100%;
+    top: 0;
     padding: 0;
     margin: 0;
     background: rgba(0, 0, 0, 0.3);
-    display:none;
+    display: none;
     position: fixed;
-    z-index:100;
+    z-index: 100;
 }
 
 .ui-loading .ui-loader-background {
@@ -196,7 +213,7 @@ div.add-btn{
     color: #FFF;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
-    font-size: 43px;
+    font-size: xx-large;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     align-items: center;
     display: flex;
@@ -238,9 +255,21 @@ div#ui-datepicker-div{
     margin-top: 20px;
 }
 
+/*statistics page*/
+
+.jqplot-pie-series.jqplot-data-label{
+    color: #fff;
+    font-size: larger;
+}
+
+.bar-line-animated{
+    margin: 5px;
+}
+
+
 /* header and footer */
 
-.ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a {
+.ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a{
     background: #3388cc;
 }
 
@@ -255,17 +284,14 @@ div#ui-datepicker-div{
     color: #fff;
 }
 
-.ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
+.ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn{
     background-color: #3388cc;
 }
 
-.ui-footer .ui-link.ui-btn:active, .ui-footer .ui-link.ui-btn:focus, .ui-footer .ui-link.ui-btn:hover{
-    background-color: #0B09CC;
+
+.ui-page .ui-footer.h-and-i-footer .ui-title{
+    color: #fa8b00 !important;
 }
-
-
-
-
 
 
 

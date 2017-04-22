@@ -1,60 +1,71 @@
 class Utils {
-    expenses: Expense[] = [];
-    displayedExpense: Expense;
-    dateFilter: Date = new Date();
-    clickAllExpensesToShow: boolean = false;
+    private expenses: Expense[] = [];
+    private displayedExpense: Expense;
+    private dateFilter: Date = new Date();
+    private clickAllExpensesToShow: boolean = false;
 
-    budget: number = 3000;
+    private budget: number = 3000;
 
-    expenseListId: string = 'expense-list';
-    expensePageDatepickerId: string = 'expense-page-datepicker';
-    expensePageSaveChangesId: string = 'expense-page-save-changes';
-    expensePageDeleteExpenseId: string = 'expense-page-delete-expense';
-    expensePageSelectId: string = 'expense-page-select-type';
-    newExpensePageSelectId: string = 'new-expense-page-select-type';
-    newExpensePageDatepickerId: string = 'new-expense-page-datepicker';
-    newExpensePageSaveChangesId: string = 'new-expense-page-save-changes';
-    addNewExpenseId: string = 'add-new-expense';
-    refreshHomePageId: string = 'refresh-home-page';
-    dateFilterId: string = 'date-filter-display';
-    dateFilterLeftArrowId: string = 'data-filter-left';
-    dateFilterRightArrowId: string = 'data-filter-right';
-    private containerPriceId: string = 'hover-price-report-container';
+    private expenseListId: string = 'expense-list';
+    private expensePageDatepickerId: string = 'expense-page-datepicker';
+    private expensePageSaveChangesId: string = 'expense-page-save-changes';
+    private expensePageDeleteExpenseId: string = 'expense-page-delete-expense';
+    private expensePageSelectId: string = 'expense-page-select-type';
+    private newExpensePageSelectId: string = 'new-expense-page-select-type';
+    private newExpensePageDatepickerId: string = 'new-expense-page-datepicker';
+    private newExpensePageSaveChangesId: string = 'new-expense-page-save-changes';
+    private addNewExpenseId: string = 'add-new-expense';
+    private refreshHomePageId: string = 'refresh-home-page';
+    private dateFilterId: string = 'date-filter-display';
+    private dateFilterLeftArrowId: string = 'data-filter-left';
+    private dateFilterRightArrowId: string = 'data-filter-right';
+    private barLineAnimatedId: string = 'bar-line-animated';
+    private pieChartId: string = 'pie-chart';
+    private statisticsPageId: string = 'statistics-page';
 
-    datepickerService: DatepickerService = new DatepickerService();
-    expenseService: ExpenseService = new ExpenseService();
-    htmlService: HtmlService = new HtmlService();
-    databaseService: DatabaseService = new DatabaseService();
+    private datepickerService: DatepickerService = new DatepickerService();
+    private expenseService: ExpenseService = new ExpenseService();
+    private htmlService: HtmlService = new HtmlService();
+    private databaseService: DatabaseService = new DatabaseService();
+    private garphService: GraphService = new GraphService();
+    private commonService: CommonService = new CommonService();
 
     constructor(){
         this.registerToEvents();
     }
 
     load() {
+        this.showLoadMsg();
         this.databaseService.getAllExpenses((expenses)=>{
             this.expenses = expenses;
             this.loadJqueryComponents();
             this.loadToView();
+            this.hideLoadMsg();
         });
     }
 
     addExpense(expense: Expense) {
+        this.showLoadMsg();
         this.databaseService.addExpenseToDB(expense, (event)=>{
             this.expenses.push(expense);
             this.addExpenseToView(expense);
             this.handleExpenseListChange();
+            this.hideLoadMsg();
         });
     }
 
     removeExpense(expense: Expense) {
+        this.showLoadMsg();
         this.databaseService.removeExpenseFromDB(expense, ()=> {
             this.expenses.splice(this.expenses.indexOf(expense), 1);
             this.removeExpenseFromView(expense);
             this.handleExpenseListChange();
+            this.hideLoadMsg();
         });
     }
 
     updateExpense(oldExpense: Expense) {
+        this.showLoadMsg();
         let updatedExpense = this.expenseService.getUpdatedExpense();
         updatedExpense.id = this.displayedExpense.id;
 
@@ -64,6 +75,7 @@ class Utils {
             this.removeExpenseFromView(this.displayedExpense);
             this.addExpenseToView(updatedExpense);
             this.handleExpenseListChange();
+            this.hideLoadMsg();
         });
     }
 
@@ -71,27 +83,19 @@ class Utils {
 
     private addExpenseToView(expense: Expense) {
         let expenseStringHtml = this.htmlService.getExpenseHtmlTemlate(expense);
-        let expenseHtmlElement = $(expenseStringHtml);
-        expenseHtmlElement.on('click', () => {
+        let expenseElementHtml = $(expenseStringHtml);
+        expenseElementHtml.click(() => {
             this.handleExpenseSelected(expense)
         });
 
-        if(this.clickAllExpensesToShow || this.isTheSameDate(expense.date, this.dateFilter)){
-            $('#' + this.expenseListId).append(expenseHtmlElement);
+        if(this.clickAllExpensesToShow || this.commonService.isTheSameDate(expense.date, this.dateFilter)){
+            $('#' + this.expenseListId).append(expenseElementHtml);
         }
     }
 
     private removeExpenseFromView(expense: Expense) {
         let elem = document.getElementById(expense.id);
         elem.parentNode.removeChild(elem);
-    }
-
-    private loadJqueryComponents() {
-        this.datepickerService.loadDatepicker(this.expensePageDatepickerId);
-        $('#' + this.expensePageSelectId).selectmenu();
-        this.datepickerService.loadDatepicker(this.newExpensePageDatepickerId);
-        $('#' + this.newExpensePageSelectId).selectmenu();
-        this.htmlService.activateDragAndDrop(this.addNewExpenseId);
     }
 
     private loadExpensesToView(expenses: Expense[]): void {
@@ -103,43 +107,28 @@ class Utils {
         this.handleExpenseListChange();
     }
 
-    private loadToView(): void {
-        let filteredExpenses = this.filterExpenses(this.dateFilter);
-        this.loadExpensesToView(filteredExpenses);
 
-        let ebumValues = Object
-            .keys(ExpenseType)
-            .filter(key => this.isIndex(key))
-            .map(index => Number(index));
-        $.each(ebumValues, (index, expenseType)=>{
-            this.addOptionTypeOfExpense(expenseType);
+
+    private filterExpenses(date: Date): Expense[]{
+        let filterdExpenses: Expense[] = [];
+
+        $.each(this.expenses, (idx, itm)=> {
+            if(this.commonService.isTheSameDate(itm.date, date)){
+                filterdExpenses.push(itm);
+            }
         });
 
-        $('#' + this.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
+        return filterdExpenses;
     }
 
-
-
+    private addOptionTypeOfExpense(optionType: ExpenseType): void{
+        let optionHtmlString = this.htmlService.getOptionTypeExpenseTemplate(optionType);
+        $('#' + this.expensePageSelectId).append(optionHtmlString);
+        $('#' + this.newExpensePageSelectId).append(optionHtmlString);
+    }
 
     private registerToEvents() {
-        $(document).on('pagebeforecreate', '[data-role="page"]', ()=> {
-            var interval = setInterval(()=> {
-                $.mobile.loading('show', {
-                    text: 'foo',
-                    textVisible: true,
-                    theme: 'z',
-                    html: "<span class='ui-bar ui-overlay-c ui-corner-all loader'><img src='assets/images/gears.gif' /><h2>loading...</h2></span>"
-                });
-                clearInterval(interval);
-            },1);
-        });
-
-        $(document).on('pageshow', '[data-role="page"]', ()=> {
-            var interval = setInterval(()=> {
-                $.mobile.loading('hide');
-                clearInterval(interval);
-            },300);
-        });
+        this.onPageLoading();
 
         $('#' + this.refreshHomePageId).click(() => {
             location.reload();
@@ -175,26 +164,72 @@ class Utils {
         $('#' + this.dateFilterId).click(() => {
             this.handleExpenseDateClicked();
         });
-    }
 
-    private filterExpenses(date: Date): Expense[]{
-        let filterdExpenses: Expense[] = [];
-
-        $.each(this.expenses, (idx, itm)=> {
-            if(this.isTheSameDate(itm.date, date)){
-                filterdExpenses.push(itm);
-            }
+        let selector = '#' + this.statisticsPageId;
+        $(document).on("pageshow", selector, ()=> {
+            this.garphService.replotBarLineAnimatedMonthly(this.barLineAnimatedId, this.expenses);
+            this.garphService.replotPieChartsEnhancedLegend(this.pieChartId, this.expenses);
         });
 
-        return filterdExpenses;
+        jQuery( window ).on( "orientationchange", (event)=> {
+            setTimeout(()=>{this.garphService.replotBarLineAnimatedMonthly(this.barLineAnimatedId, this.expenses);}, 500);
+            setTimeout(()=>{this.garphService.replotPieChartsEnhancedLegend(this.pieChartId, this.expenses);}, 500);
+        });
     }
 
-    private addOptionTypeOfExpense(optionType: ExpenseType): void{
-        let optionHtmlString = this.htmlService.getOptionTypeExpenseTemplate(optionType);
-        $('#' + this.expensePageSelectId).append(optionHtmlString);
-        $('#' + this.newExpensePageSelectId).append(optionHtmlString);
+
+
+    private loadToView(): void {
+        let filteredExpenses = this.filterExpenses(this.dateFilter);
+        this.loadExpensesToView(filteredExpenses);
+
+        let ebumValues = this.commonService.getEnumValues(ExpenseType);
+        $.each(ebumValues, (index, expenseType)=>{
+            this.addOptionTypeOfExpense(expenseType);
+        });
+
+        $('#' + this.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
     }
 
+    private loadJqueryComponents() {
+        this.datepickerService.loadDatepicker(this.expensePageDatepickerId);
+        $('#' + this.expensePageSelectId).selectmenu();
+        this.datepickerService.loadDatepicker(this.newExpensePageDatepickerId);
+        $('#' + this.newExpensePageSelectId).selectmenu();
+        $('#' + this.addNewExpenseId).draggable();
+    }
+
+    private onPageLoading() {
+        $(document).on('pagebeforecreate', '[data-role="page"]', () => {
+            var interval = setInterval(() => {
+                this.showLoadMsg();
+                clearInterval(interval);
+            }, 1);
+        });
+
+        $(document).on('pageshow', '[data-role="page"]', () => {
+            var interval = setInterval(() => {
+                $.mobile.loading('hide');
+                clearInterval(interval);
+            }, 300);
+        });
+    }
+
+    private showLoadMsg() {
+        $.mobile.loading('show', {
+            textVisible: true,
+            theme: 'z',
+            html: `<div class="loading">
+                                <span class='ui-bar ui-overlay-c ui-corner-all loader'><img src='assets/images/gears.gif'/>
+                                    <h2>loading...</h2>
+                                </span>
+                           </div>`
+        });
+    }
+
+    private hideLoadMsg() {
+        $.mobile.loading('hide');
+    }
 
 
 
@@ -227,18 +262,17 @@ class Utils {
 
     private handleExpenseListChange(expenses?: Expense[]): void {
         this.htmlService.sortUL(this.expenseListId, SortType.Date);
-        let selector = '#' + this.expenseListId;
         this.setPriceInformation();
-        $(selector).listview("refresh");
+        $('#' + this.expenseListId).listview("refresh");
     }
 
     private setPriceInformation() {
-        let expensesPrice: number = 0;
+        let totalExpensesPrice: number = 0;
         let filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
         filterdExpenses.forEach((expense) => {
-            expensesPrice += Number(expense.price);
+            totalExpensesPrice += Number(expense.price);
         });
-        this.htmlService.setPriceHoverReportTemplate(this.budget, expensesPrice);
+        this.htmlService.setPriceHoverReportTemplate(this.budget, totalExpensesPrice);
     }
 
     private handleExpenseDateClicked(): void {
@@ -259,17 +293,5 @@ class Utils {
     private handleExpenseSelected(expense: Expense): void{
         this.displayedExpense = expense;
         this.expenseService.setSelectedExpense(expense);
-    }
-
-
-
-
-    private isTheSameDate(date1: Date, date2: Date): boolean {
-        return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear()
-    }
-
-    private  isIndex(key):boolean {
-        let n = ~~Number(key);
-        return String(n) === key && n >= 0;
     }
 }

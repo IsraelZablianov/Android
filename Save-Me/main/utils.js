@@ -17,39 +17,50 @@ var Utils = (function () {
         this.dateFilterId = 'date-filter-display';
         this.dateFilterLeftArrowId = 'data-filter-left';
         this.dateFilterRightArrowId = 'data-filter-right';
-        this.containerPriceId = 'hover-price-report-container';
+        this.barLineAnimatedId = 'bar-line-animated';
+        this.pieChartId = 'pie-chart';
+        this.statisticsPageId = 'statistics-page';
         this.datepickerService = new DatepickerService();
         this.expenseService = new ExpenseService();
         this.htmlService = new HtmlService();
         this.databaseService = new DatabaseService();
+        this.garphService = new GraphService();
+        this.commonService = new CommonService();
         this.registerToEvents();
     }
     Utils.prototype.load = function () {
         var _this = this;
+        this.showLoadMsg();
         this.databaseService.getAllExpenses(function (expenses) {
             _this.expenses = expenses;
             _this.loadJqueryComponents();
             _this.loadToView();
+            _this.hideLoadMsg();
         });
     };
     Utils.prototype.addExpense = function (expense) {
         var _this = this;
+        this.showLoadMsg();
         this.databaseService.addExpenseToDB(expense, function (event) {
             _this.expenses.push(expense);
             _this.addExpenseToView(expense);
             _this.handleExpenseListChange();
+            _this.hideLoadMsg();
         });
     };
     Utils.prototype.removeExpense = function (expense) {
         var _this = this;
+        this.showLoadMsg();
         this.databaseService.removeExpenseFromDB(expense, function () {
             _this.expenses.splice(_this.expenses.indexOf(expense), 1);
             _this.removeExpenseFromView(expense);
             _this.handleExpenseListChange();
+            _this.hideLoadMsg();
         });
     };
     Utils.prototype.updateExpense = function (oldExpense) {
         var _this = this;
+        this.showLoadMsg();
         var updatedExpense = this.expenseService.getUpdatedExpense();
         updatedExpense.id = this.displayedExpense.id;
         this.databaseService.updateExpenseToDB(updatedExpense, function () {
@@ -58,29 +69,23 @@ var Utils = (function () {
             _this.removeExpenseFromView(_this.displayedExpense);
             _this.addExpenseToView(updatedExpense);
             _this.handleExpenseListChange();
+            _this.hideLoadMsg();
         });
     };
     Utils.prototype.addExpenseToView = function (expense) {
         var _this = this;
         var expenseStringHtml = this.htmlService.getExpenseHtmlTemlate(expense);
-        var expenseHtmlElement = $(expenseStringHtml);
-        expenseHtmlElement.on('click', function () {
+        var expenseElementHtml = $(expenseStringHtml);
+        expenseElementHtml.click(function () {
             _this.handleExpenseSelected(expense);
         });
-        if (this.clickAllExpensesToShow || this.isTheSameDate(expense.date, this.dateFilter)) {
-            $('#' + this.expenseListId).append(expenseHtmlElement);
+        if (this.clickAllExpensesToShow || this.commonService.isTheSameDate(expense.date, this.dateFilter)) {
+            $('#' + this.expenseListId).append(expenseElementHtml);
         }
     };
     Utils.prototype.removeExpenseFromView = function (expense) {
         var elem = document.getElementById(expense.id);
         elem.parentNode.removeChild(elem);
-    };
-    Utils.prototype.loadJqueryComponents = function () {
-        this.datepickerService.loadDatepicker(this.expensePageDatepickerId);
-        $('#' + this.expensePageSelectId).selectmenu();
-        this.datepickerService.loadDatepicker(this.newExpensePageDatepickerId);
-        $('#' + this.newExpensePageSelectId).selectmenu();
-        this.htmlService.activateDragAndDrop(this.addNewExpenseId);
     };
     Utils.prototype.loadExpensesToView = function (expenses) {
         var _this = this;
@@ -90,38 +95,24 @@ var Utils = (function () {
         });
         this.handleExpenseListChange();
     };
-    Utils.prototype.loadToView = function () {
+    Utils.prototype.filterExpenses = function (date) {
         var _this = this;
-        var filteredExpenses = this.filterExpenses(this.dateFilter);
-        this.loadExpensesToView(filteredExpenses);
-        var ebumValues = Object
-            .keys(ExpenseType)
-            .filter(function (key) { return _this.isIndex(key); })
-            .map(function (index) { return Number(index); });
-        $.each(ebumValues, function (index, expenseType) {
-            _this.addOptionTypeOfExpense(expenseType);
+        var filterdExpenses = [];
+        $.each(this.expenses, function (idx, itm) {
+            if (_this.commonService.isTheSameDate(itm.date, date)) {
+                filterdExpenses.push(itm);
+            }
         });
-        $('#' + this.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
+        return filterdExpenses;
+    };
+    Utils.prototype.addOptionTypeOfExpense = function (optionType) {
+        var optionHtmlString = this.htmlService.getOptionTypeExpenseTemplate(optionType);
+        $('#' + this.expensePageSelectId).append(optionHtmlString);
+        $('#' + this.newExpensePageSelectId).append(optionHtmlString);
     };
     Utils.prototype.registerToEvents = function () {
         var _this = this;
-        $(document).on('pagebeforecreate', '[data-role="page"]', function () {
-            var interval = setInterval(function () {
-                $.mobile.loading('show', {
-                    text: 'foo',
-                    textVisible: true,
-                    theme: 'z',
-                    html: "<span class='ui-bar ui-overlay-c ui-corner-all loader'><img src='assets/images/gears.gif' /><h2>loading...</h2></span>"
-                });
-                clearInterval(interval);
-            }, 1);
-        });
-        $(document).on('pageshow', '[data-role="page"]', function () {
-            var interval = setInterval(function () {
-                $.mobile.loading('hide');
-                clearInterval(interval);
-            }, 300);
-        });
+        this.onPageLoading();
         $('#' + this.refreshHomePageId).click(function () {
             location.reload();
         });
@@ -149,21 +140,57 @@ var Utils = (function () {
         $('#' + this.dateFilterId).click(function () {
             _this.handleExpenseDateClicked();
         });
-    };
-    Utils.prototype.filterExpenses = function (date) {
-        var _this = this;
-        var filterdExpenses = [];
-        $.each(this.expenses, function (idx, itm) {
-            if (_this.isTheSameDate(itm.date, date)) {
-                filterdExpenses.push(itm);
-            }
+        var selector = '#' + this.statisticsPageId;
+        $(document).on("pageshow", selector, function () {
+            _this.garphService.replotBarLineAnimatedMonthly(_this.barLineAnimatedId, _this.expenses);
+            _this.garphService.replotPieChartsEnhancedLegend(_this.pieChartId, _this.expenses);
         });
-        return filterdExpenses;
+        jQuery(window).on("orientationchange", function (event) {
+            setTimeout(function () { _this.garphService.replotBarLineAnimatedMonthly(_this.barLineAnimatedId, _this.expenses); }, 500);
+            setTimeout(function () { _this.garphService.replotPieChartsEnhancedLegend(_this.pieChartId, _this.expenses); }, 500);
+        });
     };
-    Utils.prototype.addOptionTypeOfExpense = function (optionType) {
-        var optionHtmlString = this.htmlService.getOptionTypeExpenseTemplate(optionType);
-        $('#' + this.expensePageSelectId).append(optionHtmlString);
-        $('#' + this.newExpensePageSelectId).append(optionHtmlString);
+    Utils.prototype.loadToView = function () {
+        var _this = this;
+        var filteredExpenses = this.filterExpenses(this.dateFilter);
+        this.loadExpensesToView(filteredExpenses);
+        var ebumValues = this.commonService.getEnumValues(ExpenseType);
+        $.each(ebumValues, function (index, expenseType) {
+            _this.addOptionTypeOfExpense(expenseType);
+        });
+        $('#' + this.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
+    };
+    Utils.prototype.loadJqueryComponents = function () {
+        this.datepickerService.loadDatepicker(this.expensePageDatepickerId);
+        $('#' + this.expensePageSelectId).selectmenu();
+        this.datepickerService.loadDatepicker(this.newExpensePageDatepickerId);
+        $('#' + this.newExpensePageSelectId).selectmenu();
+        $('#' + this.addNewExpenseId).draggable();
+    };
+    Utils.prototype.onPageLoading = function () {
+        var _this = this;
+        $(document).on('pagebeforecreate', '[data-role="page"]', function () {
+            var interval = setInterval(function () {
+                _this.showLoadMsg();
+                clearInterval(interval);
+            }, 1);
+        });
+        $(document).on('pageshow', '[data-role="page"]', function () {
+            var interval = setInterval(function () {
+                $.mobile.loading('hide');
+                clearInterval(interval);
+            }, 300);
+        });
+    };
+    Utils.prototype.showLoadMsg = function () {
+        $.mobile.loading('show', {
+            textVisible: true,
+            theme: 'z',
+            html: "<div class=\"loading\">\n                                <span class='ui-bar ui-overlay-c ui-corner-all loader'><img src='assets/images/gears.gif'/>\n                                    <h2>loading...</h2>\n                                </span>\n                           </div>"
+        });
+    };
+    Utils.prototype.hideLoadMsg = function () {
+        $.mobile.loading('hide');
     };
     Utils.prototype.handleArrowDateFilterClicked = function (isLeft) {
         this.clickAllExpensesToShow = false;
@@ -191,17 +218,16 @@ var Utils = (function () {
     };
     Utils.prototype.handleExpenseListChange = function (expenses) {
         this.htmlService.sortUL(this.expenseListId, SortType.Date);
-        var selector = '#' + this.expenseListId;
         this.setPriceInformation();
-        $(selector).listview("refresh");
+        $('#' + this.expenseListId).listview("refresh");
     };
     Utils.prototype.setPriceInformation = function () {
-        var expensesPrice = 0;
+        var totalExpensesPrice = 0;
         var filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
         filterdExpenses.forEach(function (expense) {
-            expensesPrice += Number(expense.price);
+            totalExpensesPrice += Number(expense.price);
         });
-        this.htmlService.setPriceHoverReportTemplate(this.budget, expensesPrice);
+        this.htmlService.setPriceHoverReportTemplate(this.budget, totalExpensesPrice);
     };
     Utils.prototype.handleExpenseDateClicked = function () {
         this.clickAllExpensesToShow = !this.clickAllExpensesToShow;
@@ -220,13 +246,6 @@ var Utils = (function () {
     Utils.prototype.handleExpenseSelected = function (expense) {
         this.displayedExpense = expense;
         this.expenseService.setSelectedExpense(expense);
-    };
-    Utils.prototype.isTheSameDate = function (date1, date2) {
-        return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear();
-    };
-    Utils.prototype.isIndex = function (key) {
-        var n = ~~Number(key);
-        return String(n) === key && n >= 0;
     };
     return Utils;
 }());

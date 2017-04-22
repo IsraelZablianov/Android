@@ -16,11 +16,26 @@ enum ExpenseType {
     Other
 }
 
-enum SortType{
+enum ChartType {
+    Months,
+    ExpenseType
+}
+
+enum SortType {
     Date,
     Price
 }
 
+interface BarLineConfig {
+    currency: string;
+    xaxis: any[];
+}
+
 class Settings {
 
+}
+
+/* extentions */
+interface JQueryStatic {
+    jqplot: any;
 }

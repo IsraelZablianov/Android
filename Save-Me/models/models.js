@@ -13,6 +13,11 @@ var ExpenseType;
     ExpenseType[ExpenseType["Bills"] = 5] = "Bills";
     ExpenseType[ExpenseType["Other"] = 6] = "Other";
 })(ExpenseType || (ExpenseType = {}));
+var ChartType;
+(function (ChartType) {
+    ChartType[ChartType["Months"] = 0] = "Months";
+    ChartType[ChartType["ExpenseType"] = 1] = "ExpenseType";
+})(ChartType || (ChartType = {}));
 var SortType;
 (function (SortType) {
     SortType[SortType["Date"] = 0] = "Date";

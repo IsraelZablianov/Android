@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="180" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="42f68db1-846d-4ffa-b4f9-2c6d013d619a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,16 +21,65 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="231" column="81" lean-forward="false" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
               <folding>
+                <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/utils.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#onPageLoading#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+                <marker date="1492878287558" expanded="true" signature="8076:8330" ph="..." />
+                <marker date="1492878287558" expanded="true" signature="8164:8296" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding>
+                <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -36,47 +88,27 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/utils.ts">
+      <file leaf-file-name="graph-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+            <state relative-caret-position="180">
+              <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
               <folding>
-                <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#4530#4960#0" expanded="false" />
-                <element signature="e#5026#5186#0" expanded="false" />
-                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#isTheSameDate#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
+                <element signature="e#60#178#0" expanded="false" />
+                <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#barLineAnimated#0;n#GraphService#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/loader.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,8 +116,8 @@
       <file leaf-file-name="html-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/html-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
               <folding>
                 <element signature="e#54#210#0" expanded="false" />
                 <element signature="e#253#385#0" expanded="false" />
@@ -93,25 +125,36 @@
                 <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#activateDragAndDrop#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpensesTypeNames#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
                 <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-                <marker date="1492637356232" expanded="true" signature="1590:2969" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="1655:2951" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="1705:2930" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="1756:2439" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="1811:1919" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="1973:2080" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="2136:2245" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="2300:2408" ph="..." />
-                <marker date="1492637356232" expanded="true" signature="2493:2903" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1591:2970" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1656:2952" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1706:2931" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1757:2440" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1812:1920" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="1974:2081" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="2137:2246" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="2301:2409" ph="..." />
+                <marker date="1492875334166" expanded="true" signature="2494:2904" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,17 +167,13 @@
         <option value="HTML File" />
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>view</find>
-      <find>&lt;input type=&quot;text&quot; data-role=&quot;date&quot; data-inline=&quot;true&quot;&gt;</find>
-      <find>input</find>
-      <find>Inline Datepicker</find>
       <find>red</find>
       <find>type-</find>
       <find>expensePageDatepickerId</find>
@@ -161,6 +200,10 @@
       <find>addNewExpenseId</find>
       <find>home</find>
       <find>loading</find>
+      <find>font-si</find>
+      <find>settings-footer</find>
+      <find>gif</find>
+      <find>isI</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -175,7 +218,6 @@
         <option value="$PROJECT_DIR$/utils/datepicker.ts" />
         <option value="$PROJECT_DIR$/utils/display-selected-expense-service.ts" />
         <option value="$PROJECT_DIR$/utils/datepicker-service.ts" />
-        <option value="$PROJECT_DIR$/models/models.ts" />
         <option value="$PROJECT_DIR$/bower_components/localforage/typings/localforage.d.ts" />
         <option value="$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js" />
         <option value="$PROJECT_DIR$/main/main.ts" />
@@ -190,17 +232,22 @@
         <option value="$PROJECT_DIR$/services/scroll-service.ts" />
         <option value="$PROJECT_DIR$/headroom.js v0.9.3.ts" />
         <option value="$PROJECT_DIR$/headroom.js v0.9.3.js" />
-        <option value="$PROJECT_DIR$/services/html-service.ts" />
         <option value="$PROJECT_DIR$/typings/globals/headroom/index.d.ts" />
         <option value="$PROJECT_DIR$/assets/styles/animate.css" />
         <option value="$PROJECT_DIR$/assets/styles/flip.css" />
         <option value="$PROJECT_DIR$/assets/styles/slide.css" />
         <option value="$PROJECT_DIR$/assets/styles/swing.css" />
         <option value="$PROJECT_DIR$/assets/styles/bounce.css" />
-        <option value="$PROJECT_DIR$/main/utils.ts" />
         <option value="$PROJECT_DIR$/main/loader.ts" />
-        <option value="$PROJECT_DIR$/assets/styles/main.css" />
+        <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/canvas-overlay.html" />
+        <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/barLineAnimated.html" />
+        <option value="$PROJECT_DIR$/models/models.ts" />
+        <option value="$PROJECT_DIR$/services/html-service.ts" />
+        <option value="$PROJECT_DIR$/services/common-service.ts" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/services/graph-service.ts" />
+        <option value="$PROJECT_DIR$/assets/styles/main.css" />
+        <option value="$PROJECT_DIR$/main/utils.ts" />
       </list>
     </option>
   </component>
@@ -244,6 +291,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery.jqplot.1.0.9.d96a669" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery.jqplot.1.0.9.d96a669" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -263,8 +356,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\bower_components" />
       <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\bower_components" />
       <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\assets\images" />
       <recent name="C:\Users\israel\WebstormProjects\Save-Me\assets\images" />
       <recent name="C:\Users\israel\WebstormProjects\Save-Me" />
@@ -352,12 +445,12 @@
       <workItem from="1492266000731" duration="2109000" />
       <workItem from="1492273996528" duration="4552000" />
       <workItem from="1492278713976" duration="55195000" />
-      <workItem from="1492436855949" duration="34594000" />
+      <workItem from="1492436855949" duration="67217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160459000" />
+    <option name="totallyTimeSpent" value="193082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -366,12 +459,12 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25402635" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -384,62 +477,25 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/services/graph-service.js" />
+        <option value="$PROJECT_DIR$/services/graph-service.js.map" />
+        <option value="$PROJECT_DIR$/services/common-service.js.map" />
+        <option value="$PROJECT_DIR$/services/common-service.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/icons/bills.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/datepicker/index.html" />
-    <entry file="file://$PROJECT_DIR$/bower_components/jquery/dist/jquery.js" />
-    <entry file="file://$PROJECT_DIR$/jquery-3.2.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.1.custom/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -509,22 +565,12 @@
         <state relative-caret-position="170">
           <caret line="10" column="1090" lean-forward="false" selection-start-line="10" selection-start-column="1090" selection-end-line="10" selection-end-column="1090" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/money0.gif" />
-    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/database-service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -537,14 +583,6 @@
             <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
             <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typings/globals/jqueryui/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/globals/es6-shim/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -582,45 +610,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#54#210#0" expanded="false" />
-            <element signature="e#253#385#0" expanded="false" />
-            <element signature="e#577#732#0" expanded="false" />
-            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#activateDragAndDrop#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-            <marker date="1492637356232" expanded="true" signature="1590:2969" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="1655:2951" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="1705:2930" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="1756:2439" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="1811:1919" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="1973:2080" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="2136:2245" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="2300:2408" ph="..." />
-            <marker date="1492637356232" expanded="true" signature="2493:2903" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/globals/jquery-mobile/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,28 +692,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/utils.ts">
+    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding>
-            <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#4530#4960#0" expanded="false" />
-            <element signature="e#5026#5186#0" expanded="false" />
-            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#isTheSameDate#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#isIndex#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadDatepicker#0;n#DatepickerService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -731,23 +710,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+    <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/jqPlotOptions.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/canvas-overlay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts___jb_tmp___">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/barLineAnimated.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/jqueryui/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1041" column="4" lean-forward="false" selection-start-line="1041" selection-start-column="4" selection-end-line="1041" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="n#!!block;n#setSelectedExpense#0;n#ExpenseService#0" expanded="false" />
+            <element signature="n#!!block;n#getUpdatedExpense#0;n#ExpenseService#0" expanded="false" />
+            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding>
+            <element signature="e#54#210#0" expanded="false" />
+            <element signature="e#253#385#0" expanded="false" />
+            <element signature="e#577#732#0" expanded="false" />
+            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpensesTypeNames#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+            <marker date="1492875334166" expanded="true" signature="1591:2970" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="1656:2952" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="1706:2931" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="1757:2440" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="1812:1920" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="1974:2081" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="2137:2246" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="2301:2409" ph="..." />
+            <marker date="1492875334166" expanded="true" signature="2494:2904" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="231" column="81" lean-forward="false" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
           <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/pieChartsEnhancedLegend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding>
+            <element signature="e#60#178#0" expanded="false" />
+            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#barLineAnimated#0;n#GraphService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#onPageLoading#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+            <marker date="1492878287558" expanded="true" signature="8076:8330" ph="..." />
+            <marker date="1492878287558" expanded="true" signature="8164:8296" ph="..." />
           </folding>
         </state>
       </provider>
