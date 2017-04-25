@@ -8,40 +8,28 @@ class GraphService{
     private numberOfMonthsOnBarLineAnimated = 6;
     private htmlService: HtmlService = new HtmlService();
     private commonService: CommonService = new CommonService();
+    private barLinePlot: any;
+    private pieChartPlot: any;
 
     replotBarLineAnimatedMonthly(id: string, expenses: Expense[], currency?: string){
+        if(this.barLinePlot){
+            this.barLinePlot.destroy();
+        }
+
         let series = this.getMonthlySeries(expenses);
         this.defaultConfig.currency = currency || '₪';
-        let plot = this.barLineAnimated(id, series, series, this.defaultConfig);
-        plot.replot({resetAxes:true});
+        this.barLinePlot = this.createBarLineAnimated(id, series, series, this.defaultConfig);
+        this.barLinePlot.replot({resetAxes:true});
     }
 
     replotPieChartsEnhancedLegend(id: string, expenses: Expense[]) {
-        let series = [this.getExpenseTypeSeries(expenses)];
-        let plot = jQuery.jqplot(id,
-            series,
-            {
-                title: 'Statistics About Different Expenses',
-                seriesDefaults: {
-                    shadow: false,
-                    renderer: jQuery.jqplot.PieRenderer,
-                    rendererOptions: { padding: 2, sliceMargin: 2, showDataLabels: true }
-                },
-                legend: {
-                    show: true,
-                    location: 'e',
-                    renderer: $.jqplot.EnhancedPieLegendRenderer,
-                    rendererOptions: {
-                        numberColumns: 1,
-                    }
-                },
-                markerRenderer: {
-                        color: '#fff',
-                }
-            }
-        );
+        if(this.pieChartPlot){
+            this.pieChartPlot.destroy();
+        }
 
-        plot.replot({resetAxes:true});
+        let series = [this.getExpenseTypeSeries(expenses)];
+        this.pieChartPlot = this.createPieChart(id, series);
+        this.pieChartPlot.replot({resetAxes:true});
     }
 
     private getChartData(expenses: Expense[], chartType: ChartType): any[] {
@@ -102,8 +90,33 @@ class GraphService{
         return series;
     }
 
-    private barLineAnimated(id: string, s1: any[], s2: any[], config: BarLineConfig): any {
-        var plot = $.jqplot(id, [s2, s1], {
+    private createPieChart(id: string, series: any[][]) {
+        return $.jqplot(id,
+            series,
+            {
+                title: 'Statistics Depending On The Selected Date',
+                seriesDefaults: {
+                    shadow: false,
+                    renderer: jQuery.jqplot.PieRenderer,
+                    rendererOptions: {padding: 2, sliceMargin: 2, showDataLabels: true}
+                },
+                legend: {
+                    show: true,
+                    location: 'e',
+                    renderer: $.jqplot.EnhancedPieLegendRenderer,
+                    rendererOptions: {
+                        numberColumns: 1,
+                    }
+                },
+                markerRenderer: {
+                    color: '#fff',
+                }
+            }
+        );
+    }
+
+    private createBarLineAnimated(id: string, s1: any[], s2: any[], config: BarLineConfig): any {
+        return $.jqplot(id, [s2, s1], {
             // Turns on animatino for all series in this plot.
             animate: true,
             // Will animate plot on calls to plot1.replot({resetAxes:true})
@@ -199,7 +212,5 @@ class GraphService{
                 sizeAdjust: 7.5 , tooltipLocation : 'ne'
             }
         });
-
-        return plot;
     }
 }

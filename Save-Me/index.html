@@ -87,7 +87,7 @@
     <div class="expense-page-headers">Price:</div>
     <input class="price" type="number" name="expense-page-price" id="expense-page-price" placeholder="price"/>
 
-    <div class="expense-page-headers">Type:</div>
+    <div class="expense-page-headers">Category:</div>
     <select name="expense-page-select-type" id="expense-page-select-type"></select>
 
     <div class="expense-page-headers expense-page-comments-title">Comments:</div>
@@ -139,7 +139,7 @@
     <div class="expense-page-headers">Price:</div>
     <input class="price" type="number" name="new-expense-page-price" id="new-expense-page-price" placeholder="Add The Price"/>
 
-    <div class="expense-page-headers">Type:</div>
+    <div class="expense-page-headers">Category:</div>
     <select name="new-expense-page-select-type" id="new-expense-page-select-type"></select>
 
     <div class="expense-page-headers expense-page-comments-title">Comments:</div>
@@ -193,12 +193,17 @@
 
     <header data-role="header" data-position="fixed">
         <h1>Statisics</h1>
-        <a href="#home-page" data-icon="home">Home</a>
-        <a href="#settings-page" data-icon="gear">Settings</a>
+        <a href="#home-page" data-icon="back">Back</a>
     </header>
 
-    <div class="bar-line-animated" id="bar-line-animated"></div>
-    <div id="pie-chart"></div>
+    <div id="statistics-tabs">
+        <ul>
+            <li id="bar-line-animated-tab"><a data-ripple="" href="#bar-line-animated">Bar Line</a></li>
+            <li id="pie-chart-tab"><a data-ripple="" href="#pie-chart">Pie Chart</a></li>
+        </ul>
+        <div class="bar-line-animated" id="bar-line-animated"></div>
+        <div class="bar-line-animated" id="pie-chart"></div>
+    </div>
 
     <footer data-role="footer"
             data-position="fixed"

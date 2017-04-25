@@ -1,6 +1,6 @@
 /* App Colors (instead of using Scss Or Less) */
 
-.colors-not-for-use{
+.app-colors-specification-this-is-not-css-class{
     color: #fa8b00;  /*      Orange    */
     color: #FAD40B;  /*   Light Orange */
     color: #3388cc;  /*      Blue      */
@@ -262,10 +262,29 @@ div#ui-datepicker-div{
     font-size: larger;
 }
 
+.jqplot-axis.jqplot-xaxis{
+    padding-bottom: 30px;
+}
+
+.ui-tabs .ui-tabs-panel{
+    padding: 0;
+}
+
 .bar-line-animated{
     margin: 5px;
 }
 
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab{
+    font-family: initial;
+}
+
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: #3388cc;
+    font-family: initial;
+    letter-spacing: 1px;
+    color: #fff;
+}
 
 /* header and footer */
 

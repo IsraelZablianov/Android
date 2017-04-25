@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="180" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="193" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f68db1-846d-4ffa-b4f9-2c6d013d619a" name="Default" comment="" />
@@ -24,15 +24,35 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="231" column="81" lean-forward="false" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
+            <state relative-caret-position="351">
+              <caret line="141" column="53" lean-forward="true" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
               <folding>
                 <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="92" column="56" lean-forward="false" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+              <folding>
+                <element signature="e#60#178#0" expanded="false" />
+                <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
+                <element signature="n#!!block;n#createBarLineAnimated#0;n#GraphService#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,8 +61,8 @@
       <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/utils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+            <state relative-caret-position="140">
+              <caret line="123" column="67" lean-forward="true" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="67" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
@@ -51,63 +71,23 @@
                 <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#onPageLoading#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-                <marker date="1492878287558" expanded="true" signature="8076:8330" ph="..." />
-                <marker date="1492878287558" expanded="true" signature="8164:8296" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/common-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
-                <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-              <folding>
-                <element signature="e#60#178#0" expanded="false" />
-                <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#barLineAnimated#0;n#GraphService#0" expanded="false" />
+                <marker date="1493128461623" expanded="true" signature="10007:10261" ph="..." />
+                <marker date="1493128461623" expanded="true" signature="10095:10227" ph="..." />
               </folding>
             </state>
           </provider>
@@ -149,16 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/models.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -174,10 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>red</find>
-      <find>type-</find>
-      <find>expensePageDatepickerId</find>
-      <find>expensePageSelectId</find>
       <find>date-se</find>
       <find>price-d</find>
       <find>com</find>
@@ -204,6 +170,10 @@
       <find>settings-footer</find>
       <find>gif</find>
       <find>isI</find>
+      <find>stat</find>
+      <find>jquer</find>
+      <find>sta</find>
+      <find>getUpdatedExpense</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -244,10 +214,10 @@
         <option value="$PROJECT_DIR$/models/models.ts" />
         <option value="$PROJECT_DIR$/services/html-service.ts" />
         <option value="$PROJECT_DIR$/services/common-service.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/services/graph-service.ts" />
         <option value="$PROJECT_DIR$/assets/styles/main.css" />
+        <option value="$PROJECT_DIR$/services/graph-service.ts" />
         <option value="$PROJECT_DIR$/main/utils.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -302,38 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Save-Me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Save-Me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery.jqplot.1.0.9.d96a669" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Save-Me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Save-Me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery.jqplot.1.0.9.d96a669" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,19 +383,19 @@
       <workItem from="1492266000731" duration="2109000" />
       <workItem from="1492273996528" duration="4552000" />
       <workItem from="1492278713976" duration="55195000" />
-      <workItem from="1492436855949" duration="67217000" />
+      <workItem from="1492436855949" duration="80906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193082000" />
+    <option name="totallyTimeSpent" value="206771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25402635" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15812592" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -491,7 +429,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -786,6 +724,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/pieChartsEnhancedLegend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="279" column="0" lean-forward="true" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="92" column="56" lean-forward="false" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+          <folding>
+            <element signature="e#60#178#0" expanded="false" />
+            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#createBarLineAnimated#0;n#GraphService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="141" column="53" lean-forward="true" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/html-service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -820,70 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/common-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
-            <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="231" column="81" lean-forward="false" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
-          <folding>
-            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/pieChartsEnhancedLegend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding>
-            <element signature="e#60#178#0" expanded="false" />
-            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#barLineAnimated#0;n#GraphService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+        <state relative-caret-position="140">
+          <caret line="123" column="67" lean-forward="true" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="67" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
@@ -892,22 +832,23 @@
             <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#loadJqueryComponents#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#onPageLoading#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-            <marker date="1492878287558" expanded="true" signature="8076:8330" ph="..." />
-            <marker date="1492878287558" expanded="true" signature="8164:8296" ph="..." />
+            <marker date="1493128461623" expanded="true" signature="10007:10261" ph="..." />
+            <marker date="1493128461623" expanded="true" signature="10095:10227" ph="..." />
           </folding>
         </state>
       </provider>
