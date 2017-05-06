@@ -2,11 +2,11 @@ declare var localforage;
 
 class DatabaseService {
     private expenseStoreName: string = 'expenses';
+    private settingsStoreName: string = 'settings';
+    private settingsStore: LocalForage;
     private expensesStore: LocalForage;
     private databaseVersion: number = 2;
-    private database;
-    private readonly readWriteMode: string = "readwrite";
-    private readonly readonlyMode: string = "readonly";
+    private readonly settingsId: string = 'settings-id';
 
     constructor() {
         this.expensesStore = localforage.createInstance({
@@ -15,6 +15,14 @@ class DatabaseService {
             version     : 1.0,
             storeName   : this.expenseStoreName,
             description : 'stores all expenses'
+        });
+
+        this.settingsStore = localforage.createInstance({
+            driver      : localforage.INDEXEDDB,
+            name        : this.settingsStoreName + 'DB',
+            version     : this.databaseVersion,
+            storeName   : this.settingsStoreName,
+            description : 'User Settings'
         });
     }
 
@@ -44,6 +52,17 @@ class DatabaseService {
 
     clearAll(calback?) {
         this.expensesStore.clear(calback);
+    }
+
+    setSettings(settings: Settings, calback?) {
+        settings.id = this.settingsId;
+        this.settingsStore.setItem(settings.id, settings, calback);
+    }
+
+    getSettings(calback) {
+        this.settingsStore.getItem(this.settingsId).then((settings)=>{
+            calback(settings);
+        });
     }
 
     private createId(): string {

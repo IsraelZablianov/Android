@@ -7,7 +7,8 @@
     color: #0B09CC;  /*    Dark Blue   */
     color: #FFF;     /*      White     */
     color: #ED4046;  /*      Red       */
-    color: #9CCC4E;  /*      Green     */
+    color: #81B65A;  /*      Green     */
+    color: #46624C;  /*    Dark Green  */
     color: #E9E9E9;  /*      Gray      */
 }
 
@@ -208,6 +209,7 @@ div.add-btn{
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    opacity: 0.8;
     border: none;
     outline: none;
     color: #FFF;
@@ -251,11 +253,23 @@ div#ui-datepicker-div{
     text-align: center !important;
 }
 
-.expense-page-comments-title{
+.expense-page-comments-title {
     margin-top: 20px;
 }
 
-/*statistics page*/
+/* settings */
+
+.settings-body {
+    padding: 8px;
+    color: #46624C;
+}
+
+.settings-body h2 {
+    color: #81B65A;
+    text-align: center;
+}
+
+/* statistics page */
 
 .jqplot-pie-series.jqplot-data-label{
     color: #fff;

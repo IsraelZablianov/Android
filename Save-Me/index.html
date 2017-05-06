@@ -29,12 +29,12 @@
         <h1>
             <div class="date-filter">
                 <a class="round" data-ripple="#fff" id="data-filter-left"><img src="assets/images/arrow-left.png"></a>
-                <span id="date-filter-display"></span>
+                    <span id="date-filter-display"></span>
                 <a class="round" id="data-filter-right" data-ripple="#fff"><img src="assets/images/arrow-right.png"></a>
             </div>
         </h1>
         <a href="#" id="refresh-home-page" data-icon="refresh">Refresh</a>
-        <a href="#settings-page" data-icon="gear" data-transition="pop">Settings</a>
+        <a href="#settings-page" id="settings-page-id" data-icon="gear" data-transition="pop">Settings</a>
         <div data-ripple="#3388cc" class="hover-price-report-container header header--fixed hide-from-print" id="hover-price-report-container" role="banner">
             <div class="hover-price-report-col">
                 Budget
@@ -77,8 +77,7 @@
 
     <header data-role="header" data-position="fixed">
         <h1>Expense</h1>
-        <a href="#home-page" data-icon="home" data-transition="slidefade">Home</a>
-        <a href="#settings-page" data-icon="gear" data-transition="pop">Settings</a>
+        <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
     </header>
 
     <div class="expense-page-headers">Date:</div>
@@ -129,8 +128,7 @@
 
     <header data-role="header" data-position="fixed">
         <h1>Add New Expense</h1>
-        <a href="#home-page" data-icon="home" data-transition="slidefade">Home</a>
-        <a href="#settings-page" data-icon="gear" data-transition="pop">Settings</a>
+        <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
     </header>
 
     <div class="expense-page-headers">Date:</div>
@@ -168,9 +166,45 @@
 
     <header data-role="header" data-position="fixed">
         <h1>Settings</h1>
-        <a href="#home-page" data-icon="home">Home</a>
-        <a href="#settings-page" data-icon="gear">Settings</a>
+        <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
+        <a id="settings-save" data-icon="check">Save</a>
     </header>
+
+    <div class="settings-body">
+        <h2>Stop Losing Money Today!</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="settings-name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="settings-name" id="settings-name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="settings-budget">Budget:</label>
+                </td>
+                <td>
+                    <input type="number" name="settings-budget" id="settings-budget"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="settings-select-currency">Currency:</label>
+                </td>
+                <td>
+                    <select name="settings-select-currency" id="settings-select-currency">
+                        <option value="$">Dolar - $</option>
+                        <option value="₪">ILS - ₪</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <img src="assets/images/losing-money.png">
+    </div>
 
     <footer data-role="footer"
             data-position="fixed"
@@ -247,6 +281,7 @@
 <script src="services/database-service.js"></script>
 <script src="services/graph-service.js"></script>
 <script src="services/common-service.js"></script>
+<script src="services/settings-service.js"></script>
 
 </body>
 </html>

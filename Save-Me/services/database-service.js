@@ -1,15 +1,22 @@
 var DatabaseService = (function () {
     function DatabaseService() {
         this.expenseStoreName = 'expenses';
+        this.settingsStoreName = 'settings';
         this.databaseVersion = 2;
-        this.readWriteMode = "readwrite";
-        this.readonlyMode = "readonly";
+        this.settingsId = 'settings-id';
         this.expensesStore = localforage.createInstance({
             driver: localforage.INDEXEDDB,
             name: this.expenseStoreName + 'DB',
             version: 1.0,
             storeName: this.expenseStoreName,
             description: 'stores all expenses'
+        });
+        this.settingsStore = localforage.createInstance({
+            driver: localforage.INDEXEDDB,
+            name: this.settingsStoreName + 'DB',
+            version: this.databaseVersion,
+            storeName: this.settingsStoreName,
+            description: 'User Settings'
         });
     }
     DatabaseService.prototype.addExpenseToDB = function (expense, calback) {
@@ -36,6 +43,15 @@ var DatabaseService = (function () {
     };
     DatabaseService.prototype.clearAll = function (calback) {
         this.expensesStore.clear(calback);
+    };
+    DatabaseService.prototype.setSettings = function (settings, calback) {
+        settings.id = this.settingsId;
+        this.settingsStore.setItem(settings.id, settings, calback);
+    };
+    DatabaseService.prototype.getSettings = function (calback) {
+        this.settingsStore.getItem(this.settingsId).then(function (settings) {
+            calback(settings);
+        });
     };
     DatabaseService.prototype.createId = function () {
         return new Date().getTime() + (Math.random() * 100).toString();

@@ -32,7 +32,10 @@ interface BarLineConfig {
 }
 
 class Settings {
-
+    id?: string;
+    name: string;
+    currency: string;
+    budget: number;
 }
 
 /* extentions */

@@ -40,7 +40,8 @@ class HtmlService{
         $.each(listItems, (idx, itm)=> { ul.append(itm); });
     }
 
-    getExpenseHtmlTemlate(expense: Expense): string {
+    getExpenseHtmlTemlate(expense: Expense, currency?: string): string {
+        currency = currency ? currency : 'ILS';
         return `
             <li id="${expense.id}" date="${expense.date}" price="${expense.price}">
                 <a href="#expense-page" class="expense-wrapper">
@@ -63,7 +64,7 @@ class HtmlService{
                             <img class="icon-display" src=${this.iconsPath + this.icons[expense.expenseType]}>
                             <h1 class="type-display">${this.expenseTypeNames[expense.expenseType]}</h1>
                             <p class="comments-display">${expense.comments}</p>
-                            <span class="price-display">${expense.price} ILS</span>
+                            <span class="price-display">${expense.price} ${currency}</span>
                         </div>
                     </div>
                 </a>
