@@ -1,10 +1,7 @@
 var SettingsService = (function () {
     function SettingsService() {
-        this.settingsNameId = 'settings-name';
-        this.settingsBudgetId = 'settings-budget';
-        this.settingsCurrencyId = 'settings-select-currency';
         this.databaseService = new DatabaseService();
-        $('#' + this.settingsCurrencyId).selectmenu();
+        $('#' + IdService.settingsCurrencyId).selectmenu();
     }
     SettingsService.prototype.loadSettings = function (calback) {
         var _this = this;
@@ -23,11 +20,11 @@ var SettingsService = (function () {
         });
     };
     SettingsService.prototype.setSettingsToView = function () {
-        $('#' + this.settingsNameId).val(this.settings.name);
-        $('#' + this.settingsBudgetId).val(this.settings.budget);
-        $('#' + this.settingsCurrencyId + " option:selected").prop("selected", false);
-        $('#' + this.settingsCurrencyId + ' option[value=' + this.settings.currency + ']').prop('selected', true);
-        $('#' + this.settingsCurrencyId).selectmenu('refresh');
+        $('#' + IdService.settingsNameId).val(this.settings.name);
+        $('#' + IdService.settingsBudgetId).val(this.settings.budget);
+        $('#' + IdService.settingsCurrencyId + " option:selected").prop("selected", false);
+        $('#' + IdService.settingsCurrencyId + ' option[value=' + this.settings.currency + ']').prop('selected', true);
+        $('#' + IdService.settingsCurrencyId).selectmenu('refresh');
     };
     SettingsService.prototype.saveChanges = function (calback) {
         this.settings = this.getSettingsFromView();
@@ -37,9 +34,9 @@ var SettingsService = (function () {
         return this.settings;
     };
     SettingsService.prototype.getSettingsFromView = function () {
-        this.settings.budget = $('#' + this.settingsBudgetId).val() || 0;
-        this.settings.currency = $('#' + this.settingsCurrencyId + " option:selected").val();
-        this.settings.name = $('#' + this.settingsNameId).val();
+        this.settings.budget = $('#' + IdService.settingsBudgetId).val() || 0;
+        this.settings.currency = $('#' + IdService.settingsCurrencyId + " option:selected").val();
+        this.settings.name = $('#' + IdService.settingsNameId).val();
         return this.settings;
     };
     return SettingsService;

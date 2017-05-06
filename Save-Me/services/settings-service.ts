@@ -1,12 +1,9 @@
 class SettingsService {
-    private settingsNameId: string = 'settings-name';
-    private settingsBudgetId: string = 'settings-budget';
-    private settingsCurrencyId: string = 'settings-select-currency';
     private settings: Settings;
     private databaseService: DatabaseService = new DatabaseService();
 
     constructor() {
-        $('#' + this.settingsCurrencyId).selectmenu();
+        $('#' + IdService.settingsCurrencyId).selectmenu();
     }
 
     loadSettings(calback?){
@@ -27,11 +24,11 @@ class SettingsService {
     }
 
     setSettingsToView() {
-        $('#' + this.settingsNameId).val(this.settings.name);
-        $('#' + this.settingsBudgetId).val(this.settings.budget);
-        $('#' + this.settingsCurrencyId + " option:selected").prop("selected", false);
-        $('#' + this.settingsCurrencyId + ' option[value=' + this.settings.currency + ']').prop('selected', true);
-        $('#' + this.settingsCurrencyId).selectmenu('refresh');
+        $('#' + IdService.settingsNameId).val(this.settings.name);
+        $('#' + IdService.settingsBudgetId).val(this.settings.budget);
+        $('#' + IdService.settingsCurrencyId + " option:selected").prop("selected", false);
+        $('#' + IdService.settingsCurrencyId + ' option[value=' + this.settings.currency + ']').prop('selected', true);
+        $('#' + IdService.settingsCurrencyId).selectmenu('refresh');
     }
 
     saveChanges(calback) {
@@ -44,9 +41,9 @@ class SettingsService {
     }
 
     private getSettingsFromView(): Settings {
-        this.settings.budget = $('#' + this.settingsBudgetId).val() || 0;
-        this.settings.currency = $('#' + this.settingsCurrencyId + " option:selected").val();
-        this.settings.name = $('#' + this.settingsNameId).val();
+        this.settings.budget = $('#' + IdService.settingsBudgetId).val() || 0;
+        this.settings.currency = $('#' + IdService.settingsCurrencyId + " option:selected").val();
+        this.settings.name = $('#' + IdService.settingsNameId).val();
 
         return this.settings;
     }

@@ -24,13 +24,16 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="199" column="42" lean-forward="false" selection-start-line="199" selection-start-column="42" selection-end-line="199" selection-end-column="42" />
+            <state relative-caret-position="309">
+              <caret line="274" column="38" lean-forward="true" selection-start-line="274" selection-start-column="38" selection-end-line="274" selection-end-column="38" />
               <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -56,117 +59,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/utils.ts">
+      <file leaf-file-name="id-service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/id-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
-              <folding>
-                <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#loadSettings#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-                <marker date="1494089220222" expanded="true" signature="11290:11544" ph="..." />
-                <marker date="1494089220222" expanded="true" signature="11378:11510" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/settings-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!block;n#loadSettings#0;n#SettingsService#0" expanded="false" />
-                <element signature="n#!!block;n#getSettingsFromView#0;n#SettingsService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/html-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
-              <folding>
-                <element signature="e#54#210#0" expanded="false" />
-                <element signature="e#253#385#0" expanded="false" />
-                <element signature="e#577#732#0" expanded="false" />
-                <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getExpensesTypeNames#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
-                <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-                <marker date="1494089254185" expanded="true" signature="1658:3045" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="1723:3027" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="1773:3006" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="1824:2507" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="1879:1987" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="2041:2148" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="2204:2313" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="2368:2476" ph="..." />
-                <marker date="1494089254185" expanded="true" signature="2561:2979" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/database-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
-                <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
-                <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
-                <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expense-service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="60" />
-              <folding>
-                <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,7 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>add-</find>
       <find>price-dis</find>
       <find>data</find>
       <find>padd</find>
@@ -226,6 +123,7 @@
       <find>ILS</find>
       <find>save</find>
       <find>getExpenseHtmlTemlate</find>
+      <find>new-expense-page-datepicker</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -268,11 +166,13 @@
         <option value="$PROJECT_DIR$/assets/styles/main.css" />
         <option value="$PROJECT_DIR$/services/settings-service.js" />
         <option value="$PROJECT_DIR$/models/models.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/services/settings-service.ts" />
         <option value="$PROJECT_DIR$/services/database-service.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main/utils.ts" />
+        <option value="$PROJECT_DIR$/services/settings-service.ts" />
         <option value="$PROJECT_DIR$/services/html-service.ts" />
+        <option value="$PROJECT_DIR$/services/id-service.ts" />
+        <option value="$PROJECT_DIR$/services/expense-service.ts" />
       </list>
     </option>
   </component>
@@ -312,6 +212,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,19 +340,19 @@
       <workItem from="1492278713976" duration="55195000" />
       <workItem from="1492436855949" duration="80906000" />
       <workItem from="1493142014196" duration="6065000" />
-      <workItem from="1493976105456" duration="11274000" />
+      <workItem from="1493976105456" duration="12945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224110000" />
+    <option name="totallyTimeSpent" value="225781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15812592" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15812592" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -466,6 +380,8 @@
         <option value="$PROJECT_DIR$/services/common-service.js" />
         <option value="$PROJECT_DIR$/services/settings-service.js.map" />
         <option value="$PROJECT_DIR$/services/settings-service.js" />
+        <option value="$PROJECT_DIR$/services/id-service.js" />
+        <option value="$PROJECT_DIR$/services/id-service.js.map" />
       </list>
     </option>
   </component>
@@ -474,18 +390,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/localforage/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/systemjs/examples/test.html" />
@@ -566,13 +475,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/animate.css" />
-    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/loader.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -627,6 +529,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,16 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="60" />
-          <folding>
-            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/models.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -684,106 +579,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/settings-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!block;n#loadSettings#0;n#SettingsService#0" expanded="false" />
-            <element signature="n#!!block;n#getSettingsFromView#0;n#SettingsService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="84" lean-forward="false" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding>
-            <element signature="e#60#178#0" expanded="false" />
-            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="199" column="42" lean-forward="false" selection-start-line="199" selection-start-column="42" selection-end-line="199" selection-end-column="42" />
+        <state relative-caret-position="309">
+          <caret line="274" column="38" lean-forward="true" selection-start-line="274" selection-start-column="38" selection-end-line="274" selection-end-column="38" />
           <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="42" column="71" lean-forward="false" selection-start-line="42" selection-start-column="71" selection-end-line="42" selection-end-column="71" />
-          <folding>
-            <element signature="e#54#210#0" expanded="false" />
-            <element signature="e#253#385#0" expanded="false" />
-            <element signature="e#577#732#0" expanded="false" />
-            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpensesTypeNames#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-            <marker date="1494089254185" expanded="true" signature="1658:3045" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="1723:3027" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="1773:3006" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="1824:2507" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="1879:1987" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="2041:2148" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="2204:2313" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="2368:2476" ph="..." />
-            <marker date="1494089254185" expanded="true" signature="2561:2979" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+        <state relative-caret-position="965">
+          <caret line="314" column="45" lean-forward="false" selection-start-line="314" selection-start-column="45" selection-end-line="314" selection-end-column="45" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
@@ -804,9 +627,111 @@
             <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-            <marker date="1494089220222" expanded="true" signature="11290:11544" ph="..." />
-            <marker date="1494089220222" expanded="true" signature="11378:11510" ph="..." />
+            <marker date="1494090084845" expanded="true" signature="10091:10345" ph="..." />
+            <marker date="1494090084845" expanded="true" signature="10179:10311" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="84" lean-forward="false" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+          <folding>
+            <element signature="e#60#178#0" expanded="false" />
+            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/settings-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!block;n#loadSettings#0;n#SettingsService#0" expanded="false" />
+            <element signature="n#!!block;n#getSettingsFromView#0;n#SettingsService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#210#0" expanded="false" />
+            <element signature="e#253#385#0" expanded="false" />
+            <element signature="e#577#732#0" expanded="false" />
+            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseHtmlTemlate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpensesTypeNames#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+            <marker date="1494090284003" expanded="true" signature="1421:2808" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1486:2790" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1536:2769" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1587:2270" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1642:1750" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1804:1911" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="1967:2076" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="2131:2239" ph="..." />
+            <marker date="1494090284003" expanded="true" signature="2324:2742" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#clearAll#0;n#DatabaseService#0" expanded="false" />
+            <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#setSelectedExpense#0;n#ExpenseService#0" expanded="false" />
+            <element signature="n#!!block;n#getUpdatedExpense#0;n#ExpenseService#0" expanded="false" />
+            <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/id-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

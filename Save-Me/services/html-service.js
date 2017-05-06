@@ -26,9 +26,6 @@ var HtmlService = (function () {
             "other.png"];
         this.expensesPriceClass = 'expense-price-color';
         this.budgetPriceClass = 'budget-price-color';
-        this.hoverPriceExpensePriceId = 'hover-price-expenses-price';
-        this.hoverPriceBudgetPriceId = 'hover-price-budget-price';
-        this.hoverPriceReportTotalPriceId = 'hover-price-report-total-price';
     }
     HtmlService.prototype.sortUL = function (id, sortType) {
         var sortFunction;
@@ -49,8 +46,8 @@ var HtmlService = (function () {
         return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
     };
     HtmlService.prototype.setPriceHoverReportTemplate = function (budgetPrice, expensesPrice) {
-        $('#' + this.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
-        $('#' + this.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
+        $('#' + IdService.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
+        $('#' + IdService.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
         var reportPrice = budgetPrice - expensesPrice;
         if (reportPrice < 0) {
             this.manageHoverPriceClasses(this.expensesPriceClass, this.budgetPriceClass);
@@ -58,13 +55,13 @@ var HtmlService = (function () {
         else {
             this.manageHoverPriceClasses(this.budgetPriceClass, this.expensesPriceClass);
         }
-        $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
+        $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     };
     HtmlService.prototype.getExpensesTypeNames = function () {
         return this.expenseTypeNames;
     };
     HtmlService.prototype.manageHoverPriceClasses = function (classToAdd, classToRemove) {
-        var reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);
+        var reortTotalPriceElement = $('#' + IdService.hoverPriceReportTotalPriceId);
         if (reortTotalPriceElement.hasClass(classToRemove)) {
             reortTotalPriceElement.removeClass(classToRemove);
         }

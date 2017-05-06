@@ -27,10 +27,6 @@ class HtmlService{
     private expensesPriceClass: string = 'expense-price-color';
     private budgetPriceClass: string = 'budget-price-color';
 
-    private hoverPriceExpensePriceId: string = 'hover-price-expenses-price';
-    private hoverPriceBudgetPriceId: string = 'hover-price-budget-price';
-    private hoverPriceReportTotalPriceId: string = 'hover-price-report-total-price';
-
     sortUL(id: string, sortType: SortType) {
         let sortFunction;
         sortFunction = sortType === SortType.Date ? this.dateSort : this.priceSort;
@@ -80,8 +76,8 @@ class HtmlService{
     }
 
     setPriceHoverReportTemplate(budgetPrice: number, expensesPrice: number): void {
-        $('#' + this.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
-        $('#' + this.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
+        $('#' + IdService.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
+        $('#' + IdService.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
         let reportPrice = budgetPrice - expensesPrice;
         if(reportPrice < 0) {
             this.manageHoverPriceClasses(this.expensesPriceClass, this.budgetPriceClass);
@@ -90,7 +86,7 @@ class HtmlService{
             this.manageHoverPriceClasses(this.budgetPriceClass, this.expensesPriceClass);
         }
 
-        $('#' + this.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
+        $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     }
 
     getExpensesTypeNames(): string[] {
@@ -98,7 +94,7 @@ class HtmlService{
     }
 
     private manageHoverPriceClasses(classToAdd: string, classToRemove: string): void {
-        let reortTotalPriceElement = $('#' + this.hoverPriceReportTotalPriceId);
+        let reortTotalPriceElement = $('#' + IdService.hoverPriceReportTotalPriceId);
         if(reortTotalPriceElement.hasClass(classToRemove)) {
             reortTotalPriceElement.removeClass(classToRemove)
         }
