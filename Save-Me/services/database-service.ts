@@ -1,5 +1,13 @@
 declare var localforage;
-
+/*
+* This class service is responsible for handling all data base related actions.
+* The database that in use is index DB that managed by LocalForage.
+* LocalForage is an extension - java script library that allow you to control IndexDb, LocalStorage and WebSql
+* All in one.
+*
+* Because LocalForage Does Not supported yet with typescript (05/2017), the declaration of
+* localForage is necessary.
+* */
 class DatabaseService {
     private expenseStoreName: string = 'expenses';
     private settingsStoreName: string = 'settings';
@@ -8,6 +16,9 @@ class DatabaseService {
     private databaseVersion: number = 2;
     private readonly settingsId: string = 'settings-id';
 
+    /*
+    * Setup Default configuration for the data base.
+    * */
     constructor() {
         this.expensesStore = localforage.createInstance({
             driver      : localforage.INDEXEDDB,
@@ -26,6 +37,12 @@ class DatabaseService {
         });
     }
 
+    /*
+    * All the methods are supplied with callback param that is executed after
+    * The require action is Done.
+    *
+    * The callback executed with one argument that it is the result of the action.
+    * */
     addExpenseToDB(expense: Expense, calback?) {
         expense.id = this.createId();
         this.expensesStore.setItem(expense.id, expense, calback);
@@ -41,6 +58,9 @@ class DatabaseService {
         })
     }
 
+    /*
+    * An array of items will be passed to the callback.
+    * */
     getAllExpenses(callback) {
         this.expensesStore.keys().then((items)=>{
             var promises  = items.map((item)=> { return this.expensesStore.getItem(item); });
@@ -50,7 +70,7 @@ class DatabaseService {
         })
     }
 
-    clearAll(calback?) {
+    DeleteAllExpenses(calback?) {
         this.expensesStore.clear(calback);
     }
 

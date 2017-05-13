@@ -1,24 +1,23 @@
+/*
+* This class service is responsible for handling the JQuery UI DatePicker
+* */
 class DatepickerService {
 
+    /*
+    * Load an element with suplied id to bcome datepicker.
+    * */
     loadDatepicker(id: string, options?: any){
         let configurations = options ? options : this.getDefaultOptions(id);
-        this.getDatepickerElement(id).datepicker(configurations);
+        $("#" + id).datepicker(configurations);
     }
 
-    getDatepicker(id: string): Date{
-        return new Date(this.getDatepickerElement(id).val());
+    getDatepickerDate(id: string): Date {
+        return new Date($("#" + id).val());
     }
 
-    setDatepicker(id: string, date: Date): void{
-        let datepicker = this.getDatepickerElement(id);
+    setDatepickerDate(id: string, date: Date): void{
+        let datepicker = $("#" + id);
         datepicker.datepicker("setDate", date);
-    }
-
-    private getDatepickerElement(id: string){
-        let selector = "#" + id;
-        let datepicker = $(selector);
-
-        return datepicker;
     }
 
     private getDefaultOptions(id: string): any {

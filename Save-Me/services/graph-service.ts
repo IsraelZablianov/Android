@@ -6,7 +6,6 @@ class GraphService{
         "Nov", "Dec" ];
     private defaultConfig: BarLineConfig;
     private numberOfMonthsOnBarLineAnimated = 6;
-    private htmlService: HtmlService = new HtmlService();
     private commonService: CommonService = new CommonService();
     private barLinePlot: any;
     private pieChartPlot: any;
@@ -54,8 +53,8 @@ class GraphService{
     private getExpenseTypeSeries(expenses: Expense[]): any[] {
         let series: any[] = [];
         let expensesTypesToatlPrices = this.getChartData(expenses, ChartType.ExpenseType);
-        let ebumValues = this.commonService.getEnumValues(ExpenseType);
-        let typeNames: string[] = this.htmlService.getExpensesTypeNames();
+        let ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
+        let typeNames: string[] = this.commonService.getExpenseTypeNames();
 
         $.each(ebumValues, (index, expenseType)=> {
             if(expensesTypesToatlPrices[expenseType] !== undefined){
@@ -121,7 +120,7 @@ class GraphService{
             animate: true,
             // Will animate plot on calls to plot1.replot({resetAxes:true})
             animateReplot: true,
-            title: 'Statistics About Yearly Expenses',
+            title: "Statistics About Yearly Expenses",
             cursor: {
                 show: true,
                 zoom: true,
@@ -145,7 +144,7 @@ class GraphService{
                     },
                     renderer: $.jqplot.BarRenderer,
                     showHighlight: false,
-                    yaxis: 'y2axis',
+                    yaxis: "y2axis",
                     rendererOptions: {
                         // Speed up the animation a little bit.
                         // This is a number of milliseconds.
@@ -208,8 +207,8 @@ class GraphService{
             highlighter: {
                 show: true,
                 showLabel: true,
-                tooltipAxes: 'y',
-                sizeAdjust: 7.5 , tooltipLocation : 'ne'
+                tooltipAxes: "y",
+                sizeAdjust: 7.5 , tooltipLocation : "ne"
             }
         });
     }

@@ -2,11 +2,12 @@ class SettingsService {
     private settings: Settings;
     private databaseService: DatabaseService = new DatabaseService();
 
-    constructor() {
-        $('#' + IdService.settingsCurrencyId).selectmenu();
-    }
-
-    loadSettings(calback?){
+    /*
+    * This function is loading the settings object
+    * From the database if exists or creating default settings.
+    * The function executing the supplied callback function if exists.
+    * */
+    loadSettings(callback?) {
         this.databaseService.getSettings((settings)=>{
             if(settings) {
                 this.settings = settings;
@@ -17,13 +18,16 @@ class SettingsService {
                 this.settings.currency = '₪';
             }
 
-            if(calback){
-                calback();
+            if(callback){
+                callback();
             }
         });
     }
 
-    setSettingsToView() {
+    /*
+    *  This function is responsible for setting the content of settings object to settings page.
+    * */
+    setSettingsToView(): void {
         $('#' + IdService.settingsNameId).val(this.settings.name);
         $('#' + IdService.settingsBudgetId).val(this.settings.budget);
         $('#' + IdService.settingsCurrencyId + " option:selected").prop("selected", false);
@@ -31,12 +35,15 @@ class SettingsService {
         $('#' + IdService.settingsCurrencyId).selectmenu('refresh');
     }
 
-    saveChanges(calback) {
+    /*
+    * Setting the settings object to DB.
+    * */
+    saveChanges(calback): void {
         this.settings = this.getSettingsFromView();
         this.databaseService.setSettings(this.settings, calback)
     }
 
-    getSettings() {
+    getSettings(): Settings {
         return this.settings;
     }
 

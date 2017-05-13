@@ -1,19 +1,8 @@
+/*
+* This service is responsible for manipulating html components, create new templates
+* And all Html related issues.
+* */
 class HtmlService{
-    private monthNames: string[] = [
-        "January", "February", "March",
-        "April", "May", "June", "July",
-        "August", "September", "October",
-        "November", "December" ];
-    private expenseTypeNames: string[] = [
-        "Food",
-        "House",
-        "Entertainment",
-        "Clothes",
-        "Car",
-        "Bills",
-        "Other"
-    ];
-    private weekday: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     private iconsPath: string = "assets/icons/";
     private icons:string[] = [
         "food.png",
@@ -23,11 +12,14 @@ class HtmlService{
         "car.png",
         "bills.png",
         "other.png"];
+    private expensesPriceClass: string = "expense-price-color";
+    private budgetPriceClass: string = "budget-price-color";
+    private commonService: CommonService = new CommonService();
 
-    private expensesPriceClass: string = 'expense-price-color';
-    private budgetPriceClass: string = 'budget-price-color';
-
-    sortUL(id: string, sortType: SortType) {
+    /*
+    * Sort the list of expenses.
+    * */
+    sortUL(id: string, sortType: SortType): void {
         let sortFunction;
         sortFunction = sortType === SortType.Date ? this.dateSort : this.priceSort;
         var ul = $('#' + id);
@@ -36,7 +28,10 @@ class HtmlService{
         $.each(listItems, (idx, itm)=> { ul.append(itm); });
     }
 
-    getExpenseHtmlTemlate(expense: Expense, currency?: string): string {
+    /*
+    * Templates generating methods.
+    * */
+    getExpenseHtmlTemplate(expense: Expense, currency?: string): string {
         currency = currency ? currency : 'ILS';
         return `
             <li id="${expense.id}" date="${expense.date}" price="${expense.price}">
@@ -58,7 +53,7 @@ class HtmlService{
                         </div>
                         <div class="content-section">
                             <img class="icon-display" src=${this.iconsPath + this.icons[expense.expenseType]}>
-                            <h1 class="type-display">${this.expenseTypeNames[expense.expenseType]}</h1>
+                            <h1 class="type-display">${this.commonService.getExpenseTypeNames()[expense.expenseType]}</h1>
                             <p class="comments-display">${expense.comments}</p>
                             <span class="price-display">${expense.price} ${currency}</span>
                         </div>
@@ -68,11 +63,11 @@ class HtmlService{
     }
 
     getOptionTypeExpenseTemplate(optionType: ExpenseType): string{
-        return `<option value="${optionType}">${this.expenseTypeNames[optionType]}</option>`;
+        return `<option value="${optionType}">${this.commonService.getExpenseTypeNames()[optionType]}</option>`;
     }
 
     getYearAndMonthDisplay(date: Date): string{
-        return date.getFullYear() + ' ' + this.monthNames[date.getMonth()];
+        return date.getFullYear() + ' ' + this.commonService.getMonthNames()[date.getMonth()];
     }
 
     setPriceHoverReportTemplate(budgetPrice: number, expensesPrice: number): void {
@@ -89,10 +84,9 @@ class HtmlService{
         $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     }
 
-    getExpensesTypeNames(): string[] {
-        return this.expenseTypeNames;
-    }
-
+    /*
+    * Set color Red for Alert (expenses are over the budget) or blue.
+    * */
     private manageHoverPriceClasses(classToAdd: string, classToRemove: string): void {
         let reortTotalPriceElement = $('#' + IdService.hoverPriceReportTotalPriceId);
         if(reortTotalPriceElement.hasClass(classToRemove)) {
@@ -103,6 +97,9 @@ class HtmlService{
         }
     }
 
+    /*
+    * Get dates format.
+    * */
     private getDate(date : Date): string {
         let day = date.getDate().toString();
         day = day.length > 1 ? day : '0' + day;
@@ -110,7 +107,7 @@ class HtmlService{
     }
 
     private getMonth(date : Date): string {
-        return this.monthNames[date.getMonth()];
+        return this.commonService.getMonthNames()[date.getMonth()];
     }
 
     private getYear(date : Date): string {
@@ -118,9 +115,12 @@ class HtmlService{
     }
 
     private getDay(date : Date): string {
-        return this.weekday[date.getDay()];
+        return this.commonService.getDayNames()[date.getDay()];
     }
 
+    /*
+    * sorting methods
+    * */
     private dateSort(a, b): number {
         let aDate = new Date(a.getAttribute('date'));
         let bDate = new Date(b.getAttribute('date'));

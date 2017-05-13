@@ -6,7 +6,6 @@ var GraphService = (function () {
             "Aug", "Sep", "Oct",
             "Nov", "Dec"];
         this.numberOfMonthsOnBarLineAnimated = 6;
-        this.htmlService = new HtmlService();
         this.commonService = new CommonService();
     }
     GraphService.prototype.replotBarLineAnimatedMonthly = function (id, expenses, currency) {
@@ -45,8 +44,8 @@ var GraphService = (function () {
     GraphService.prototype.getExpenseTypeSeries = function (expenses) {
         var series = [];
         var expensesTypesToatlPrices = this.getChartData(expenses, ChartType.ExpenseType);
-        var ebumValues = this.commonService.getEnumValues(ExpenseType);
-        var typeNames = this.htmlService.getExpensesTypeNames();
+        var ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
+        var typeNames = this.commonService.getExpenseTypeNames();
         $.each(ebumValues, function (index, expenseType) {
             if (expensesTypesToatlPrices[expenseType] !== undefined) {
                 series.push([typeNames[expenseType], expensesTypesToatlPrices[expenseType]]);
@@ -101,7 +100,7 @@ var GraphService = (function () {
             animate: true,
             // Will animate plot on calls to plot1.replot({resetAxes:true})
             animateReplot: true,
-            title: 'Statistics About Yearly Expenses',
+            title: "Statistics About Yearly Expenses",
             cursor: {
                 show: true,
                 zoom: true,
@@ -125,7 +124,7 @@ var GraphService = (function () {
                     },
                     renderer: $.jqplot.BarRenderer,
                     showHighlight: false,
-                    yaxis: 'y2axis',
+                    yaxis: "y2axis",
                     rendererOptions: {
                         // Speed up the animation a little bit.
                         // This is a number of milliseconds.
@@ -188,8 +187,8 @@ var GraphService = (function () {
             highlighter: {
                 show: true,
                 showLabel: true,
-                tooltipAxes: 'y',
-                sizeAdjust: 7.5, tooltipLocation: 'ne'
+                tooltipAxes: "y",
+                sizeAdjust: 7.5, tooltipLocation: "ne"
             }
         });
     };
