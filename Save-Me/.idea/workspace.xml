@@ -51,8 +51,8 @@
       <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/utils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="169" column="31" lean-forward="false" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
+            <state relative-caret-position="72">
+              <caret line="151" column="26" lean-forward="true" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
               <folding>
                 <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
@@ -72,7 +72,6 @@
                 <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#AddExpenseTypeOption#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
@@ -392,12 +391,12 @@
       <workItem from="1493976105456" duration="16167000" />
       <workItem from="1494681493886" duration="9228000" />
       <workItem from="1495105758695" duration="4101000" />
-      <workItem from="1495281863672" duration="10189000" />
+      <workItem from="1495281863672" duration="10232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252521000" />
+    <option name="totallyTimeSpent" value="252564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -763,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="169" column="31" lean-forward="false" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
+        <state relative-caret-position="72">
+          <caret line="151" column="26" lean-forward="true" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
           <folding>
             <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
@@ -784,7 +783,6 @@
             <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#AddExpenseTypeOption#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
             <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
