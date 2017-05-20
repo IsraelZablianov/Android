@@ -91,8 +91,10 @@ class Utils {
         $("#" + IdService.expensePageSelectId).selectmenu();
         $("#" + IdService.newExpensePageSelectId).selectmenu();
         $('#' + IdService.settingsCurrencyId).selectmenu();
-        $("#" + IdService.addNewExpenseId).draggable();
         $( "#" + IdService.statisticsTabsId).tabs();
+
+        /* Android webWiew Can't handle that */
+        // $("#" + IdService.addNewExpenseId).draggable();
     }
 
     /* Load user settings*/
