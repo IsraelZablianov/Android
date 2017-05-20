@@ -18,7 +18,6 @@ var IdService = (function () {
     IdService.newExpensePageCommentsId = "new-expense-page-comments";
     IdService.newExpensePageSaveTheChangesId = "new-expense-page-save-changes";
     IdService.addNewExpenseId = "add-new-expense";
-    IdService.refreshHomePageId = "refresh-home-page";
     IdService.dateFilterId = "date-filter-display";
     IdService.dateFilterLeftArrowId = "data-filter-left";
     IdService.dateFilterRightArrowId = "data-filter-right";

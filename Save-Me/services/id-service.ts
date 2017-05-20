@@ -19,7 +19,6 @@ class IdService {
     static readonly newExpensePageSaveTheChangesId: string = "new-expense-page-save-changes";
     static readonly addNewExpenseId: string = "add-new-expense";
 
-    static readonly refreshHomePageId: string = "refresh-home-page";
     static readonly dateFilterId: string = "date-filter-display";
     static readonly dateFilterLeftArrowId: string = "data-filter-left";
     static readonly dateFilterRightArrowId: string = "data-filter-right";

@@ -173,10 +173,6 @@ class Utils {
         this.registerStatisticsPageEvents();
         this.registerToSettingsEvents();
         this.registerExpensesEvents();
-
-        $("#" + IdService.refreshHomePageId).click(() => {
-            location.reload();
-        });
     }
 
     private registerExpensesEvents() {

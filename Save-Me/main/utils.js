@@ -154,9 +154,6 @@ var Utils = (function () {
         this.registerStatisticsPageEvents();
         this.registerToSettingsEvents();
         this.registerExpensesEvents();
-        $("#" + IdService.refreshHomePageId).click(function () {
-            location.reload();
-        });
     };
     Utils.prototype.registerExpensesEvents = function () {
         var _this = this;
