@@ -1,4 +1,3 @@
-declare var localforage;
 /*
 * This class service is responsible for handling all data base related actions.
 * The database that in use is index DB that managed by LocalForage.
@@ -8,6 +7,8 @@ declare var localforage;
 * Because LocalForage Does Not supported yet with typescript (05/2017), the declaration of
 * localForage is necessary.
 * */
+declare var localforage;
+
 class DatabaseService {
     private expenseStoreName: string = 'expenses';
     private settingsStoreName: string = 'settings';

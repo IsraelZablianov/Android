@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="192" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="211" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42f68db1-846d-4ffa-b4f9-2c6d013d619a" name="Default" comment="" />
@@ -24,124 +24,75 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="269" column="37" lean-forward="false" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="15" column="92" lean-forward="true" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph-service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#60#178#0" expanded="false" />
-                <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
-                <element signature="n#!!block;n#createBarLineAnimated#0;n#GraphService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/utils.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
               <folding>
                 <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
-                <element signature="e#732#1005#0" expanded="false" />
-                <element signature="e#826#993#0" expanded="false" />
                 <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
-                <element signature="e#1140#1312#0" expanded="false" />
+                <element signature="e#1185#1357#0" expanded="false" />
                 <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
-                <element signature="e#1451#1656#0" expanded="false" />
+                <element signature="e#1496#1701#0" expanded="false" />
                 <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-                <element signature="e#1928#2249#0" expanded="false" />
-                <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
-                <element signature="e#2529#2588#0" expanded="false" />
-                <element signature="e#2698#2782#0" expanded="false" />
-                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
-                <element signature="e#3189#3257#0" expanded="false" />
-                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-                <element signature="e#3553#3687#0" expanded="false" />
-                <element signature="e#3619#3677#0" expanded="false" />
-                <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#4338#4380#0" expanded="false" />
-                <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#4498#4564#0" expanded="false" />
-                <element signature="e#4634#4700#0" expanded="false" />
-                <element signature="e#4759#4839#0" expanded="false" />
-                <element signature="e#4963#5100#0" expanded="false" />
-                <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#5208#5273#0" expanded="false" />
-                <element signature="e#5341#5533#0" expanded="false" />
-                <element signature="e#5426#5521#0" expanded="false" />
-                <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#5672#5738#0" expanded="false" />
-                <element signature="e#5804#5871#0" expanded="false" />
-                <element signature="e#5927#5983#0" expanded="false" />
-                <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
-                <element signature="e#6203#6742#0" expanded="false" />
-                <element signature="e#6262#6505#0" expanded="false" />
-                <element signature="e#6523#6732#0" expanded="false" />
-                <element signature="e#6799#7390#0" expanded="false" />
-                <element signature="e#6865#7074#0" expanded="false" />
-                <element signature="e#7137#7380#0" expanded="false" />
-                <element signature="e#7454#7709#0" expanded="false" />
-                <element signature="e#7766#8048#0" expanded="false" />
-                <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
+                <element signature="e#1973#2294#0" expanded="false" />
                 <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-                <element signature="e#8834#8899#0" expanded="false" />
                 <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
-                <element signature="e#9179#9234#0" expanded="false" />
+                <element signature="e#3052#3107#0" expanded="false" />
                 <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#loadSettings#0;n#Utils#0" expanded="false" />
-                <element signature="e#9894#9960#0" expanded="false" />
+                <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+                <element signature="e#4176#4235#0" expanded="false" />
+                <element signature="e#4353#4437#0" expanded="false" />
+                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#AddExpenseTypeOption#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
-                <element signature="e#10694#10897#0" expanded="false" />
-                <element signature="e#10781#10887#0" expanded="false" />
-                <element signature="e#10910#11113#0" expanded="false" />
-                <element signature="e#10996#11103#0" expanded="false" />
+                <element signature="e#11000#11203#0" expanded="false" />
+                <element signature="e#11216#11419#0" expanded="false" />
                 <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-                <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
-                <element signature="e#11835#12012#0" expanded="false" />
-                <element signature="e#12026#12322#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseDateFilterClicked#0;n#Utils#0" expanded="false" />
                 <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-                <marker date="1494689251076" expanded="true" signature="10127:10381" ph="..." />
-                <marker date="1494689251076" expanded="true" signature="10215:10347" ph="..." />
+                <marker date="1495287761538" expanded="true" signature="5861:6115" ph="..." />
+                <marker date="1495287761538" expanded="true" signature="5949:6081" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="326" column="1" lean-forward="false" selection-start-line="326" selection-start-column="1" selection-end-line="326" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,10 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>date-f</find>
-      <find>this.htmlService.sortUL</find>
-      <find>icon</find>
-      <find>.val()</find>
       <find>hover-price-expenses-price</find>
       <find>expensesPrice</find>
       <find>addNewExpenseId</find>
@@ -191,6 +138,10 @@
       <find>selectM</find>
       <find>loader</find>
       <find>loading</find>
+      <find>getChartData</find>
+      <find>BarLineConfig</find>
+      <find>displayedExpense</find>
+      <find>headroom</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -231,19 +182,19 @@
         <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/canvas-overlay.html" />
         <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/barLineAnimated.html" />
         <option value="$PROJECT_DIR$/services/settings-service.js" />
-        <option value="$PROJECT_DIR$/models/models.ts" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/services/settings-service.ts" />
         <option value="$PROJECT_DIR$/services/id-service.ts" />
         <option value="$PROJECT_DIR$/main/loader.ts" />
-        <option value="$PROJECT_DIR$/main/utils.ts" />
-        <option value="$PROJECT_DIR$/assets/styles/main.css" />
         <option value="$PROJECT_DIR$/services/datepicker-service.ts" />
-        <option value="$PROJECT_DIR$/services/expense-service.ts" />
         <option value="$PROJECT_DIR$/services/database-service.ts" />
+        <option value="$PROJECT_DIR$/services/graph-service.ts" />
+        <option value="$PROJECT_DIR$/models/models.ts" />
+        <option value="$PROJECT_DIR$/assets/styles/main.css" />
+        <option value="$PROJECT_DIR$/services/expense-service.ts" />
         <option value="$PROJECT_DIR$/services/common-service.ts" />
         <option value="$PROJECT_DIR$/services/html-service.ts" />
-        <option value="$PROJECT_DIR$/services/graph-service.ts" />
+        <option value="$PROJECT_DIR$/main/utils.ts" />
       </list>
     </option>
   </component>
@@ -274,6 +225,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,10 +239,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,34 +364,55 @@
       <workItem from="1493142014196" duration="6065000" />
       <workItem from="1493976105456" duration="16167000" />
       <workItem from="1494681493886" duration="9228000" />
+      <workItem from="1495105758695" duration="4101000" />
+      <workItem from="1495281863672" duration="5497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238231000" />
+    <option name="totallyTimeSpent" value="247829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -448,12 +434,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="42" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/systemjs/examples/test.html" />
     <entry file="file://$PROJECT_DIR$/bower_components/systemjs/src/System.js" />
@@ -568,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="1041" column="4" lean-forward="false" selection-start-line="1041" selection-start-column="4" selection-end-line="1041" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,11 +577,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/models.ts">
+    <entry file="file://$PROJECT_DIR$/main/loader.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -605,11 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!block;n#loadSettings#0;n#SettingsService#0" expanded="false" />
-            <element signature="n#!!block;n#setSettingsToView#0;n#SettingsService#0" expanded="false" />
-            <element signature="n#!!block;n#getSettingsFromView#0;n#SettingsService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,176 +595,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/loader.ts">
+    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="269" column="37" lean-forward="false" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1247">
+          <caret line="107" column="72" lean-forward="true" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/expense-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="326" column="1" lean-forward="false" selection-start-line="326" selection-start-column="1" selection-end-line="326" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!block;n#loadDatepicker#0;n#DatepickerService#0" expanded="false" />
-            <element signature="n#!!block;n#getDatepickerDate#0;n#DatepickerService#0" expanded="false" />
-            <element signature="n#!!block;n#setDatepickerDate#0;n#DatepickerService#0" expanded="false" />
-            <element signature="n#!!block;n#getDefaultOptions#0;n#DatepickerService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
           <folding>
-            <element signature="n#!!block;n#setSelectedExpense#0;n#ExpenseService#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#getExpenseFromView#0;n#ExpenseService#0" expanded="false" />
             <element signature="n#!!block;n#setDefaultExpenseToNewExpensePage#0;n#ExpenseService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="15" column="92" lean-forward="true" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
           <folding>
-            <element signature="n#!!block;n#constructor#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#addExpenseToDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#removeExpenseFromDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#updateExpenseToDB#0;n#DatabaseService#0" expanded="false" />
-            <element signature="e#2053#2134#0" expanded="false" />
-            <element signature="n#!!block;n#getAllExpenses#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#DeleteAllExpenses#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#setSettings#0;n#DatabaseService#0" expanded="false" />
-            <element signature="n#!!block;n#getSettings#0;n#DatabaseService#0" expanded="false" />
-            <element signature="e#2854#2896#0" expanded="false" />
-            <element signature="n#!!block;n#createId#0;n#DatabaseService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
-            <element signature="e#732#1005#0" expanded="false" />
-            <element signature="e#826#993#0" expanded="false" />
-            <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
-            <element signature="e#1140#1312#0" expanded="false" />
-            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
-            <element signature="e#1451#1656#0" expanded="false" />
-            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
-            <element signature="e#1928#2249#0" expanded="false" />
-            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
-            <element signature="e#2529#2588#0" expanded="false" />
-            <element signature="e#2698#2782#0" expanded="false" />
-            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
-            <element signature="e#3189#3257#0" expanded="false" />
-            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
-            <element signature="e#3553#3687#0" expanded="false" />
-            <element signature="e#3619#3677#0" expanded="false" />
-            <element signature="n#!!block;n#addOptionTypeOfExpense#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#4338#4380#0" expanded="false" />
-            <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#4498#4564#0" expanded="false" />
-            <element signature="e#4634#4700#0" expanded="false" />
-            <element signature="e#4759#4839#0" expanded="false" />
-            <element signature="e#4963#5100#0" expanded="false" />
-            <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#5208#5273#0" expanded="false" />
-            <element signature="e#5341#5533#0" expanded="false" />
-            <element signature="e#5426#5521#0" expanded="false" />
-            <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#5672#5738#0" expanded="false" />
-            <element signature="e#5804#5871#0" expanded="false" />
-            <element signature="e#5927#5983#0" expanded="false" />
-            <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
-            <element signature="e#6203#6742#0" expanded="false" />
-            <element signature="e#6262#6505#0" expanded="false" />
-            <element signature="e#6523#6732#0" expanded="false" />
-            <element signature="e#6799#7390#0" expanded="false" />
-            <element signature="e#6865#7074#0" expanded="false" />
-            <element signature="e#7137#7380#0" expanded="false" />
-            <element signature="e#7454#7709#0" expanded="false" />
-            <element signature="e#7766#8048#0" expanded="false" />
-            <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
-            <element signature="e#8834#8899#0" expanded="false" />
-            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
-            <element signature="e#9179#9234#0" expanded="false" />
-            <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#loadSettings#0;n#Utils#0" expanded="false" />
-            <element signature="e#9894#9960#0" expanded="false" />
-            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
-            <element signature="e#10694#10897#0" expanded="false" />
-            <element signature="e#10781#10887#0" expanded="false" />
-            <element signature="e#10910#11113#0" expanded="false" />
-            <element signature="e#10996#11103#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseDateClicked#0;n#Utils#0" expanded="false" />
-            <element signature="e#11835#12012#0" expanded="false" />
-            <element signature="e#12026#12322#0" expanded="false" />
-            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
-            <marker date="1494689251076" expanded="true" signature="10127:10381" ph="..." />
-            <marker date="1494689251076" expanded="true" signature="10215:10347" ph="..." />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/common-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#170#326#0" expanded="false" />
-            <element signature="e#369#501#0" expanded="false" />
-            <element signature="n#!!block;n#isTheSameDate#0;n#CommonService#0" expanded="false" />
+            <element signature="e#176#294#0" expanded="false" />
+            <element signature="e#331#487#0" expanded="false" />
+            <element signature="e#530#662#0" expanded="false" />
             <element signature="n#!!block;n#getEnumNumericKeys#0;n#CommonService#0" expanded="false" />
             <element signature="n#!!block;n#getMonthNames#0;n#CommonService#0" expanded="false" />
             <element signature="n#!!block;n#getDayNames#0;n#CommonService#0" expanded="false" />
             <element signature="n#!!block;n#getExpenseTypeNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getshortMonthNames#0;n#CommonService#0" expanded="false" />
             <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
           </folding>
         </state>
@@ -794,14 +704,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/html-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="202">
+          <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#221#376#0" expanded="false" />
+            <element signature="e#223#378#0" expanded="false" />
             <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#getExpenseHtmlTemplate#0;n#HtmlService#0" expanded="false" />
-            <element signature="n#!!block;n#getOptionTypeExpenseTemplate#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
@@ -811,32 +720,59 @@
             <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
             <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
-            <marker date="1494690451342" expanded="true" signature="1236:2642" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1301:2624" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1351:2603" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1402:2085" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1457:1565" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1619:1726" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1782:1891" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="1946:2054" ph="..." />
-            <marker date="1494690451342" expanded="true" signature="2139:2576" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1238:2644" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1303:2626" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1353:2605" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1404:2087" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1459:1567" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1621:1728" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1784:1893" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="1948:2056" ph="..." />
+            <marker date="1495286769978" expanded="true" signature="2141:2578" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+    <entry file="file://$PROJECT_DIR$/main/utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="222">
+          <caret line="123" column="34" lean-forward="false" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
           <folding>
-            <element signature="e#60#178#0" expanded="false" />
-            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getChartData#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
-            <element signature="n#!!block;n#createBarLineAnimated#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1185#1357#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1496#1701#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1973#2294#0" expanded="false" />
+            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#3052#3107#0" expanded="false" />
+            <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadSettings#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#4176#4235#0" expanded="false" />
+            <element signature="e#4353#4437#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#AddExpenseTypeOption#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="e#11000#11203#0" expanded="false" />
+            <element signature="e#11216#11419#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+            <marker date="1495287761538" expanded="true" signature="5861:6115" ph="..." />
+            <marker date="1495287761538" expanded="true" signature="5949:6081" ph="..." />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,7 @@ var ExpenseService = (function () {
         return updatesExpanse;
     };
     /*
-    * Setting a default expense to new expense page (this method is called after the new expense button is pressed).
+    * Setting a default expense to 'new expense page' (this method is called after the new expense button is pressed).
     * */
     ExpenseService.prototype.setDefaultExpenseToNewExpensePage = function () {
         this.datepickerService.setDatepickerDate(IdService.newExpensePageDatepickerId, new Date());

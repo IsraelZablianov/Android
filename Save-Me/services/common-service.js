@@ -4,6 +4,11 @@
 * */
 var CommonService = (function () {
     function CommonService() {
+        this.shortMonthNames = [
+            "Jan", "Feb", "Mar",
+            "Apr", "May", "Jun", "Jul",
+            "Aug", "Sep", "Oct",
+            "Nov", "Dec"];
         this.monthNames = [
             "January", "February", "March",
             "April", "May", "June", "July",
@@ -20,7 +25,7 @@ var CommonService = (function () {
         ];
         this.weekdayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     }
-    CommonService.prototype.isTheSameDate = function (date1, date2) {
+    CommonService.prototype.isTheSameMonthAndYear = function (date1, date2) {
         return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear();
     };
     CommonService.prototype.getEnumNumericKeys = function (enumType) {
@@ -41,6 +46,9 @@ var CommonService = (function () {
     };
     CommonService.prototype.getExpenseTypeNames = function () {
         return this.expenseTypeNames;
+    };
+    CommonService.prototype.getshortMonthNames = function () {
+        return this.shortMonthNames;
     };
     CommonService.prototype.isIndex = function (key) {
         var n = ~~Number(key);

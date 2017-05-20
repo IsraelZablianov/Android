@@ -1,6 +1,7 @@
 /*
 * This class service is handling the expenses list and expenses pages.
 * */
+
 class ExpenseService {
     private datepickerService: DatepickerService = new DatepickerService();
 
@@ -35,7 +36,7 @@ class ExpenseService {
     }
 
     /*
-    * Setting a default expense to new expense page (this method is called after the new expense button is pressed).
+    * Setting a default expense to 'new expense page' (this method is called after the new expense button is pressed).
     * */
     setDefaultExpenseToNewExpensePage(): void {
         this.datepickerService.setDatepickerDate(IdService.newExpensePageDatepickerId, new Date());

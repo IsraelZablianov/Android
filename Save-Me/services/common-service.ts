@@ -2,7 +2,13 @@
 * This class service is a general service that store methods with different use for all
 * Of the system.
 * */
+
 class CommonService {
+    private shortMonthNames: string[] = [
+        "Jan", "Feb", "Mar",
+        "Apr", "May", "Jun", "Jul",
+        "Aug", "Sep", "Oct",
+        "Nov", "Dec" ];
     private monthNames: string[] = [
         "January", "February", "March",
         "April", "May", "June", "July",
@@ -19,7 +25,7 @@ class CommonService {
     ];
     private weekdayNames: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    isTheSameDate(date1: Date, date2: Date): boolean {
+    isTheSameMonthAndYear(date1: Date, date2: Date): boolean {
         return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear()
     }
 
@@ -43,6 +49,10 @@ class CommonService {
 
     getExpenseTypeNames(): string[] {
         return this.expenseTypeNames;
+    }
+
+    getshortMonthNames(): string[] {
+        return this.shortMonthNames;
     }
 
     private  isIndex(key):boolean {

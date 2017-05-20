@@ -12,6 +12,7 @@ class Utils {
     private commonService: CommonService = new CommonService();
     private settingsService: SettingsService = new SettingsService();
 
+    /* The main method to activate the app*/
     load() {
         this.registerToEvents();
         this.loadSettings(()=> {
@@ -60,6 +61,49 @@ class Utils {
         });
     }
 
+    /* Loads all the necessary elements to html */
+    private loadToView(): void {
+        let filteredExpenses = this.filterExpenses(this.dateFilter);
+        this.loadExpensesToView(filteredExpenses);
+
+        let ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
+        $.each(ebumValues, (index, expenseType)=>{
+            this.AddExpenseTypeOption(expenseType);
+        });
+
+        $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
+    }
+
+    /* Loads the expenses that passed as param to the list of expenses */
+    private loadExpensesToView(expenses: Expense[]): void {
+        $("#" + IdService.expenseListId + " > li").remove();
+        $.each(expenses, (index, expense)=> {
+            this.addExpenseToView(expense);
+        });
+
+        this.handleExpenseListChange();
+    }
+
+    /* Load JQuery components */
+    private loadComponents() {
+        this.datepickerService.loadDatepicker(IdService.expensePageDatepickerId);
+        this.datepickerService.loadDatepicker(IdService.newExpensePageDatepickerId);
+        $("#" + IdService.expensePageSelectId).selectmenu();
+        $("#" + IdService.newExpensePageSelectId).selectmenu();
+        $('#' + IdService.settingsCurrencyId).selectmenu();
+        $("#" + IdService.addNewExpenseId).draggable();
+        $( "#" + IdService.statisticsTabsId).tabs();
+    }
+
+    /* Load user settings*/
+    private loadSettings(callback) {
+        this.showLoadMsg();
+        this.settingsService.loadSettings(()=>{
+            this.hideLoadMsg();
+            callback();
+        });
+    }
+
     private addExpenseToView(expense: Expense) {
         let expenseStringHtml = this.htmlService.getExpenseHtmlTemplate(expense, this.settingsService.getSettings().currency);
         let expenseElementHtml = $(expenseStringHtml);
@@ -67,7 +111,7 @@ class Utils {
             this.handleExpenseSelected(expense)
         });
 
-        if(this.clickAllExpensesToShow || this.commonService.isTheSameDate(expense.date, this.dateFilter)){
+        if(this.clickAllExpensesToShow || this.commonService.isTheSameMonthAndYear(expense.date, this.dateFilter)){
             $("#" + IdService.expenseListId).append(expenseElementHtml);
         }
     }
@@ -91,7 +135,7 @@ class Utils {
         let filterdExpenses: Expense[] = [];
 
         $.each(this.expenses, (idx, itm)=> {
-            if(this.commonService.isTheSameDate(itm.date, date)){
+            if(this.commonService.isTheSameMonthAndYear(itm.date, date)){
                 filterdExpenses.push(itm);
             }
         });
@@ -99,11 +143,29 @@ class Utils {
         return filterdExpenses;
     }
 
-    private addOptionTypeOfExpense(optionType: ExpenseType): void{
-        let optionHtmlString = this.htmlService.getOptionTypeExpenseTemplate(optionType);
+    private AddExpenseTypeOption(optionType: ExpenseType): void{
+        let optionHtmlString = this.htmlService.getExpenseTypeOptionTemplate(optionType);
         $("#" + IdService.expensePageSelectId).append(optionHtmlString);
         $("#" + IdService.newExpensePageSelectId).append(optionHtmlString);
     }
+
+    private showLoadMsg() {
+        $.mobile.loading("show", {
+            textVisible: true,
+            theme: "z",
+            html: `<div class="loading">
+                                <span class="ui-bar ui-overlay-c ui-corner-all loader"><img src="assets/images/gears.gif"/>
+                                    <h2>loading...</h2>
+                                </span>
+                           </div>`
+        });
+    }
+
+    private hideLoadMsg() {
+        $.mobile.loading("hide");
+    }
+
+    /* Register to events */
 
     private registerToEvents() {
         this.registerPageLoadEvent();
@@ -162,7 +224,7 @@ class Utils {
         });
 
         $("#" + IdService.dateFilterId).click(() => {
-            this.handleExpenseDateClicked();
+            this.handleExpenseDateFilterClicked();
         });
     }
 
@@ -222,60 +284,7 @@ class Utils {
         });
     }
 
-    private loadToView(): void {
-        let filteredExpenses = this.filterExpenses(this.dateFilter);
-        this.loadExpensesToView(filteredExpenses);
-
-        let ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
-        $.each(ebumValues, (index, expenseType)=>{
-            this.addOptionTypeOfExpense(expenseType);
-        });
-
-        $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
-    }
-
-    private loadExpensesToView(expenses: Expense[]): void {
-        $("#" + IdService.expenseListId + " > li").remove();
-        $.each(expenses, (index, expense)=> {
-            this.addExpenseToView(expense);
-        });
-
-        this.handleExpenseListChange();
-    }
-
-    private loadComponents() {
-        this.datepickerService.loadDatepicker(IdService.expensePageDatepickerId);
-        this.datepickerService.loadDatepicker(IdService.newExpensePageDatepickerId);
-        $("#" + IdService.expensePageSelectId).selectmenu();
-        $("#" + IdService.newExpensePageSelectId).selectmenu();
-        $('#' + IdService.settingsCurrencyId).selectmenu();
-        $("#" + IdService.addNewExpenseId).draggable();
-        $( "#" + IdService.statisticsTabsId).tabs();
-    }
-
-    private loadSettings(calback) {
-        this.showLoadMsg();
-        this.settingsService.loadSettings(()=>{
-            this.hideLoadMsg();
-            calback();
-        });
-    }
-
-    private showLoadMsg() {
-        $.mobile.loading("show", {
-            textVisible: true,
-            theme: "z",
-            html: `<div class="loading">
-                                <span class="ui-bar ui-overlay-c ui-corner-all loader"><img src="assets/images/gears.gif"/>
-                                    <h2>loading...</h2>
-                                </span>
-                           </div>`
-        });
-    }
-
-    private hideLoadMsg() {
-        $.mobile.loading("hide");
-    }
+    /* Handle events */
 
     private handleArrowDateFilterClicked(isLeft: boolean): void {
         this.clickAllExpensesToShow = false;
@@ -310,7 +319,7 @@ class Utils {
         $("#" + IdService.expenseListId).listview("refresh");
     }
 
-    private handleExpenseDateClicked(): void {
+    private handleExpenseDateFilterClicked(): void {
         this.clickAllExpensesToShow = !this.clickAllExpensesToShow;
         if(this.clickAllExpensesToShow) {
             this.loadExpensesToView(this.expenses);

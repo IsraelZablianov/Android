@@ -2,7 +2,8 @@
 * This service is responsible for manipulating html components, create new templates
 * And all Html related issues.
 * */
-class HtmlService{
+
+class HtmlService {
     private iconsPath: string = "assets/icons/";
     private icons:string[] = [
         "food.png",
@@ -62,7 +63,7 @@ class HtmlService{
             </li>`;
     }
 
-    getOptionTypeExpenseTemplate(optionType: ExpenseType): string{
+    getExpenseTypeOptionTemplate(optionType: ExpenseType): string{
         return `<option value="${optionType}">${this.commonService.getExpenseTypeNames()[optionType]}</option>`;
     }
 

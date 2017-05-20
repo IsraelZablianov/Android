@@ -1,13 +1,15 @@
+/*
+* This class service is responsible for statistics page
+* Graph displaying.
+* */
 var GraphService = (function () {
     function GraphService() {
-        this.shortMonthNames = [
-            "Jan", "Feb", "Mar",
-            "Apr", "May", "Jun", "Jul",
-            "Aug", "Sep", "Oct",
-            "Nov", "Dec"];
         this.numberOfMonthsOnBarLineAnimated = 6;
         this.commonService = new CommonService();
     }
+    /*
+    * The replot method, builds the graph again and destroys the old one.
+    * */
     GraphService.prototype.replotBarLineAnimatedMonthly = function (id, expenses, currency) {
         if (this.barLinePlot) {
             this.barLinePlot.destroy();
@@ -25,7 +27,12 @@ var GraphService = (function () {
         this.pieChartPlot = this.createPieChart(id, series);
         this.pieChartPlot.replot({ resetAxes: true });
     };
-    GraphService.prototype.getChartData = function (expenses, chartType) {
+    /*
+    * Returns A key value pair ( simple object that been used like a map).
+    * The keys can be months, expense type or any of the ChartType enum,
+    * The value is the sum of those expenses.
+    * */
+    GraphService.prototype.getChartDataMap = function (expenses, chartType) {
         var currentYear = (new Date()).getFullYear();
         var values = {};
         expenses.forEach(function (expense) {
@@ -41,9 +48,12 @@ var GraphService = (function () {
         });
         return values;
     };
+    /*
+    * Returns a series, build according to jqPlot requirements For 'Bar Line Animated' chart.
+    * */
     GraphService.prototype.getExpenseTypeSeries = function (expenses) {
         var series = [];
-        var expensesTypesToatlPrices = this.getChartData(expenses, ChartType.ExpenseType);
+        var expensesTypesToatlPrices = this.getChartDataMap(expenses, ChartType.ExpenseType);
         var ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
         var typeNames = this.commonService.getExpenseTypeNames();
         $.each(ebumValues, function (index, expenseType) {
@@ -56,10 +66,13 @@ var GraphService = (function () {
         });
         return series;
     };
+    /*
+    * Returns a series, build according to jqPlot requirements For 'Pie Charts Enhanced Legend' chart.
+    * */
     GraphService.prototype.getMonthlySeries = function (expenses) {
         var series = [];
         var currentMonth = (new Date()).getMonth();
-        var monthsToatlPricesExpenses = this.getChartData(expenses, ChartType.Months);
+        var monthsToatlPricesExpenses = this.getChartDataMap(expenses, ChartType.Months);
         var monthToStartTheGraphWith = currentMonth - this.numberOfMonthsOnBarLineAnimated >= 0 ? currentMonth - this.numberOfMonthsOnBarLineAnimated : 0;
         this.defaultConfig = { xaxis: [], currency: '' };
         for (var i = monthToStartTheGraphWith; i < currentMonth + 1; i++) {
@@ -69,10 +82,14 @@ var GraphService = (function () {
             else {
                 series.push([i - monthToStartTheGraphWith, 0]);
             }
-            this.defaultConfig.xaxis.push([i - monthToStartTheGraphWith, this.shortMonthNames[i]]);
+            this.defaultConfig.xaxis.push([i - monthToStartTheGraphWith, this.commonService.getshortMonthNames()[i]]);
         }
         return series;
     };
+    /*
+    * Basic configuration for creating Plot objects From jqPlot library.
+    * For more info visit ->  http://www.jqplot.com/examples/
+    * */
     GraphService.prototype.createPieChart = function (id, series) {
         return $.jqplot(id, series, {
             title: 'Statistics Depending On The Selected Date',

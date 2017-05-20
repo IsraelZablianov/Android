@@ -1,16 +1,19 @@
-class GraphService{
-    private shortMonthNames: string[] = [
-        "Jan", "Feb", "Mar",
-        "Apr", "May", "Jun", "Jul",
-        "Aug", "Sep", "Oct",
-        "Nov", "Dec" ];
+/*
+* This class service is responsible for statistics page
+* Graph displaying.
+* */
+
+class GraphService {
     private defaultConfig: BarLineConfig;
-    private numberOfMonthsOnBarLineAnimated = 6;
+    private numberOfMonthsOnBarLineAnimated: number = 6;
     private commonService: CommonService = new CommonService();
     private barLinePlot: any;
     private pieChartPlot: any;
 
-    replotBarLineAnimatedMonthly(id: string, expenses: Expense[], currency?: string){
+    /*
+    * The replot method, builds the graph again and destroys the old one.
+    * */
+    replotBarLineAnimatedMonthly(id: string, expenses: Expense[], currency?: string): void {
         if(this.barLinePlot){
             this.barLinePlot.destroy();
         }
@@ -21,7 +24,7 @@ class GraphService{
         this.barLinePlot.replot({resetAxes:true});
     }
 
-    replotPieChartsEnhancedLegend(id: string, expenses: Expense[]) {
+    replotPieChartsEnhancedLegend(id: string, expenses: Expense[]): void {
         if(this.pieChartPlot){
             this.pieChartPlot.destroy();
         }
@@ -31,7 +34,12 @@ class GraphService{
         this.pieChartPlot.replot({resetAxes:true});
     }
 
-    private getChartData(expenses: Expense[], chartType: ChartType): any[] {
+    /*
+    * Returns A key value pair ( simple object that been used like a map).
+    * The keys can be months, expense type or any of the ChartType enum,
+    * The value is the sum of those expenses.
+    * */
+    private getChartDataMap(expenses: Expense[], chartType: ChartType): any {
         let currentYear = (new Date()).getFullYear();
         let values: any = {};
 
@@ -50,9 +58,12 @@ class GraphService{
         return values;
     }
 
+    /*
+    * Returns a series, build according to jqPlot requirements For 'Bar Line Animated' chart.
+    * */
     private getExpenseTypeSeries(expenses: Expense[]): any[] {
         let series: any[] = [];
-        let expensesTypesToatlPrices = this.getChartData(expenses, ChartType.ExpenseType);
+        let expensesTypesToatlPrices = this.getChartDataMap(expenses, ChartType.ExpenseType);
         let ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
         let typeNames: string[] = this.commonService.getExpenseTypeNames();
 
@@ -68,10 +79,13 @@ class GraphService{
         return series;
     }
 
+    /*
+    * Returns a series, build according to jqPlot requirements For 'Pie Charts Enhanced Legend' chart.
+    * */
     private getMonthlySeries(expenses: Expense[]): any[] {
         let series: any[] = [];
         let currentMonth = (new Date()).getMonth();
-        let monthsToatlPricesExpenses = this.getChartData(expenses, ChartType.Months);
+        let monthsToatlPricesExpenses = this.getChartDataMap(expenses, ChartType.Months);
         let monthToStartTheGraphWith = currentMonth - this.numberOfMonthsOnBarLineAnimated >= 0 ? currentMonth - this.numberOfMonthsOnBarLineAnimated : 0;
         this.defaultConfig = {xaxis:[], currency: ''};
 
@@ -83,13 +97,18 @@ class GraphService{
                 series.push([i - monthToStartTheGraphWith, 0]);
             }
 
-            this.defaultConfig.xaxis.push([i - monthToStartTheGraphWith, this.shortMonthNames[i]])
+            this.defaultConfig.xaxis.push([i - monthToStartTheGraphWith, this.commonService.getshortMonthNames()[i]])
         }
 
         return series;
     }
 
-    private createPieChart(id: string, series: any[][]) {
+
+    /*
+    * Basic configuration for creating Plot objects From jqPlot library.
+    * For more info visit ->  http://www.jqplot.com/examples/
+    * */
+    private createPieChart(id: string, series: any[][]): any {
         return $.jqplot(id,
             series,
             {

@@ -1,12 +1,3 @@
-/*
-* This class service is responsible for handling all data base related actions.
-* The database that in use is index DB that managed by LocalForage.
-* LocalForage is an extension - java script library that allow you to control IndexDb, LocalStorage and WebSql
-* All in one.
-*
-* Because LocalForage Does Not supported yet with typescript (05/2017), the declaration of
-* localForage is necessary.
-* */
 var DatabaseService = (function () {
     /*
     * Setup Default configuration for the data base.

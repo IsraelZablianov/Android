@@ -16,16 +16,26 @@ enum ExpenseType {
     Other
 }
 
+/*
+* Types of available charts
+* */
 enum ChartType {
     Months,
     ExpenseType
 }
 
+/*
+* Types of sort for the list of expenses in home page.
+* */
 enum SortType {
     Date,
     Price
 }
 
+
+/*
+* Configuration object for the bar line chart.
+* */
 interface BarLineConfig {
     currency: string;
     xaxis: any[];

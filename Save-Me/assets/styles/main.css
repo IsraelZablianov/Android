@@ -1,6 +1,6 @@
-/* App Colors (instead of using Scss Or Less) */
+/* App Colors (instead of using SASS Or Less) */
 
-.app-colors-specification-this-is-not-css-class{
+.app-colors-specification{
     color: #fa8b00;  /*      Orange    */
     color: #FAD40B;  /*   Light Orange */
     color: #3388cc;  /*      Blue      */
@@ -11,6 +11,8 @@
     color: #46624C;  /*    Dark Green  */
     color: #E9E9E9;  /*      Gray      */
 }
+
+/* App main font */
 
 @font-face {
     font-family: PlayfairDisplay;
@@ -23,35 +25,56 @@
     src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("opentype");
 }
 
-/* apply for all */
-
-.loading {
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: PlayfairDisplay;
-    font-size: xx-large;
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:1000;
-}
-
-.round .ripple{
-    border-radius: 100%;
-}
-body.ui-mobile-viewport.ui-overlay-a, body{
+body.ui-mobile-viewport.ui-overlay-a, body {
     font-family: PlayfairDisplay;
 }
 
 body.ui-mobile-viewport.ui-overlay-a, body, input, select, textarea, button, .ui-btn {
     font-family: PlayfairDisplay;
 }
+
+/* loading effects */
+
+.loading {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-family: PlayfairDisplay;
+    font-size: xx-large;
+    height: 100%;
+    justify-content: center;
+    left: 0px;
+    position:fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ui-loader-background {
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.ui-loading .ui-loader-background {
+    display: block;
+}
+
+/* Google Materials override */
+
+.round .ripple{
+    border-radius: 100%;
+}
+
+/* general behavior */
 
 .ui-page-theme-a .ui-btn.expense-wrapper{
     background-color: #fff;
@@ -65,45 +88,19 @@ ul#expense-list li:nth-child(even) .expense-display .content-section .price-disp
     text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-.ui-loader-background {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.3);
-    display: none;
-    position: fixed;
-    z-index: 100;
-}
-
-.ui-loading .ui-loader-background {
-    display:block;
-}
-
-
 /* home page */
-.headroom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all .2s ease-in-out;
-}
-.headroom--unpinned {top: -100px;}
-.headroom--pinned {top: 0;}
 
 header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container {
-    display: flex;
     background-color: #fff;
     box-shadow: 2px 3px 5px rgba(57, 63, 72, 0.3);
+    display: flex;
     justify-content: space-around;
     transition: top 0.2s ease-in-out;
 }
 
-header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container .hover-price-report-col{
-    padding: 5px;
+header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-container .hover-price-report-col {
     font-weight: lighter;
+    padding: 5px;
     text-align: center;
 }
 
@@ -115,25 +112,25 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     color: #3388cc;
 }
 
-.ui-page .ui-header .date-filter{
-    text-align: center;
-    padding-bottom: 10px;
+.ui-page .ui-header .date-filter {
     color: #fff;
     font-family: PlayfairDisplay;
     font-weight: 300;
     font-size: smaller;
+    padding-bottom: 10px;
+    text-align: center;
     text-shadow: 1px 1px 1px black;
 }
 
-.ui-page .ui-header .date-filter a{
+.ui-page .ui-header .date-filter a {
     background-color: transparent !important;
-    position: relative;
     bottom: -2px;
+    position: relative;
 }
 
 /* expense template */
 
-.expense-display{
+.expense-display {
     display: flex;
 }
 
@@ -142,54 +139,54 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     width: 80px;
 }
 
-.expense-display .date-section .date-display{
+.expense-display .date-section .date-display {
     font-size: xx-large;
 }
 
-.expense-display .date-section .day-display{
+.expense-display .date-section .day-display {
     background-color: #3388cc;
+    border-radius: 10%;
     color: #FFF;
+    display: inline-block;
     font-weight: normal;
     font-size: small;
     letter-spacing: 1px;
-    padding: 1px 5px 1px 5px;
-    border-radius: 10%;
+    left: -10px;
     margin-bottom: 5px;
+    padding: 1px 5px 1px 5px;
     position: relative;
     top: -5px;
-    display: inline-block;
-    left: -10px;
 }
 
-.expense-display .date-section .month-display, .expense-display .date-section .year-display{
+.expense-display .date-section .month-display, .expense-display .date-section .year-display {
     font-size: smaller;
 }
 
-.expense-display .content-section .type-display{
-    text-align: center;
+.expense-display .content-section .type-display {
     font-size: larger;
+    text-align: center;
     width: 140px;
 }
 
-.expense-display .content-section .comments-display{
-    width: 125px;
+.expense-display .content-section .comments-display {
+    font-size: initial;
     margin-top: 10%;
     padding-left: 10px;
     text-align: center;
-    font-size: initial;
+    width: 125px;
 }
 
-.expense-display .content-section .price-display{
+.expense-display .content-section .price-display {
+    bottom: 5%;
     color: #ED4046;
     float: right;
-    padding-top: 10px;
     font-family: -WEBKIT-BODY;
+    padding-top: 10px;
     position: absolute;
     right: 2%;
-    bottom: 5%;
 }
 
-.icon-display{
+.icon-display {
     width: 60px;
     height: 60px;
     top: 30px;
@@ -198,8 +195,8 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     border-radius: 100% !important;
 }
 
-
 /* floating button */
+
 div.add-btn{
     position: fixed;
     background-color: #fa8b00;
@@ -227,23 +224,24 @@ div.add-btn:active {
     box-shadow: none;
 }
 
-/* expense page and new-expense-page */
+/* expense page & new-expense-page */
+
 .ui-input-text input.price {
     text-align: center;
 }
 
-input.date-of-expense{
+input.date-of-expense {
     text-align: center;
 }
 
-.expense-page-headers{
+.expense-page-headers {
     text-align: center;
     padding: 5px;
     font-weight: bolder;
     font-size: x-large;
 }
 
-div#ui-datepicker-div{
+div#ui-datepicker-div {
     width: 97%;
 }
 
@@ -271,24 +269,24 @@ div#ui-datepicker-div{
 
 /* statistics page */
 
-.jqplot-pie-series.jqplot-data-label{
+.jqplot-pie-series.jqplot-data-label {
     color: #fff;
     font-size: larger;
 }
 
-.jqplot-axis.jqplot-xaxis{
+.jqplot-axis.jqplot-xaxis {
     padding-bottom: 30px;
 }
 
-.ui-tabs .ui-tabs-panel{
+.ui-tabs .ui-tabs-panel {
     padding: 0;
 }
 
-.bar-line-animated{
+.bar-line-animated {
     margin: 5px;
 }
 
-.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab{
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
     font-family: initial;
 }
 
@@ -302,26 +300,25 @@ div#ui-datepicker-div{
 
 /* header and footer */
 
-.ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a{
+.ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a {
     background: #3388cc;
 }
 
-.ui-page .ui-header a{
+.ui-page .ui-header a {
     background: #fa8b00 !important;
     text-shadow: 0 1px 0 #f3f3f3;
 }
 
-.ui-header .ui-title, .ui-footer .ui-title, .ui-header .ui-link.ui-btn, .ui-footer .ui-link.ui-btn{
+.ui-header .ui-title, .ui-footer .ui-title, .ui-header .ui-link.ui-btn, .ui-footer .ui-link.ui-btn {
     font-weight: normal;
     letter-spacing: 1px;
     color: #fff;
 }
 
-.ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn{
+.ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
     background-color: #3388cc;
 }
 
-
-.ui-page .ui-footer.h-and-i-footer .ui-title{
+.ui-page .ui-footer.h-and-i-footer .ui-title {
     color: #fa8b00 !important;
 }
