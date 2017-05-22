@@ -36,6 +36,22 @@ var CommonService = (function () {
             .map(function (index) { return Number(index); });
     };
     /*
+    * Returns greeting message according to current time.
+    * */
+    CommonService.prototype.getGreetingMessage = function () {
+        var today = new Date();
+        var curHr = today.getHours();
+        if (curHr < 12) {
+            return "Good Morning";
+        }
+        else if (curHr < 18) {
+            return "Good Afternoon";
+        }
+        else {
+            return "Good evening";
+        }
+    };
+    /*
     * Those methods 'get..names' are here so in the future it will be easier to add multi languages support.
     * */
     CommonService.prototype.getMonthNames = function () {

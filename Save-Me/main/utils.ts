@@ -68,7 +68,7 @@ class Utils {
 
         let ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
         $.each(ebumValues, (index, expenseType)=>{
-            this.AddExpenseTypeOption(expenseType);
+            this.addExpenseTypeOption(expenseType);
         });
 
         $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
@@ -101,6 +101,7 @@ class Utils {
     private loadSettings(callback) {
         this.showLoadMsg();
         this.settingsService.loadSettings(()=>{
+            this.htmlService.setGreetingMessage(this.settingsService.getSettings().name);
             this.hideLoadMsg();
             callback();
         });
@@ -145,7 +146,7 @@ class Utils {
         return filterdExpenses;
     }
 
-    private AddExpenseTypeOption(optionType: ExpenseType): void{
+    private addExpenseTypeOption(optionType: ExpenseType): void{
         let optionHtmlString = this.htmlService.getExpenseTypeOptionTemplate(optionType);
         $("#" + IdService.expensePageSelectId).append(optionHtmlString);
         $("#" + IdService.newExpensePageSelectId).append(optionHtmlString);
@@ -205,6 +206,17 @@ class Utils {
         $("#" + IdService.settingsSaveTheChangesId).click(() => {
             this.showLoadMsg();
             this.settingsService.saveChanges(() => {
+                this.setPriceInformation();
+                this.hideLoadMsg();
+            });
+        });
+
+        $("#" + IdService.settingsResetApp).click(() => {
+            this.showLoadMsg();
+            this.databaseService.deleteAllExpenses(() => {
+                this.expenses = [];
+                this.displayedExpense = new Expense();
+                this.loadExpensesToView(this.expenses);
                 this.setPriceInformation();
                 this.hideLoadMsg();
             });

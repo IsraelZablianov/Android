@@ -53,7 +53,7 @@ var DatabaseService = (function () {
             });
         });
     };
-    DatabaseService.prototype.DeleteAllExpenses = function (calback) {
+    DatabaseService.prototype.deleteAllExpenses = function (calback) {
         this.expensesStore.clear(calback);
     };
     DatabaseService.prototype.setSettings = function (settings, calback) {

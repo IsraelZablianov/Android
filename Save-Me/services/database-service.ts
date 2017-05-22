@@ -71,7 +71,7 @@ class DatabaseService {
         })
     }
 
-    DeleteAllExpenses(calback?) {
+    deleteAllExpenses(calback?) {
         this.expensesStore.clear(calback);
     }
 

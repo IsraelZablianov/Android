@@ -37,6 +37,22 @@ class CommonService {
     }
 
     /*
+    * Returns greeting message according to current time.
+    * */
+    getGreetingMessage(): string {
+        var today = new Date();
+        var curHr = today.getHours();
+
+        if (curHr < 12) {
+            return "Good Morning";
+        } else if (curHr < 18) {
+            return "Good Afternoon";
+        } else {
+            return "Good evening";
+        }
+    }
+
+    /*
     * Those methods 'get..names' are here so in the future it will be easier to add multi languages support.
     * */
     getMonthNames(): string[] {

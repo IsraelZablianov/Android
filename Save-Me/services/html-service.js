@@ -53,6 +53,11 @@ var HtmlService = (function () {
         }
         $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     };
+    HtmlService.prototype.setGreetingMessage = function (userName) {
+        var msg = this.commonService.getGreetingMessage();
+        msg += userName ? " " + userName + " !" : "";
+        $("#" + IdService.greetingMessage).text(msg);
+    };
     /*
     * Set color Red for Alert (expenses are over the budget) or blue.
     * */

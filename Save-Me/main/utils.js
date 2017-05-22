@@ -66,7 +66,7 @@ var Utils = (function () {
         this.loadExpensesToView(filteredExpenses);
         var ebumValues = this.commonService.getEnumNumericKeys(ExpenseType);
         $.each(ebumValues, function (index, expenseType) {
-            _this.AddExpenseTypeOption(expenseType);
+            _this.addExpenseTypeOption(expenseType);
         });
         $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
     };
@@ -95,6 +95,7 @@ var Utils = (function () {
         var _this = this;
         this.showLoadMsg();
         this.settingsService.loadSettings(function () {
+            _this.htmlService.setGreetingMessage(_this.settingsService.getSettings().name);
             _this.hideLoadMsg();
             callback();
         });
@@ -133,7 +134,7 @@ var Utils = (function () {
         });
         return filterdExpenses;
     };
-    Utils.prototype.AddExpenseTypeOption = function (optionType) {
+    Utils.prototype.addExpenseTypeOption = function (optionType) {
         var optionHtmlString = this.htmlService.getExpenseTypeOptionTemplate(optionType);
         $("#" + IdService.expensePageSelectId).append(optionHtmlString);
         $("#" + IdService.newExpensePageSelectId).append(optionHtmlString);
@@ -181,6 +182,16 @@ var Utils = (function () {
         $("#" + IdService.settingsSaveTheChangesId).click(function () {
             _this.showLoadMsg();
             _this.settingsService.saveChanges(function () {
+                _this.setPriceInformation();
+                _this.hideLoadMsg();
+            });
+        });
+        $("#" + IdService.settingsResetApp).click(function () {
+            _this.showLoadMsg();
+            _this.databaseService.deleteAllExpenses(function () {
+                _this.expenses = [];
+                _this.displayedExpense = new Expense();
+                _this.loadExpensesToView(_this.expenses);
                 _this.setPriceInformation();
                 _this.hideLoadMsg();
             });

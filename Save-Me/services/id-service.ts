@@ -25,6 +25,7 @@ class IdService {
     static readonly hoverPriceExpensePriceId: string = "hover-price-expenses-price";
     static readonly hoverPriceBudgetPriceId: string = "hover-price-budget-price";
     static readonly hoverPriceReportTotalPriceId: string = "hover-price-report-total-price";
+    static readonly greetingMessage: string = "greeting-message";
 
     static readonly barLineAnimatedId: string = "bar-line-animated";
     static readonly pieChartId: string = "pie-chart";
@@ -38,4 +39,5 @@ class IdService {
     static readonly settingsNameId: string = "settings-name";
     static readonly settingsBudgetId: string = "settings-budget";
     static readonly settingsCurrencyId: string = "settings-select-currency";
+    static readonly settingsResetApp: string = "reset-app";
 }

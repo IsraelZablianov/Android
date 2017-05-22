@@ -15,22 +15,22 @@
 /* App main font */
 
 @font-face {
-    font-family: PlayfairDisplay;
-    src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf") format("opentype");
+    font-family: roboto;
+    src: url("../fonts/roboto/roboto-Regular.ttf") format('truetype');
 }
 
 @font-face {
-    font-family: PlayfairDisplay;
+    font-family: roboto;
     font-weight: bold;
-    src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("opentype");
+    src: url("../fonts/roboto/roboto-Bold.ttf") format('truetype');
 }
 
 body.ui-mobile-viewport.ui-overlay-a, body {
-    font-family: PlayfairDisplay;
+    font-family: roboto;
 }
 
 body.ui-mobile-viewport.ui-overlay-a, body, input, select, textarea, button, .ui-btn {
-    font-family: PlayfairDisplay;
+    font-family: roboto;
 }
 
 /* loading effects */
@@ -40,7 +40,7 @@ body.ui-mobile-viewport.ui-overlay-a, body, input, select, textarea, button, .ui
     background-color: #000;
     color: #fff;
     display: flex;
-    font-family: PlayfairDisplay;
+    font-family: roboto;
     font-size: xx-large;
     height: 100%;
     justify-content: center;
@@ -114,7 +114,7 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
 
 .ui-page .ui-header .date-filter {
     color: #fff;
-    font-family: PlayfairDisplay;
+    font-family: roboto;
     font-weight: 300;
     font-size: smaller;
     padding-bottom: 10px;
@@ -128,6 +128,13 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     position: relative;
 }
 
+.home-footer {
+    -webkit-background-clip: text;
+    font-size: larger;
+    margin: 15px auto;
+    text-align: center;
+    color: #fa8b00;
+}
 /* expense template */
 
 .expense-display {
@@ -201,7 +208,7 @@ div.add-btn{
     position: fixed;
     background-color: #fa8b00;
     z-index: 100;
-    top: 400px;
+    top: 465px;
     left: 80%;
     width: 60px;
     height: 60px;
@@ -213,6 +220,7 @@ div.add-btn{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
     font-size: xx-large;
+    font-family: -webkit-body;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     align-items: center;
     display: flex;
@@ -267,6 +275,9 @@ div#ui-datepicker-div {
     text-align: center;
 }
 
+.ui-page .ui-footer a.settings-reset-app {
+    color: #fa8b00;
+}
 /* statistics page */
 
 .jqplot-pie-series.jqplot-data-label {

@@ -24,6 +24,7 @@ var IdService = (function () {
     IdService.hoverPriceExpensePriceId = "hover-price-expenses-price";
     IdService.hoverPriceBudgetPriceId = "hover-price-budget-price";
     IdService.hoverPriceReportTotalPriceId = "hover-price-report-total-price";
+    IdService.greetingMessage = "greeting-message";
     IdService.barLineAnimatedId = "bar-line-animated";
     IdService.pieChartId = "pie-chart";
     IdService.pieChartTabId = "pie-chart-tab";
@@ -35,6 +36,7 @@ var IdService = (function () {
     IdService.settingsNameId = "settings-name";
     IdService.settingsBudgetId = "settings-budget";
     IdService.settingsCurrencyId = "settings-select-currency";
+    IdService.settingsResetApp = "reset-app";
     return IdService;
 }());
 //# sourceMappingURL=id-service.js.map

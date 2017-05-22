@@ -62,7 +62,7 @@
             data-position="fixed">
         <nav data-role="navbar">
             <ul>
-                <li data-ripple=""><a target="_blank" data-icon="mail" href="mailto:123hartk123@gmail.com?Subject=Save%20Me%20Contact%20Us">Contact Us</a></li>
+                <li data-ripple=""><div class="home-footer" id="greeting-message"></div></li>
             </ul>
         </nav>
     </footer>
@@ -213,7 +213,19 @@
             data-update-page-padding="true"
             class="h-and-i-footer">
             <h1>
-                H & I
+                <a class="settings-reset-app" href="#resetDialog" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="delete">H & I</a>
+                <div data-role="popup" id="resetDialog" data-overlay-theme="b" data-theme="a" data-dismissible="false" style="max-width:400px;">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <div data-role="header" data-theme="a">
+                        <h1>Secret Reset</h1>
+                    </div>
+                    <div role="main" class="ui-content">
+                        <h3 class="ui-title">Are you sure you want to delete all expenses (your settings remain untouched)?</h3>
+                        <p>This action cannot be undone.</p>
+                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+                        <a id="reset-app" href="#home-page" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="slidefade">Do It!</a>
+                    </div>
+                </div>
             </h1>
     </footer>
 
