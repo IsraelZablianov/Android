@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jQueryMobile" type="javaScript">
+    <CLASSES />
+    <DOCUMENTATION>
+      <root url="http://jquerymobile.com/test/docs/api/" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>

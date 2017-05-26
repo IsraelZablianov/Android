@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/services/graph-service.ts" line="211" mnemonic="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42f68db1-846d-4ffa-b4f9-2c6d013d619a" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#h1#0;n#footer#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#176#294#0" expanded="false" />
+                <element signature="e#331#487#0" expanded="false" />
+                <element signature="e#530#662#0" expanded="false" />
+                <element signature="n#!!block;n#getEnumNumericKeys#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#getMonthNames#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#getDayNames#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseTypeNames#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#getshortMonthNames#0;n#CommonService#0" expanded="false" />
+                <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/utils.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="103" column="87" lean-forward="false" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
+              <folding>
+                <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+                <element signature="e#1185#1357#0" expanded="false" />
+                <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+                <element signature="e#1496#1701#0" expanded="false" />
+                <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+                <element signature="e#1973#2294#0" expanded="false" />
+                <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+                <element signature="e#3052#3107#0" expanded="false" />
+                <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+                <element signature="e#4318#4377#0" expanded="false" />
+                <element signature="e#4495#4579#0" expanded="false" />
+                <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#addExpenseTypeOption#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+                <element signature="e#11444#11647#0" expanded="false" />
+                <element signature="e#11660#11863#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseDateFilterClicked#0;n#Utils#0" expanded="false" />
+                <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+                <marker date="1495484934294" expanded="true" signature="6003:6257" ph="..." />
+                <marker date="1495484934294" expanded="true" signature="6091:6223" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+              <folding>
+                <element signature="e#223#378#0" expanded="false" />
+                <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseHtmlTemplate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getExpenseTypeOptionTemplate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
+                <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+                <marker date="1495487623037" expanded="true" signature="1238:2644" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1303:2626" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1353:2605" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1404:2087" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1459:1567" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1621:1728" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1784:1893" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="1948:2056" ph="..." />
+                <marker date="1495487623037" expanded="true" signature="2141:2578" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="id-service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/id-service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getUpdatedExpense</find>
+      <find>Settings</find>
+      <find>asse</find>
+      <find>databaseVersion</find>
+      <find>menu</find>
+      <find>database</find>
+      <find>ILS</find>
+      <find>save</find>
+      <find>getExpenseHtmlTemlate</find>
+      <find>new-expense-page-datepicker</find>
+      <find>'</find>
+      <find>selectM</find>
+      <find>loader</find>
+      <find>loading</find>
+      <find>getChartData</find>
+      <find>BarLineConfig</find>
+      <find>headroom</find>
+      <find>reload</find>
+      <find>ref</find>
+      <find>are yo</find>
+      <find>exp</find>
+      <find>displayedExpense</find>
+      <find>loadToView</find>
+      <find>#fa8b00</find>
+      <find>sett</find>
+      <find>add-</find>
+      <find>contact</find>
+      <find>home</find>
+      <find>gree</find>
+      <find>play</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+      <replace>roboto</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/expense.ts" />
+        <option value="$PROJECT_DIR$/utils/expense-manager.ts" />
+        <option value="$PROJECT_DIR$/typings/globals/jquery-mobile/index.d.ts" />
+        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/utils/utils.js" />
+        <option value="$PROJECT_DIR$/jquery.mobile-1.4.5/demos/datepicker/index.html" />
+        <option value="$PROJECT_DIR$/utils/datepicker.ts" />
+        <option value="$PROJECT_DIR$/utils/display-selected-expense-service.ts" />
+        <option value="$PROJECT_DIR$/utils/datepicker-service.ts" />
+        <option value="$PROJECT_DIR$/bower_components/localforage/typings/localforage.d.ts" />
+        <option value="$PROJECT_DIR$/bower_components/localforage-getitems/dist/localforage-getitems.es6.js" />
+        <option value="$PROJECT_DIR$/main/main.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/typings/globals/es6-shim/index.d.ts" />
+        <option value="$PROJECT_DIR$/typings/globals/require/index.d.ts" />
+        <option value="$PROJECT_DIR$/utils/database-service.ts" />
+        <option value="$PROJECT_DIR$/utils/utils.ts" />
+        <option value="$PROJECT_DIR$/jquery-ui-touch-punch.js" />
+        <option value="$PROJECT_DIR$/utils/html-service.ts" />
+        <option value="$PROJECT_DIR$/utils/expense-service.ts" />
+        <option value="$PROJECT_DIR$/services/scroll-service.ts" />
+        <option value="$PROJECT_DIR$/headroom.js v0.9.3.ts" />
+        <option value="$PROJECT_DIR$/headroom.js v0.9.3.js" />
+        <option value="$PROJECT_DIR$/typings/globals/headroom/index.d.ts" />
+        <option value="$PROJECT_DIR$/assets/styles/animate.css" />
+        <option value="$PROJECT_DIR$/assets/styles/flip.css" />
+        <option value="$PROJECT_DIR$/assets/styles/slide.css" />
+        <option value="$PROJECT_DIR$/assets/styles/swing.css" />
+        <option value="$PROJECT_DIR$/assets/styles/bounce.css" />
+        <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/canvas-overlay.html" />
+        <option value="$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/barLineAnimated.html" />
+        <option value="$PROJECT_DIR$/services/settings-service.js" />
+        <option value="$PROJECT_DIR$/services/settings-service.ts" />
+        <option value="$PROJECT_DIR$/main/loader.ts" />
+        <option value="$PROJECT_DIR$/services/datepicker-service.ts" />
+        <option value="$PROJECT_DIR$/services/graph-service.ts" />
+        <option value="$PROJECT_DIR$/models/models.ts" />
+        <option value="$PROJECT_DIR$/services/expense-service.ts" />
+        <option value="$PROJECT_DIR$/main/utils.js" />
+        <option value="$PROJECT_DIR$/services/database-service.ts" />
+        <option value="$PROJECT_DIR$/services/common-service.ts" />
+        <option value="$PROJECT_DIR$/services/id-service.ts" />
+        <option value="$PROJECT_DIR$/main/utils.ts" />
+        <option value="$PROJECT_DIR$/services/html-service.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/styles/main.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1370" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Save-Me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="models&#9;FILE&#9;file://C:/Users/israel/Documents/GitHub/Android/Save-Me/models/models.ts&#10;model&#9;FILE&#9;file://C:/Users/israel/Documents/GitHub/Android/Save-Me/models/models.ts&#10;main&#9;FILE&#9;file://C:/Users/israel/Documents/GitHub/Android/Save-Me/assets/styles/main.css&#10;load&#9;FILE&#9;file://C:/Users/israel/Documents/GitHub/Android/Save-Me/main/loader.ts&#10;mainc&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/assets/styles/main.css&#10;mode&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/models/models.ts&#10;main.cs&#9;FILE&#9;file://C:/Users/israel/WebstormProjects/Save-Me/assets/styles/main.css" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\assets\fonts\roboto" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\assets\images" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\assets\fonts" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me" />
+      <recent name="C:\Users\israel\Documents\GitHub\Android\Save-Me\bower_components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\israel\WebstormProjects\Save-Me\bower_components\localforage-getitems\dist" />
+      <recent name="C:\Users\israel\WebstormProjects\Save-Me" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42f68db1-846d-4ffa-b4f9-2c6d013d619a" name="Default" comment="" />
+      <created>1492110285150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492110285150</updated>
+      <workItem from="1492110286679" duration="64009000" />
+      <workItem from="1492266000731" duration="2109000" />
+      <workItem from="1492273996528" duration="4552000" />
+      <workItem from="1492278713976" duration="55195000" />
+      <workItem from="1492436855949" duration="80906000" />
+      <workItem from="1493142014196" duration="6065000" />
+      <workItem from="1493976105456" duration="16167000" />
+      <workItem from="1494681493886" duration="9228000" />
+      <workItem from="1495105758695" duration="4101000" />
+      <workItem from="1495281863672" duration="12282000" />
+      <workItem from="1495478720280" duration="9086000" />
+      <workItem from="1495490307214" duration="240000" />
+      <workItem from="1495491109008" duration="1740000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="265680000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18094535" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23343849" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/services/graph-service.js" />
+        <option value="$PROJECT_DIR$/services/graph-service.js.map" />
+        <option value="$PROJECT_DIR$/services/common-service.js.map" />
+        <option value="$PROJECT_DIR$/services/common-service.js" />
+        <option value="$PROJECT_DIR$/services/settings-service.js.map" />
+        <option value="$PROJECT_DIR$/services/settings-service.js" />
+        <option value="$PROJECT_DIR$/services/id-service.js" />
+        <option value="$PROJECT_DIR$/services/id-service.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="49" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/id-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="103" column="87" lean-forward="false" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1185#1357#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1496#1701#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1973#2294#0" expanded="false" />
+            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#3052#3107#0" expanded="false" />
+            <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#4318#4377#0" expanded="false" />
+            <element signature="e#4495#4579#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseTypeOption#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="e#11444#11647#0" expanded="false" />
+            <element signature="e#11660#11863#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+            <marker date="1495484934294" expanded="true" signature="6003:6257" ph="..." />
+            <marker date="1495484934294" expanded="true" signature="6091:6223" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#176#294#0" expanded="false" />
+            <element signature="e#331#487#0" expanded="false" />
+            <element signature="e#530#662#0" expanded="false" />
+            <element signature="n#!!block;n#getEnumNumericKeys#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getDayNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getshortMonthNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+          <folding>
+            <element signature="e#223#378#0" expanded="false" />
+            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseHtmlTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeOptionTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+            <marker date="1495487623037" expanded="true" signature="1238:2644" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1303:2626" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1353:2605" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1404:2087" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1459:1567" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1621:1728" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1784:1893" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1948:2056" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="2141:2578" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="64" column="47" lean-forward="false" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="58" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#h1#0;n#footer#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/examples/test.html" />
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/src/System.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/systemjs/build/system.min.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/systemjs/dist/system-production.src.js" />
+    <entry file="file://$PROJECT_DIR$/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/jqueryui/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/require/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript-require/typings/node.d.ts" />
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-ui-touch-punch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1090" lean-forward="false" selection-start-line="10" selection-start-column="1090" selection-end-line="10" selection-end-column="1090" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/money0.gif" />
+    <entry file="file://$PROJECT_DIR$/services/scroll-service.ts" />
+    <entry file="file://$PROJECT_DIR$/headroom.js v0.9.3.js" />
+    <entry file="file://$PROJECT_DIR$/typings/globals/es6-shim/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/jquery-mobile/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/jquery/typings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/jqPlotOptions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/canvas-overlay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts___jb_tmp___" />
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/barLineAnimated.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/globals/jqueryui/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1041" column="4" lean-forward="false" selection-start-line="1041" selection-start-column="4" selection-end-line="1041" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.jqplot.1.0.9.d96a669/examples/pieChartsEnhancedLegend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/common-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/settings-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/loader.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/settings-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/datepicker-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/graph-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1247">
+          <caret line="107" column="72" lean-forward="true" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#!!block;n#replotBarLineAnimatedMonthly#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#replotPieChartsEnhancedLegend#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getChartDataMap#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeSeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthlySeries#0;n#GraphService#0" expanded="false" />
+            <element signature="n#!!block;n#createPieChart#0;n#GraphService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/expense-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/expense-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/database-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/id-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="103" column="87" lean-forward="false" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!block;n#load#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1185#1357#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1496#1701#0" expanded="false" />
+            <element signature="n#!!block;n#updateExpense#0;n#Utils#0" expanded="false" />
+            <element signature="e#1973#2294#0" expanded="false" />
+            <element signature="n#!!block;n#loadToView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#loadExpensesToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#3052#3107#0" expanded="false" />
+            <element signature="n#!!block;n#loadComponents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseToView#0;n#Utils#0" expanded="false" />
+            <element signature="e#4318#4377#0" expanded="false" />
+            <element signature="e#4495#4579#0" expanded="false" />
+            <element signature="n#!!block;n#removeExpenseFromView#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceInformation#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#filterExpenses#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#addExpenseTypeOption#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#showLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#hideLoadMsg#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerExpensesEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerToSettingsEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerDateFilterEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerStatisticsPageEvents#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#registerPageLoadEvent#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleArrowDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="e#11444#11647#0" expanded="false" />
+            <element signature="e#11660#11863#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseListChange#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseDateFilterClicked#0;n#Utils#0" expanded="false" />
+            <element signature="n#!!block;n#handleExpenseSelected#0;n#Utils#0" expanded="false" />
+            <marker date="1495484934294" expanded="true" signature="6003:6257" ph="..." />
+            <marker date="1495484934294" expanded="true" signature="6091:6223" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/common-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#176#294#0" expanded="false" />
+            <element signature="e#331#487#0" expanded="false" />
+            <element signature="e#530#662#0" expanded="false" />
+            <element signature="n#!!block;n#getEnumNumericKeys#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonthNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getDayNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#getshortMonthNames#0;n#CommonService#0" expanded="false" />
+            <element signature="n#!!block;n#isIndex#0;n#CommonService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/html-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="89" column="45" lean-forward="false" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+          <folding>
+            <element signature="e#223#378#0" expanded="false" />
+            <element signature="n#!!block;n#sortUL#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseHtmlTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getExpenseTypeOptionTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYearAndMonthDisplay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#setPriceHoverReportTemplate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#manageHoverPriceClasses#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDate#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getMonth#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getYear#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#getDay#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#dateSort#0;n#HtmlService#0" expanded="false" />
+            <element signature="n#!!block;n#priceSort#0;n#HtmlService#0" expanded="false" />
+            <marker date="1495487623037" expanded="true" signature="1238:2644" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1303:2626" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1353:2605" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1404:2087" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1459:1567" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1621:1728" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1784:1893" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="1948:2056" ph="..." />
+            <marker date="1495487623037" expanded="true" signature="2141:2578" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#h1#0;n#footer#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

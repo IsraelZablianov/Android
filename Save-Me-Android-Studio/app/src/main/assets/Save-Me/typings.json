@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "headroom": "registry:dt/headroom#0.7.0+20161119044246",
+    "jquery": "registry:dt/jquery#1.10.0+20170310222111",
+    "jqueryui": "registry:dt/jqueryui#1.11.0+20161214061125"
+  }
+}
