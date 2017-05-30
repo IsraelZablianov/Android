@@ -121,7 +121,7 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     text-align: center;
     text-shadow: 1px 1px 1px black;
     position: relative;
-    right: 10px;
+    right: 3px;
 }
 
 .ui-page .ui-header .date-filter a {
@@ -332,7 +332,6 @@ div#ui-datepicker-div {
     border: none;
     border-radius: 2px;
     top: 6px;
-    display: flex;
 }
 
 .ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
