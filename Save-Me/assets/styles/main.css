@@ -120,11 +120,15 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     padding-bottom: 10px;
     text-align: center;
     text-shadow: 1px 1px 1px black;
+    position: relative;
+    right: 10px;
 }
 
 .ui-page .ui-header .date-filter a {
     background-color: transparent !important;
     bottom: -2px;
+    margin-left: -3px;
+    margin-right: -3px;
     position: relative;
 }
 
@@ -277,7 +281,6 @@ div#ui-datepicker-div {
 
 .ui-page .ui-footer a.settings-reset-app {
     color: #fc9a51;
-    font-size: x-large;
     text-decoration: none;
 }
 /* statistics page */
@@ -328,6 +331,8 @@ div#ui-datepicker-div {
     color: #fff;
     border: none;
     border-radius: 2px;
+    top: 6px;
+    display: flex;
 }
 
 .ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
@@ -336,6 +341,7 @@ div#ui-datepicker-div {
 
 .ui-page .ui-footer.h-and-i-footer .ui-title {
     color: #fc9a51 !important;
+    font-size: large;
 }
 
 /* google translate service */
@@ -373,7 +379,7 @@ div#ui-datepicker-div {
 }
 
 iframe.goog-te-banner-frame {
-    top: 85% !important;
+    top: 86% !important;
 }
 
 body {
