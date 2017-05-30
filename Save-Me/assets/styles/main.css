@@ -3,7 +3,7 @@
 .app-colors-specification{
     color: #fc9a51;  /*      Orange    */
     color: #FAD40B;  /*   Light Orange */
-    color: #2ebaee;  /*      Blue      */
+    color: #3388cc;  /*      Blue      */
     color: #3388cc;  /*    Dark Blue   */
     color: #FFF;     /*      White     */
     color: #ED4046;  /*      Red       */
@@ -305,7 +305,7 @@ div#ui-datepicker-div {
 
 .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border: none;
-    background: #2ebaee;
+    background: #3388cc;
     font-family: initial;
     letter-spacing: 1px;
     color: #fff;
@@ -314,7 +314,7 @@ div#ui-datepicker-div {
 /* header and footer */
 
 .ui-page .ui-header, .ui-page .ui-footer, .ui-page .ui-footer a {
-    background: #2ebaee;
+    background: #3388cc;
 }
 
 .ui-page .ui-header a {
@@ -331,7 +331,7 @@ div#ui-datepicker-div {
 }
 
 .ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
-    background-color: #2ebaee;
+    background-color: #3388cc;
 }
 
 .ui-page .ui-footer.h-and-i-footer .ui-title {
