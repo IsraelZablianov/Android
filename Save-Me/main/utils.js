@@ -183,6 +183,7 @@ var Utils = (function () {
             _this.showLoadMsg();
             _this.settingsService.saveChanges(function () {
                 _this.setPriceInformation();
+                _this.htmlService.setGreetingMessage(_this.settingsService.getSettings().name);
                 _this.hideLoadMsg();
             });
         });

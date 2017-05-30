@@ -107,6 +107,7 @@ class Utils {
         });
     }
 
+
     private addExpenseToView(expense: Expense) {
         let expenseStringHtml = this.htmlService.getExpenseHtmlTemplate(expense, this.settingsService.getSettings().currency);
         let expenseElementHtml = $(expenseStringHtml);
@@ -207,6 +208,7 @@ class Utils {
             this.showLoadMsg();
             this.settingsService.saveChanges(() => {
                 this.setPriceInformation();
+                this.htmlService.setGreetingMessage(this.settingsService.getSettings().name);
                 this.hideLoadMsg();
             });
         });
