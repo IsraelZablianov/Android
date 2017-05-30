@@ -1,10 +1,10 @@
 /* App Colors (instead of using SASS Or Less) */
 
 .app-colors-specification{
-    color: #fa8b00;  /*      Orange    */
+    color: #fc9a51;  /*      Orange    */
     color: #FAD40B;  /*   Light Orange */
     color: #3388cc;  /*      Blue      */
-    color: #0B09CC;  /*    Dark Blue   */
+    color: #3388cc;  /*    Dark Blue   */
     color: #FFF;     /*      White     */
     color: #ED4046;  /*      Red       */
     color: #81B65A;  /*      Green     */
@@ -120,11 +120,15 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     padding-bottom: 10px;
     text-align: center;
     text-shadow: 1px 1px 1px black;
+    position: relative;
+    right: 10px;
 }
 
 .ui-page .ui-header .date-filter a {
     background-color: transparent !important;
     bottom: -2px;
+    margin-left: -3px;
+    margin-right: -3px;
     position: relative;
 }
 
@@ -133,7 +137,7 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
     font-size: larger;
     margin: 15px auto;
     text-align: center;
-    color: #fa8b00;
+    color: #fc9a51;
 }
 /* expense template */
 
@@ -206,7 +210,7 @@ header.ui-header.ui-bar-inherit.ui-header-fixed.slidedown .hover-price-report-co
 
 div.add-btn{
     position: fixed;
-    background-color: #fa8b00;
+    background-color: #fc9a51;
     z-index: 100;
     top: 465px;
     left: 80%;
@@ -220,7 +224,7 @@ div.add-btn{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
     font-size: xx-large;
-    font-family: -webkit-body;
+    font-family: initial;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     align-items: center;
     display: flex;
@@ -276,7 +280,8 @@ div#ui-datepicker-div {
 }
 
 .ui-page .ui-footer a.settings-reset-app {
-    color: #fa8b00;
+    color: #fc9a51;
+    text-decoration: none;
 }
 /* statistics page */
 
@@ -316,7 +321,7 @@ div#ui-datepicker-div {
 }
 
 .ui-page .ui-header a {
-    background: #fa8b00 !important;
+    background: #fc9a51 !important;
     text-shadow: 0 1px 0 #f3f3f3;
 }
 
@@ -324,6 +329,10 @@ div#ui-datepicker-div {
     font-weight: normal;
     letter-spacing: 1px;
     color: #fff;
+    border: none;
+    border-radius: 2px;
+    top: 6px;
+    display: flex;
 }
 
 .ui-footer .ui-link.ui-btn:visited, .ui-footer .ui-link.ui-btn {
@@ -331,5 +340,49 @@ div#ui-datepicker-div {
 }
 
 .ui-page .ui-footer.h-and-i-footer .ui-title {
-    color: #fa8b00 !important;
+    color: #fc9a51 !important;
+    font-size: large;
+}
+
+/* google translate service */
+
+.goog-tooltip {
+    display: none !important;
+}
+
+.goog-te-gadget-simple {
+    margin-right: 32%;
+}
+
+.language-place {
+    position: relative;
+    top: 15px;
+}
+
+.goog-te-menu2 {
+    width: 200px !important;
+    height: 200px !important;
+    overflow: auto !important;
+}
+.goog-te-menu2 table,
+.goog-te-menu2 table tbody,
+.goog-te-menu2 table tbody tr {
+    width: 90% !important;
+    height: 90% !important;
+}
+.goog-te-menu2 table tbody tr td {
+    width: 90% !important;
+    display: block !important;
+}
+.goog-te-menu2 table tbody tr td .goog-te-menu2-colpad {
+    visibility: hidden !important;
+}
+
+iframe.goog-te-banner-frame {
+    top: 86% !important;
+}
+
+body {
+    position: static !important;
+    top: 0px !important;
 }

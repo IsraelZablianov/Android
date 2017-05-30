@@ -25,7 +25,7 @@
 <!-- home page -->
 <div id="home-page" data-role="page">
 
-    <header data-role="header" data-position="fixed">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="">
         <h1>
             <div class="date-filter">
                 <a class="round" data-ripple="#fff" id="data-filter-left"><img src="assets/images/arrow-left.png"></a>
@@ -34,7 +34,7 @@
             </div>
         </h1>
         <a href="#settings-page" id="settings-page-id" data-icon="gear" data-transition="pop">Settings</a>
-        <a href="#statistics-page" id="statistics" data-icon="grid">Statisics</a>
+        <a href="#statistics-page" id="statistics" data-icon="grid">Statistics</a>
         <div data-ripple="#3388cc" class="hover-price-report-container header header--fixed hide-from-print" id="hover-price-report-container" role="banner">
             <div class="hover-price-report-col">
                 Budget
@@ -58,11 +58,11 @@
 
     <a href="#new-expense-page"><div data-ripple="#fff" id="add-new-expense" class="add-btn"><span>+</span></div></a>
 
-    <footer data-role="footer"
-            data-position="fixed">
+    <footer data-role="footer" data-hide-during-focus=""
+            data-position="fixed" data-tap-toggle="false">
         <nav data-role="navbar">
             <ul>
-                <li data-ripple=""><div class="home-footer" id="greeting-message"></div></li>
+                <li><div class="home-footer" id="greeting-message"></div></li>
             </ul>
         </nav>
     </footer>
@@ -79,16 +79,16 @@
         <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
     </header>
 
-    <div class="expense-page-headers">Date:</div>
+    <div class="expense-page-headers">Date</div>
     <input type="text" id="expense-page-datepicker" class="date-of-expense" placeholder="Date">
 
-    <div class="expense-page-headers">Price:</div>
+    <div class="expense-page-headers">Price</div>
     <input class="price" type="number" name="expense-page-price" id="expense-page-price" placeholder="price"/>
 
-    <div class="expense-page-headers">Category:</div>
+    <div class="expense-page-headers">Category</div>
     <select name="expense-page-select-type" id="expense-page-select-type"></select>
 
-    <div class="expense-page-headers expense-page-comments-title">Comments:</div>
+    <div class="expense-page-headers expense-page-comments-title">Comments</div>
     <textarea name="textarea" id="expense-page-comments" placeholder="Add your comments here..."></textarea>
 
     <footer data-role="footer"
@@ -113,7 +113,7 @@
                             <a id="expense-page-delete-expense" href="#home-page" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="slidefade  ">Delete</a>
                         </div>
                     </div>
-                <li id="expense-page-save-changes"><a href="#home-page" data-icon="check">Save</a></li>
+                <li id="expense-page-save-changes"><a href="#home-page" data-icon="check">Save Changes</a></li>
             </ul>
         </nav>
     </footer>
@@ -126,20 +126,20 @@
 <div id="new-expense-page" data-role="page">
 
     <header data-role="header" data-position="fixed">
-        <h1>Add New Expense</h1>
+        <h1>Add Expense</h1>
         <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
     </header>
 
-    <div class="expense-page-headers">Date:</div>
+    <div class="expense-page-headers">Date</div>
     <input type="text" id="new-expense-page-datepicker" class="date-of-expense" placeholder="Add the date">
 
-    <div class="expense-page-headers">Price:</div>
+    <div class="expense-page-headers">Price</div>
     <input class="price" type="number" name="new-expense-page-price" id="new-expense-page-price" placeholder="Add The Price"/>
 
-    <div class="expense-page-headers">Category:</div>
+    <div class="expense-page-headers">Category</div>
     <select name="new-expense-page-select-type" id="new-expense-page-select-type"></select>
 
-    <div class="expense-page-headers expense-page-comments-title">Comments:</div>
+    <div class="expense-page-headers expense-page-comments-title">Comments</div>
     <textarea name="textarea" id="new-expense-page-comments" placeholder="Add your comments here..."></textarea>
 
     <footer data-role="footer"
@@ -151,7 +151,7 @@
         <nav data-role="navbar">
             <ul>
                 <li><a data-icon="back" href="#home-page">Cancel</a></li>
-                <li id="new-expense-page-save-changes"><a href="#home-page" data-icon="check">Save</a></li>
+                <li id="new-expense-page-save-changes"><a href="#home-page" data-icon="check">Save Changes</a></li>
             </ul>
         </nav>
     </footer>
@@ -163,7 +163,7 @@
 <!--settings page-->
 <div id="settings-page" data-role="page">
 
-    <header data-role="header" data-position="fixed">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="">
         <h1>Settings</h1>
         <a href="#home-page" data-icon="back" data-transition="slidefade">Back</a>
         <a id="settings-save" data-icon="check">Save</a>
@@ -175,7 +175,7 @@
         <table>
             <tr>
                 <td>
-                    <label for="settings-name">Name:</label>
+                    <label for="settings-name">Name</label>
                 </td>
                 <td>
                     <input type="text" name="settings-name" id="settings-name"/>
@@ -183,7 +183,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="settings-budget">Budget:</label>
+                    <label for="settings-budget">Budget</label>
                 </td>
                 <td>
                     <input type="number" name="settings-budget" id="settings-budget"/>
@@ -191,13 +191,21 @@
             </tr>
             <tr>
                 <td>
-                    <label for="settings-select-currency">Currency:</label>
+                    <label for="settings-select-currency">Currency</label>
                 </td>
                 <td>
                     <select name="settings-select-currency" id="settings-select-currency">
                         <option value="$">Dolar - $</option>
                         <option value="₪">ILS - ₪</option>
                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="language-place">
+                    <label for="google_translate_element">Language</label>
+                </td>
+                <td class="language-place">
+                    <div name="google-translate-element" id="google_translate_element"></div>
                 </td>
             </tr>
         </table>
@@ -207,10 +215,7 @@
 
     <footer data-role="footer"
             data-position="fixed"
-            data-position="fixed"
-            data-tap-toggle="true"
-            data-visible-on-page-show="true"
-            data-update-page-padding="true"
+            data-tap-toggle="false" data-hide-during-focus=""
             class="h-and-i-footer">
             <h1>
                 <a class="settings-reset-app" href="#resetDialog" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="delete">H & I</a>
@@ -264,9 +269,6 @@
 
 </div>
 
-
-
-<!-- External Links -->
 <script src="jquery.js"></script>
 <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
 <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
@@ -294,6 +296,21 @@
 <script src="services/graph-service.js"></script>
 <script src="services/common-service.js"></script>
 <script src="services/settings-service.js"></script>
+
+
+<!--google translate service-->
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+    $('body').click('#google_translate_element', function () {
+        if (($goog = $('.goog-te-menu-frame').contents().find('body')).length) {
+            var stylesHtml = '<link rel="stylesheet" href="assets/styles/main.css">';
+            $goog.prepend(stylesHtml);
+        }
+    });
+</script>
 
 </body>
 </html>
