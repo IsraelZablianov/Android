@@ -5,10 +5,16 @@ import android.os.Bundle;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-
+/**
+ * The main activity of the app that creates the webView.
+ * */
 public class MainActivity extends AppCompatActivity {
     private WebView mainWebView;
 
+    /**
+     * onCreate will initialize a webView object that will take the place
+     * of all views of the application.
+    * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(mainWebView);
     }
 
+    /**
+    * Overriding the default behavior of back button.
+     * When pressing back, go the the previos URL.
+    * */
     @Override
     public void onBackPressed() {
         if (mainWebView.canGoBack()) {
