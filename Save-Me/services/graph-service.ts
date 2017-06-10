@@ -24,6 +24,9 @@ class GraphService {
         this.barLinePlot.replot({resetAxes:true});
     }
 
+    /*
+     * The replot method, builds the graph again and destroys the old one.
+     * */
     replotPieChartsEnhancedLegend(id: string, expenses: Expense[]): void {
         if(this.pieChartPlot){
             this.pieChartPlot.destroy();

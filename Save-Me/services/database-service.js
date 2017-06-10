@@ -28,21 +28,21 @@ var DatabaseService = (function () {
     *
     * The callback executed with one argument that it is the result of the action.
     * */
-    DatabaseService.prototype.addExpenseToDB = function (expense, calback) {
+    DatabaseService.prototype.addExpenseToDB = function (expense, callback) {
         expense.id = this.createId();
-        this.expensesStore.setItem(expense.id, expense, calback);
+        this.expensesStore.setItem(expense.id, expense, callback);
     };
-    DatabaseService.prototype.removeExpenseFromDB = function (expense, calback) {
-        this.expensesStore.removeItem(expense.id, calback);
+    DatabaseService.prototype.removeExpenseFromDB = function (expense, callback) {
+        this.expensesStore.removeItem(expense.id, callback);
     };
-    DatabaseService.prototype.updateExpenseToDB = function (expense, calback) {
+    DatabaseService.prototype.updateExpenseToDB = function (expense, callback) {
         var _this = this;
         this.expensesStore.removeItem(expense.id, function () {
-            _this.expensesStore.setItem(expense.id, expense, calback);
+            _this.expensesStore.setItem(expense.id, expense, callback);
         });
     };
     /*
-    * An array of items will be passed to the callback.
+    * An array of expenses will be passed to the callback.
     * */
     DatabaseService.prototype.getAllExpenses = function (callback) {
         var _this = this;
@@ -53,18 +53,30 @@ var DatabaseService = (function () {
             });
         });
     };
-    DatabaseService.prototype.deleteAllExpenses = function (calback) {
-        this.expensesStore.clear(calback);
+    /*
+     * delete all expenses from DB.
+     * */
+    DatabaseService.prototype.deleteAllExpenses = function (callback) {
+        this.expensesStore.clear(callback);
     };
-    DatabaseService.prototype.setSettings = function (settings, calback) {
+    /*
+    * Set settings in DB.
+    * */
+    DatabaseService.prototype.setSettings = function (settings, callback) {
         settings.id = this.settingsId;
-        this.settingsStore.setItem(settings.id, settings, calback);
+        this.settingsStore.setItem(settings.id, settings, callback);
     };
-    DatabaseService.prototype.getSettings = function (calback) {
+    /*
+     * get object settings from DB.
+     * */
+    DatabaseService.prototype.getSettings = function (callback) {
         this.settingsStore.getItem(this.settingsId).then(function (settings) {
-            calback(settings);
+            callback(settings);
         });
     };
+    /*
+    * Creates unique id for expenses
+    * */
     DatabaseService.prototype.createId = function () {
         return new Date().getTime() + (Math.random() * 100).toString();
     };

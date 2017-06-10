@@ -1,3 +1,8 @@
+/*
+* Utils is the main class that manages the application.
+* All the business logic, event registration and more, are been handled here.
+* */
+
 class Utils {
     private expenses: Expense[] = [];
     private displayedExpense: Expense;
@@ -12,21 +17,26 @@ class Utils {
     private commonService: CommonService = new CommonService();
     private settingsService: SettingsService = new SettingsService();
 
-    /* The main method to activate the app*/
-    load() {
+    /*
+    * The main method to activate the app
+    * */
+    load(): void {
         this.registerToEvents();
         this.loadSettings(()=> {
             this.showLoadMsg();
             this.databaseService.getAllExpenses((expenses)=>{
                 this.expenses = expenses;
                 this.loadComponents();
-                this.loadToView();
+                this.loadAllToView();
                 this.hideLoadMsg();
             });
         });
     }
 
-    addExpense(expense: Expense) {
+    /*
+    * Add expense to everywhere (Database, UI, innerCollections...)
+    * */
+    addExpense(expense: Expense): void {
         this.showLoadMsg();
         this.databaseService.addExpenseToDB(expense, (event)=>{
             this.expenses.push(expense);
@@ -36,7 +46,10 @@ class Utils {
         });
     }
 
-    removeExpense(expense: Expense) {
+    /*
+    * Remove expense from everywhere (Database, UI, innerCollections...)
+    * */
+    removeExpense(expense: Expense): void {
         this.showLoadMsg();
         this.databaseService.removeExpenseFromDB(expense, ()=> {
             this.expenses.splice(this.expenses.indexOf(expense), 1);
@@ -46,7 +59,10 @@ class Utils {
         });
     }
 
-    updateExpense(oldExpense: Expense) {
+    /*
+    * Update expense everywhere (Database, UI, innerCollections...)
+    * */
+    updateExpense(oldExpense: Expense): void {
         this.showLoadMsg();
         let updatedExpense = this.expenseService.getExpenseFromView();
         updatedExpense.id = this.displayedExpense.id;
@@ -61,8 +77,10 @@ class Utils {
         });
     }
 
-    /* Loads all the necessary elements to html */
-    private loadToView(): void {
+    /*
+    * Loads all the necessary elements to html
+    * */
+    private loadAllToView(): void {
         let filteredExpenses = this.filterExpenses(this.dateFilter);
         this.loadExpensesToView(filteredExpenses);
 
@@ -74,7 +92,9 @@ class Utils {
         $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
     }
 
-    /* Loads the expenses that passed as param to the list of expenses */
+    /*
+    * Loads the expenses that passed as param to the list of expenses
+    * */
     private loadExpensesToView(expenses: Expense[]): void {
         $("#" + IdService.expenseListId + " > li").remove();
         $.each(expenses, (index, expense)=> {
@@ -84,8 +104,10 @@ class Utils {
         this.handleExpenseListChange();
     }
 
-    /* Load JQuery components */
-    private loadComponents() {
+    /*
+    * Load JQuery components
+    * */
+    private loadComponents(): void {
         this.datepickerService.loadDatepicker(IdService.expensePageDatepickerId);
         this.datepickerService.loadDatepicker(IdService.newExpensePageDatepickerId);
         $("#" + IdService.expensePageSelectId).selectmenu();
@@ -97,8 +119,10 @@ class Utils {
         // $("#" + IdService.addNewExpenseId).draggable();
     }
 
-    /* Load user settings*/
-    private loadSettings(callback) {
+    /*
+    * Load user settings
+    * */
+    private loadSettings(callback): void {
         this.showLoadMsg();
         this.settingsService.loadSettings(()=>{
             this.htmlService.setGreetingMessage(this.settingsService.getSettings().name);
@@ -107,8 +131,10 @@ class Utils {
         });
     }
 
-
-    private addExpenseToView(expense: Expense) {
+    /*
+    * Add single expense to view
+    * */
+    private addExpenseToView(expense: Expense): void {
         let expenseStringHtml = this.htmlService.getExpenseHtmlTemplate(expense, this.settingsService.getSettings().currency);
         let expenseElementHtml = $(expenseStringHtml);
         expenseElementHtml.click(() => {
@@ -120,12 +146,18 @@ class Utils {
         }
     }
 
-    private removeExpenseFromView(expense: Expense) {
+    /*
+    * Remove single expense from view
+    * */
+    private removeExpenseFromView(expense: Expense): void {
         let elem = document.getElementById(expense.id);
         elem.parentNode.removeChild(elem);
     }
 
-    private setPriceInformation() {
+    /*
+    * Set price information according to current budget and total expenses
+    * */
+    private setPriceInformation(): void {
         let totalExpensesPrice: number = 0;
         let filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
         filterdExpenses.forEach((expense) => {
@@ -135,6 +167,9 @@ class Utils {
         this.htmlService.setPriceHoverReportTemplate(budget, totalExpensesPrice);
     }
 
+    /*
+    * filter expenses according to given month and year
+    * */
     private filterExpenses(date: Date): Expense[]{
         let filterdExpenses: Expense[] = [];
 
@@ -147,13 +182,16 @@ class Utils {
         return filterdExpenses;
     }
 
-    private addExpenseTypeOption(optionType: ExpenseType): void{
+    /*
+    * Adding option for expense type to 'select' html element
+    * */
+    private addExpenseTypeOption(optionType: ExpenseType): void {
         let optionHtmlString = this.htmlService.getExpenseTypeOptionTemplate(optionType);
         $("#" + IdService.expensePageSelectId).append(optionHtmlString);
         $("#" + IdService.newExpensePageSelectId).append(optionHtmlString);
     }
 
-    private showLoadMsg() {
+    private showLoadMsg(): void {
         $.mobile.loading("show", {
             textVisible: true,
             theme: "z",
@@ -165,13 +203,15 @@ class Utils {
         });
     }
 
-    private hideLoadMsg() {
+    private hideLoadMsg(): void {
         $.mobile.loading("hide");
     }
 
-    /* Register to events */
 
-    private registerToEvents() {
+    /*
+    * Register to all system events
+    * */
+    private registerToEvents(): void {
         this.registerPageLoadEvent();
         this.registerDateFilterEvents();
         this.registerStatisticsPageEvents();
@@ -179,7 +219,10 @@ class Utils {
         this.registerExpensesEvents();
     }
 
-    private registerExpensesEvents() {
+    /*
+    * Register to events related to some expense (Add, Remove, Update..)
+    * */
+    private registerExpensesEvents(): void {
         $("#" + IdService.expensePageUpdateTheChangesId).click(() => {
             this.updateExpense(this.displayedExpense);
         });
@@ -199,7 +242,10 @@ class Utils {
         });
     }
 
-    private registerToSettingsEvents() {
+    /*
+    * Register to events related to change of settings
+    * */
+    private registerToSettingsEvents(): void {
         $("#" + IdService.settingsPageBtnId).click(() => {
             this.settingsService.setSettingsToView();
         });
@@ -225,7 +271,10 @@ class Utils {
         });
     }
 
-    private registerDateFilterEvents() {
+    /*
+    * Register to date filter events (Arrow filters)
+    * */
+    private registerDateFilterEvents(): void {
         let isLeft = true;
         $("#" + IdService.dateFilterLeftArrowId).click(() => {
             this.handleArrowDateFilterClicked(isLeft);
@@ -240,11 +289,15 @@ class Utils {
         });
     }
 
-    private registerStatisticsPageEvents() {
+    /*
+    * Register to statistics page events
+    * */
+    private registerStatisticsPageEvents(): void {
         let selector = "#" + IdService.statisticsPageId;
         let tabSelected;
         let expensesToPieChart;
 
+        // Create charts only if page is shown
         $(document).on("pageshow", selector, ()=> {
             if (tabSelected === IdService.pieChartTabId) {
                 expensesToPieChart = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
@@ -253,17 +306,6 @@ class Utils {
             else {
                 let currency = this.settingsService.getSettings().currency;
                 this.graphService.replotBarLineAnimatedMonthly(IdService.barLineAnimatedId, this.expenses, currency);
-            }
-        });
-
-        $(window).on("orientationchange", (event) => {
-            if (tabSelected === IdService.barLineAnimatedTabId) {
-                let currency = this.settingsService.getSettings().currency;
-                this.graphService.replotBarLineAnimatedMonthly(IdService.barLineAnimatedId, this.expenses, currency);
-            }
-            else if (tabSelected === IdService.pieChartTabId) {
-                expensesToPieChart = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
-                this.graphService.replotPieChartsEnhancedLegend(IdService.pieChartId, expensesToPieChart);
             }
         });
 
@@ -280,7 +322,10 @@ class Utils {
         });
     }
 
-    private registerPageLoadEvent() {
+    /*
+    * Register events related to page loading and initializing
+    * */
+    private registerPageLoadEvent(): void {
         $(document).on("pagebeforecreate", "[data-role='page']", () => {
             var interval = setInterval(() => {
                 this.showLoadMsg();

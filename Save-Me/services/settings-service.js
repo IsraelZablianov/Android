@@ -1,3 +1,6 @@
+/*
+* This class service is responsible for managing the user settings.
+* */
 var SettingsService = (function () {
     function SettingsService() {
         this.databaseService = new DatabaseService();
@@ -40,9 +43,15 @@ var SettingsService = (function () {
         this.settings = this.getSettingsFromView();
         this.databaseService.setSettings(this.settings, calback);
     };
+    /*
+    * Returns current settingsOr Undefined
+    * */
     SettingsService.prototype.getSettings = function () {
         return this.settings;
     };
+    /*
+    * Gets tue user selected settings from settings page
+    * */
     SettingsService.prototype.getSettingsFromView = function () {
         this.settings.budget = $('#' + IdService.settingsBudgetId).val() || 0;
         this.settings.currency = $('#' + IdService.settingsCurrencyId + " option:selected").val();

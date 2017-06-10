@@ -1,3 +1,7 @@
+/*
+* Utils is the main class that manages the application.
+* All the business logic, event registration and more, are been handled here.
+* */
 var Utils = (function () {
     function Utils() {
         this.expenses = [];
@@ -11,7 +15,9 @@ var Utils = (function () {
         this.commonService = new CommonService();
         this.settingsService = new SettingsService();
     }
-    /* The main method to activate the app*/
+    /*
+    * The main method to activate the app
+    * */
     Utils.prototype.load = function () {
         var _this = this;
         this.registerToEvents();
@@ -20,11 +26,14 @@ var Utils = (function () {
             _this.databaseService.getAllExpenses(function (expenses) {
                 _this.expenses = expenses;
                 _this.loadComponents();
-                _this.loadToView();
+                _this.loadAllToView();
                 _this.hideLoadMsg();
             });
         });
     };
+    /*
+    * Add expense to everywhere (Database, UI, innerCollections...)
+    * */
     Utils.prototype.addExpense = function (expense) {
         var _this = this;
         this.showLoadMsg();
@@ -35,6 +44,9 @@ var Utils = (function () {
             _this.hideLoadMsg();
         });
     };
+    /*
+    * Remove expense from everywhere (Database, UI, innerCollections...)
+    * */
     Utils.prototype.removeExpense = function (expense) {
         var _this = this;
         this.showLoadMsg();
@@ -45,6 +57,9 @@ var Utils = (function () {
             _this.hideLoadMsg();
         });
     };
+    /*
+    * Update expense everywhere (Database, UI, innerCollections...)
+    * */
     Utils.prototype.updateExpense = function (oldExpense) {
         var _this = this;
         this.showLoadMsg();
@@ -59,8 +74,10 @@ var Utils = (function () {
             _this.hideLoadMsg();
         });
     };
-    /* Loads all the necessary elements to html */
-    Utils.prototype.loadToView = function () {
+    /*
+    * Loads all the necessary elements to html
+    * */
+    Utils.prototype.loadAllToView = function () {
         var _this = this;
         var filteredExpenses = this.filterExpenses(this.dateFilter);
         this.loadExpensesToView(filteredExpenses);
@@ -70,7 +87,9 @@ var Utils = (function () {
         });
         $("#" + IdService.dateFilterId).text(this.htmlService.getYearAndMonthDisplay(this.dateFilter));
     };
-    /* Loads the expenses that passed as param to the list of expenses */
+    /*
+    * Loads the expenses that passed as param to the list of expenses
+    * */
     Utils.prototype.loadExpensesToView = function (expenses) {
         var _this = this;
         $("#" + IdService.expenseListId + " > li").remove();
@@ -79,7 +98,9 @@ var Utils = (function () {
         });
         this.handleExpenseListChange();
     };
-    /* Load JQuery components */
+    /*
+    * Load JQuery components
+    * */
     Utils.prototype.loadComponents = function () {
         this.datepickerService.loadDatepicker(IdService.expensePageDatepickerId);
         this.datepickerService.loadDatepicker(IdService.newExpensePageDatepickerId);
@@ -90,7 +111,9 @@ var Utils = (function () {
         /* Android webWiew Can't handle that */
         // $("#" + IdService.addNewExpenseId).draggable();
     };
-    /* Load user settings*/
+    /*
+    * Load user settings
+    * */
     Utils.prototype.loadSettings = function (callback) {
         var _this = this;
         this.showLoadMsg();
@@ -100,6 +123,9 @@ var Utils = (function () {
             callback();
         });
     };
+    /*
+    * Add single expense to view
+    * */
     Utils.prototype.addExpenseToView = function (expense) {
         var _this = this;
         var expenseStringHtml = this.htmlService.getExpenseHtmlTemplate(expense, this.settingsService.getSettings().currency);
@@ -111,10 +137,16 @@ var Utils = (function () {
             $("#" + IdService.expenseListId).append(expenseElementHtml);
         }
     };
+    /*
+    * Remove single expense from view
+    * */
     Utils.prototype.removeExpenseFromView = function (expense) {
         var elem = document.getElementById(expense.id);
         elem.parentNode.removeChild(elem);
     };
+    /*
+    * Set price information according to current budget and total expenses
+    * */
     Utils.prototype.setPriceInformation = function () {
         var totalExpensesPrice = 0;
         var filterdExpenses = this.clickAllExpensesToShow ? this.expenses : this.filterExpenses(this.dateFilter);
@@ -124,6 +156,9 @@ var Utils = (function () {
         var budget = this.settingsService.getSettings().budget;
         this.htmlService.setPriceHoverReportTemplate(budget, totalExpensesPrice);
     };
+    /*
+    * filter expenses according to given month and year
+    * */
     Utils.prototype.filterExpenses = function (date) {
         var _this = this;
         var filterdExpenses = [];
@@ -134,6 +169,9 @@ var Utils = (function () {
         });
         return filterdExpenses;
     };
+    /*
+    * Adding option for expense type to 'select' html element
+    * */
     Utils.prototype.addExpenseTypeOption = function (optionType) {
         var optionHtmlString = this.htmlService.getExpenseTypeOptionTemplate(optionType);
         $("#" + IdService.expensePageSelectId).append(optionHtmlString);
@@ -149,7 +187,9 @@ var Utils = (function () {
     Utils.prototype.hideLoadMsg = function () {
         $.mobile.loading("hide");
     };
-    /* Register to events */
+    /*
+    * Register to all system events
+    * */
     Utils.prototype.registerToEvents = function () {
         this.registerPageLoadEvent();
         this.registerDateFilterEvents();
@@ -157,6 +197,9 @@ var Utils = (function () {
         this.registerToSettingsEvents();
         this.registerExpensesEvents();
     };
+    /*
+    * Register to events related to some expense (Add, Remove, Update..)
+    * */
     Utils.prototype.registerExpensesEvents = function () {
         var _this = this;
         $("#" + IdService.expensePageUpdateTheChangesId).click(function () {
@@ -174,6 +217,9 @@ var Utils = (function () {
             _this.addExpense(expense);
         });
     };
+    /*
+    * Register to events related to change of settings
+    * */
     Utils.prototype.registerToSettingsEvents = function () {
         var _this = this;
         $("#" + IdService.settingsPageBtnId).click(function () {
@@ -198,6 +244,9 @@ var Utils = (function () {
             });
         });
     };
+    /*
+    * Register to date filter events (Arrow filters)
+    * */
     Utils.prototype.registerDateFilterEvents = function () {
         var _this = this;
         var isLeft = true;
@@ -211,11 +260,15 @@ var Utils = (function () {
             _this.handleExpenseDateFilterClicked();
         });
     };
+    /*
+    * Register to statistics page events
+    * */
     Utils.prototype.registerStatisticsPageEvents = function () {
         var _this = this;
         var selector = "#" + IdService.statisticsPageId;
         var tabSelected;
         var expensesToPieChart;
+        // Create charts only if page is shown
         $(document).on("pageshow", selector, function () {
             if (tabSelected === IdService.pieChartTabId) {
                 expensesToPieChart = _this.clickAllExpensesToShow ? _this.expenses : _this.filterExpenses(_this.dateFilter);
@@ -224,16 +277,6 @@ var Utils = (function () {
             else {
                 var currency = _this.settingsService.getSettings().currency;
                 _this.graphService.replotBarLineAnimatedMonthly(IdService.barLineAnimatedId, _this.expenses, currency);
-            }
-        });
-        $(window).on("orientationchange", function (event) {
-            if (tabSelected === IdService.barLineAnimatedTabId) {
-                var currency = _this.settingsService.getSettings().currency;
-                _this.graphService.replotBarLineAnimatedMonthly(IdService.barLineAnimatedId, _this.expenses, currency);
-            }
-            else if (tabSelected === IdService.pieChartTabId) {
-                expensesToPieChart = _this.clickAllExpensesToShow ? _this.expenses : _this.filterExpenses(_this.dateFilter);
-                _this.graphService.replotPieChartsEnhancedLegend(IdService.pieChartId, expensesToPieChart);
             }
         });
         $("#" + IdService.barLineAnimatedTabId).click(function () {
@@ -247,6 +290,9 @@ var Utils = (function () {
             _this.graphService.replotPieChartsEnhancedLegend(IdService.pieChartId, expensesToPieChart);
         });
     };
+    /*
+    * Register events related to page loading and initializing
+    * */
     Utils.prototype.registerPageLoadEvent = function () {
         var _this = this;
         $(document).on("pagebeforecreate", "[data-role='page']", function () {

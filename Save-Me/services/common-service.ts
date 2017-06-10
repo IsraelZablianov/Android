@@ -29,6 +29,9 @@ class CommonService {
         return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear()
     }
 
+    /*
+    * Returns enum values.
+    * */
     getEnumNumericKeys(enumType: any): number[] {
         return Object
             .keys(enumType)
@@ -71,7 +74,10 @@ class CommonService {
         return this.shortMonthNames;
     }
 
-    private  isIndex(key):boolean {
+    /*
+    * Check if a given key is a number
+    * */
+    private  isIndex(key: any): boolean {
         let n = ~~Number(key);
         return String(n) === key && n >= 0;
     }

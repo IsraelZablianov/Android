@@ -1,11 +1,6 @@
-class Expense {
-    date: Date;
-    price: number;
-    comments: string;
-    expenseType: ExpenseType;
-    id: string;
-}
-
+/*
+* Types of expenses
+* */
 enum ExpenseType {
     Food,
     House,
@@ -32,7 +27,6 @@ enum SortType {
     Price
 }
 
-
 /*
 * Configuration object for the bar line chart.
 * */
@@ -41,6 +35,9 @@ interface BarLineConfig {
     xaxis: any[];
 }
 
+/*
+* Settings .
+* */
 class Settings {
     id?: string;
     name: string;
@@ -48,7 +45,20 @@ class Settings {
     budget: number;
 }
 
-/* extentions */
+/*
+ * Expense type description
+ * */
+class Expense {
+    date: Date;
+    price: number;
+    comments: string;
+    expenseType: ExpenseType;
+    id: string;
+}
+
+/*
+* extentions
+* */
 interface JQueryStatic {
     jqplot: any;
 }

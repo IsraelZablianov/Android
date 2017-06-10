@@ -4,6 +4,7 @@
 * */
 
 class IdService {
+    // Expense page Id's //
     static readonly expenseListId: string = "expense-list";
     static readonly expensePageDatepickerId: string = "expense-page-datepicker";
     static readonly expensePageUpdateTheChangesId: string = "expense-page-save-changes";
@@ -12,6 +13,7 @@ class IdService {
     static readonly expensePagePriceId: string = "expense-page-price";
     static readonly expensePageCommentsId: string = "expense-page-comments";
 
+    // New Expense page Id's //
     static readonly newExpensePageDatepickerId: string = "new-expense-page-datepicker";
     static readonly newExpensePageSelectId: string = "new-expense-page-select-type";
     static readonly newExpensePagePriceId: string = "new-expense-page-price";
@@ -19,6 +21,7 @@ class IdService {
     static readonly newExpensePageSaveTheChangesId: string = "new-expense-page-save-changes";
     static readonly addNewExpenseId: string = "add-new-expense";
 
+    // Home page Id's //
     static readonly dateFilterId: string = "date-filter-display";
     static readonly dateFilterLeftArrowId: string = "data-filter-left";
     static readonly dateFilterRightArrowId: string = "data-filter-right";
@@ -27,6 +30,7 @@ class IdService {
     static readonly hoverPriceReportTotalPriceId: string = "hover-price-report-total-price";
     static readonly greetingMessage: string = "greeting-message";
 
+    // Statistics Id's //
     static readonly barLineAnimatedId: string = "bar-line-animated";
     static readonly pieChartId: string = "pie-chart";
     static readonly pieChartTabId: string = "pie-chart-tab";
@@ -34,6 +38,7 @@ class IdService {
     static readonly statisticsPageId: string = "statistics-page";
     static readonly statisticsTabsId: string = "statistics-tabs";
 
+    // Settings Id's //
     static readonly settingsSaveTheChangesId: string = "settings-save";
     static readonly settingsPageBtnId: string = "settings-page-id";
     static readonly settingsNameId: string = "settings-name";

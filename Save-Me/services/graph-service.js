@@ -19,6 +19,9 @@ var GraphService = (function () {
         this.barLinePlot = this.createBarLineAnimated(id, series, series, this.defaultConfig);
         this.barLinePlot.replot({ resetAxes: true });
     };
+    /*
+     * The replot method, builds the graph again and destroys the old one.
+     * */
     GraphService.prototype.replotPieChartsEnhancedLegend = function (id, expenses) {
         if (this.pieChartPlot) {
             this.pieChartPlot.destroy();

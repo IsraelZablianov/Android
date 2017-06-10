@@ -28,6 +28,9 @@ var CommonService = (function () {
     CommonService.prototype.isTheSameMonthAndYear = function (date1, date2) {
         return date1.getMonth() === date2.getMonth() && date1.getFullYear() === date2.getFullYear();
     };
+    /*
+    * Returns enum values.
+    * */
     CommonService.prototype.getEnumNumericKeys = function (enumType) {
         var _this = this;
         return Object
@@ -66,6 +69,9 @@ var CommonService = (function () {
     CommonService.prototype.getshortMonthNames = function () {
         return this.shortMonthNames;
     };
+    /*
+    * Check if a given key is a number
+    * */
     CommonService.prototype.isIndex = function (key) {
         var n = ~~Number(key);
         return String(n) === key && n >= 0;

@@ -1,8 +1,6 @@
-var Expense = (function () {
-    function Expense() {
-    }
-    return Expense;
-}());
+/*
+* Types of expenses
+* */
 var ExpenseType;
 (function (ExpenseType) {
     ExpenseType[ExpenseType["Food"] = 0] = "Food";
@@ -29,9 +27,20 @@ var SortType;
     SortType[SortType["Date"] = 0] = "Date";
     SortType[SortType["Price"] = 1] = "Price";
 })(SortType || (SortType = {}));
+/*
+* Settings .
+* */
 var Settings = (function () {
     function Settings() {
     }
     return Settings;
+}());
+/*
+ * Expense type description
+ * */
+var Expense = (function () {
+    function Expense() {
+    }
+    return Expense;
 }());
 //# sourceMappingURL=models.js.map

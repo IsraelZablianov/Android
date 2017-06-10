@@ -44,23 +44,23 @@ class DatabaseService {
     *
     * The callback executed with one argument that it is the result of the action.
     * */
-    addExpenseToDB(expense: Expense, calback?) {
+    addExpenseToDB(expense: Expense, callback?) {
         expense.id = this.createId();
-        this.expensesStore.setItem(expense.id, expense, calback);
+        this.expensesStore.setItem(expense.id, expense, callback);
     }
 
-    removeExpenseFromDB(expense: Expense, calback?) {
-        this.expensesStore.removeItem(expense.id, calback);
+    removeExpenseFromDB(expense: Expense, callback?) {
+        this.expensesStore.removeItem(expense.id, callback);
     }
 
-    updateExpenseToDB(expense: Expense, calback?) {
+    updateExpenseToDB(expense: Expense, callback?) {
         this.expensesStore.removeItem(expense.id, ()=>{
-            this.expensesStore.setItem(expense.id, expense, calback);
+            this.expensesStore.setItem(expense.id, expense, callback);
         })
     }
 
     /*
-    * An array of items will be passed to the callback.
+    * An array of expenses will be passed to the callback.
     * */
     getAllExpenses(callback) {
         this.expensesStore.keys().then((items)=>{
@@ -71,21 +71,33 @@ class DatabaseService {
         })
     }
 
-    deleteAllExpenses(calback?) {
-        this.expensesStore.clear(calback);
+    /*
+     * delete all expenses from DB.
+     * */
+    deleteAllExpenses(callback?) {
+        this.expensesStore.clear(callback);
     }
 
-    setSettings(settings: Settings, calback?) {
+    /*
+    * Set settings in DB.
+    * */
+    setSettings(settings: Settings, callback?) {
         settings.id = this.settingsId;
-        this.settingsStore.setItem(settings.id, settings, calback);
+        this.settingsStore.setItem(settings.id, settings, callback);
     }
 
-    getSettings(calback) {
+    /*
+     * get object settings from DB.
+     * */
+    getSettings(callback) {
         this.settingsStore.getItem(this.settingsId).then((settings)=>{
-            calback(settings);
+            callback(settings);
         });
     }
 
+    /*
+    * Creates unique id for expenses
+    * */
     private createId(): string {
         return new Date().getTime() + (Math.random() * 100).toString();
     }

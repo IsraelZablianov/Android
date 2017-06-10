@@ -30,7 +30,7 @@ class HtmlService {
     }
 
     /*
-    * Templates generating methods.
+    * Returns a template of new expense.
     * */
     getExpenseHtmlTemplate(expense: Expense, currency?: string): string {
         currency = currency ? currency : 'ILS';
@@ -63,14 +63,26 @@ class HtmlService {
             </li>`;
     }
 
+    /*
+    * Returns a template of expense type -> 'option' to be added to 'select' html element
+    * */
     getExpenseTypeOptionTemplate(optionType: ExpenseType): string{
         return `<option value="${optionType}">${this.commonService.getExpenseTypeNames()[optionType]}</option>`;
     }
 
+    /*
+    * Returns a date display format
+    * */
     getYearAndMonthDisplay(date: Date): string{
         return date.getFullYear() + ' ' + this.commonService.getMonthNames()[date.getMonth()];
     }
 
+    /*
+    * Set price hover information of
+    * 1. expenses
+    * 2. budget
+    * 3. total
+    * */
     setPriceHoverReportTemplate(budgetPrice: number, expensesPrice: number): void {
         $('#' + IdService.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
         $('#' + IdService.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
@@ -85,6 +97,9 @@ class HtmlService {
         $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     }
 
+    /*
+    * Set greeting message for user.
+    * */
     setGreetingMessage(userName?: string): void {
         let msg = this.commonService.getGreetingMessage();
         msg += userName ? " " + userName + " !" : "";
@@ -92,7 +107,7 @@ class HtmlService {
     }
 
     /*
-    * Set color Red for Alert (expenses are over the budget) or blue.
+    * Set color Red if expenses are over the budget else blue.
     * */
     private manageHoverPriceClasses(classToAdd: string, classToRemove: string): void {
         let reortTotalPriceElement = $('#' + IdService.hoverPriceReportTotalPriceId);

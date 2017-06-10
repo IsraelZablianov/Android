@@ -29,18 +29,30 @@ var HtmlService = (function () {
         $.each(listItems, function (idx, itm) { ul.append(itm); });
     };
     /*
-    * Templates generating methods.
+    * Returns a template of new expense.
     * */
     HtmlService.prototype.getExpenseHtmlTemplate = function (expense, currency) {
         currency = currency ? currency : 'ILS';
         return "\n            <li id=\"" + expense.id + "\" date=\"" + expense.date + "\" price=\"" + expense.price + "\">\n                <a href=\"#expense-page\" class=\"expense-wrapper\">\n                    <div class=\"expense-display\">\n                        <div class=\"date-section\">\n                            <div class=\"date-display\">\n                                <div>" + this.getDate(expense.date) + "</div>\n                            </div>\n                            <div class=\"day-display\">\n                                <div>" + this.getDay(expense.date) + "</div>\n                            </div>\n                            <div class=\"month-display\">\n                                <div>" + this.getMonth(expense.date) + "</div>\n                            </div>\n                            <div class=\"year-display\">\n                                <div>" + this.getYear(expense.date) + "</div>\n                            </div>\n                        </div>\n                        <div class=\"content-section\">\n                            <img class=\"icon-display\" src=" + (this.iconsPath + this.icons[expense.expenseType]) + ">\n                            <h1 class=\"type-display\">" + this.commonService.getExpenseTypeNames()[expense.expenseType] + "</h1>\n                            <p class=\"comments-display\">" + expense.comments + "</p>\n                            <span class=\"price-display\">" + expense.price + " " + currency + "</span>\n                        </div>\n                    </div>\n                </a>\n            </li>";
     };
+    /*
+    * Returns a template of expense type -> 'option' to be added to 'select' html element
+    * */
     HtmlService.prototype.getExpenseTypeOptionTemplate = function (optionType) {
         return "<option value=\"" + optionType + "\">" + this.commonService.getExpenseTypeNames()[optionType] + "</option>";
     };
+    /*
+    * Returns a date display format
+    * */
     HtmlService.prototype.getYearAndMonthDisplay = function (date) {
         return date.getFullYear() + ' ' + this.commonService.getMonthNames()[date.getMonth()];
     };
+    /*
+    * Set price hover information of
+    * 1. expenses
+    * 2. budget
+    * 3. total
+    * */
     HtmlService.prototype.setPriceHoverReportTemplate = function (budgetPrice, expensesPrice) {
         $('#' + IdService.hoverPriceExpensePriceId).text(Number(expensesPrice).toFixed(2));
         $('#' + IdService.hoverPriceBudgetPriceId).text(Number(budgetPrice).toFixed(2));
@@ -53,13 +65,16 @@ var HtmlService = (function () {
         }
         $('#' + IdService.hoverPriceReportTotalPriceId).text(Number(reportPrice).toFixed(2));
     };
+    /*
+    * Set greeting message for user.
+    * */
     HtmlService.prototype.setGreetingMessage = function (userName) {
         var msg = this.commonService.getGreetingMessage();
         msg += userName ? " " + userName + " !" : "";
         $("#" + IdService.greetingMessage).text(msg);
     };
     /*
-    * Set color Red for Alert (expenses are over the budget) or blue.
+    * Set color Red if expenses are over the budget else blue.
     * */
     HtmlService.prototype.manageHoverPriceClasses = function (classToAdd, classToRemove) {
         var reortTotalPriceElement = $('#' + IdService.hoverPriceReportTotalPriceId);

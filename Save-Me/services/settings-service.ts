@@ -1,3 +1,7 @@
+/*
+* This class service is responsible for managing the user settings.
+* */
+
 class SettingsService {
     private settings: Settings;
     private databaseService: DatabaseService = new DatabaseService();
@@ -7,7 +11,7 @@ class SettingsService {
     * From the database if exists or creating default settings.
     * The function executing the supplied callback function if exists.
     * */
-    loadSettings(callback?) {
+    loadSettings(callback?): void {
         this.databaseService.getSettings((settings)=>{
             if(settings) {
                 this.settings = settings;
@@ -43,10 +47,16 @@ class SettingsService {
         this.databaseService.setSettings(this.settings, calback)
     }
 
+    /*
+    * Returns current settingsOr Undefined
+    * */
     getSettings(): Settings {
         return this.settings;
     }
 
+    /*
+    * Gets tue user selected settings from settings page
+    * */
     private getSettingsFromView(): Settings {
         this.settings.budget = $('#' + IdService.settingsBudgetId).val() || 0;
         this.settings.currency = $('#' + IdService.settingsCurrencyId + " option:selected").val();
