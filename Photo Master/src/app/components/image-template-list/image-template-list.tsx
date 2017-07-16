@@ -22,17 +22,17 @@ export default class ImageTemplateList extends React.Component<ImageTemplateList
     render(): JSX.Element {
         imageTemplates
         return (
-            <div>
+            <ul className="image-templates">
                 {imageTemplates.map((imageTemplate, index) => {
                     return (
-                        <div className="image-templates">
+                        <li key={index}>
                             <UploadImageComponent imageChanged={(file) => { }}>
-                                <img className={imageTemplate.className} src={imageTemplate.url} key={index} />
+                                <img className={imageTemplate.className} src={imageTemplate.url} />
                             </UploadImageComponent>
-                        </div>
+                        </li>
                     );
                 })}
-            </div>
+            </ul>
         );
     }
 

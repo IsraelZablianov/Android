@@ -41,8 +41,8 @@ export default class UploadImageComponent extends React.Component<UploadImagePro
                     id="file-input-image"
                     type="file"
                     onChange={this.handleImageChange}
-                    accept=".jpg"
-                    className="display-none"
+                    accept="image/*"
+                    className="hide"
                 />
             </div>
         );

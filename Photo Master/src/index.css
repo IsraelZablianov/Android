@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 8px;
+  background-color: #2A2A2A;
+}
+.app {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.app .app-body {
+  padding-top: 60px;
+}
+.app .hide {
+  display: none;
+}
+.header {
+  height: 60px;
+  z-index: 10000;
+  width: 100%;
+  margin: -8px;
+  background-color: #393939;
+  position: fixed;
+  border-bottom: 1px solid #CCC;
+}
+.header .hamburger {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 3%;
+}
+.header .header-title {
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  font-size: larger;
+}
+.image-templates {
+  list-style-type: none;
+  padding: 0;
+}
+.image-templates .img-template {
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 1px;
+  margin-bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.image-templates .deadpull {
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 1px;
+  margin-bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  border: 3px solid #812635;
+}
+.image-templates .spider-man {
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 1px;
+  margin-bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  border: 3px solid #5A160D;
+}
+.image-templates .iron-man {
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 1px;
+  margin-bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  border: 3px solid #3E565A;
+}
