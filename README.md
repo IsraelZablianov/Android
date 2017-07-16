@@ -1,6 +1,6 @@
-# Android application developed by Isare Z.
+# Android Applications.
 
-My first aplication is 'Save Me' 
+My first aplication - 'Save Me' 
 
 https://play.google.com/store/apps/details?id=com.israelz.save_me
 
