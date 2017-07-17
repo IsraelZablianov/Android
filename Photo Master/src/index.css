@@ -4,7 +4,7 @@ html {
 body {
   min-height: 100%;
   margin: 8px;
-  background-color: #2A2A2A;
+  background-color: #393939;
 }
 .app {
   position: relative;
@@ -24,7 +24,15 @@ body {
   z-index: 10000;
   width: 100%;
   margin: -8px;
-  background-color: #393939;
+  background: #373F52;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#373F52, #202A36);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#373F52, #202A36);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#373F52, #202A36);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#373F52, #202A36);
   position: fixed;
   border-bottom: 1px solid #CCC;
 }
@@ -41,6 +49,25 @@ body {
   position: relative;
   transform: translateY(-50%);
   font-size: larger;
+}
+.header .side-nav-header {
+  background: #373F52;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#373F52, #202A36);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#373F52, #202A36);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#373F52, #202A36);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#373F52, #202A36);
+  border-bottom: 1px solid #CCC;
+  color: #fff;
+  height: calc(120px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 .image-templates {
   list-style-type: none;

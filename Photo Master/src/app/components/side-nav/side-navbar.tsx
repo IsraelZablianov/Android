@@ -1,6 +1,5 @@
 import * as React from 'react';
-const SideNav = require('react-simple-sidenav');
-// import * as SideNav from 'react-simple-sidenav';
+const SideNav = require('react-simple-sidenav').default;
  
 /**
  * for more : https://www.npmjs.com/package/react-simple-sidenav
@@ -21,6 +20,7 @@ export interface SideNavbarProps {
     onShowNav?: () => void;	//  Trigger when navigation opens
     onHideNav?: () => void;	//  Trigger when navigation close
     children?: SideNavbarNode;        //	Content of navigation. If supplying children to SideNav, title and items will be ignore and replaced by children
+    className?: string;
 }
 
 export interface SideNavbarState {

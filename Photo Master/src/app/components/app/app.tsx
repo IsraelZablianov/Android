@@ -1,7 +1,6 @@
 import * as React from 'react';
 import ImageTemplateList from "../image-template-list/image-template-list";
 import { Header } from "../header/header";
-const emptyString: string = "";
 
 export interface AppProps {
 
@@ -9,7 +8,7 @@ export interface AppProps {
 
 export interface AppState {
     imagePreviewUrl?: string;
-    title?: string;
+    title: string;
 }
 
 export default class App extends React.Component<AppProps, AppState> {
@@ -26,7 +25,7 @@ export default class App extends React.Component<AppProps, AppState> {
     render(): JSX.Element {
         return (
             <div className="app">
-                <Header title={this.state.title || emptyString}></Header>
+                <Header title={this.state.title}></Header>
                 <div className="app-body">
                     <ImageTemplateList imageChanged={(file) => { this.onImageSelected(file) }}>
                     </ImageTemplateList>

@@ -1,7 +1,5 @@
-@bodyMargin: 8px;
-@headerHeight: 60px;
-@headerColor: #393939;
-@appColor: #2A2A2A;
+@import (reference)'app/styles/_variables.less';
+@import (reference)'app/styles/mixing.less';
 
 html{
   height: 100%;
@@ -28,13 +26,12 @@ body{
     }
 }
 
-
 .header {
     height: @headerHeight;
     z-index: 10000;
     width: 100%;
     margin: -8px;
-    background-color: @headerColor;
+    .vertical-gradient(@headerColor, @endHeaderColor);
     position: fixed;
     border-bottom: 1px solid #CCC;
 
@@ -47,11 +44,23 @@ body{
 
     .header-title { 
         text-align: center;
-        color: #fff;
+        color: @fontColor;
         top: 50%;
         position: relative;
         transform: translateY(-50%);
         font-size: larger;
+    }
+
+    .side-nav-header {
+        .vertical-gradient(@headerColor, @endHeaderColor);
+        border-bottom: 1px solid #CCC;
+        color: @fontColor;
+        height: calc(@headerHeight * 2);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
     }
 }
 

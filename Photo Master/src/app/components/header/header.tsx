@@ -14,7 +14,6 @@ export interface HeaderState {
 export class Header extends React.Component<HeaderProps, HeaderState> {
     constructor(props: HeaderProps) {
         super(props);
-
         this.state = {
             showSideNav: false
         };
@@ -26,18 +25,22 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 <div className="header-title">
                     {this.props.title}
                 </div>
-                <div onClick={() => { this.onMenuSelected() }}>
+                <div onClick={() => { this.openMenu() }}>
                     <img className="hamburger" src={menu} alt="menu" />
                 </div>
-                <SideNavbar 
+                <SideNavbar navStyle={{width: '70%'}}
                     {...this.props.sideNavbarProps}
                     showNav={this.state.showSideNav} 
-                    onHideNav={() => {this.closeMenu()}}/>
+                    onHideNav={() => {this.closeMenu()}}>
+                    <div className="side-nav-header">
+                        {this.props.sideNavbarProps && this.props.sideNavbarProps.title || this.props.title}
+                    </div>
+                </SideNavbar>
             </div>
         );
     }
 
-    onMenuSelected(): void {
+    openMenu(): void {
         this.setState({
             showSideNav: true
         });
