@@ -1,6 +1,6 @@
 # Android Applications.
 
-My first aplication - 'Save Me' 
+My first application - 'Save Me' 
 
 https://play.google.com/store/apps/details?id=com.israelz.save_me
 
